@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="APP.UserControls.UCHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:APP.UserControls"
+             mc:Ignorable="d" 
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+    <Border Background="#f3f1f1" Margin="10,0,10,10" CornerRadius="5">
+        <Border.Effect>
+            <DropShadowEffect Color="Gray" Direction="315" ShadowDepth="4" 
+           BlurRadius="10" Opacity="0.5"/>
+        </Border.Effect>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0">
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" Direction="315" ShadowDepth="4" 
+           BlurRadius="10" Opacity="0.5"/>
+                </Border.Effect>
+                <ToolBarTray >
+                    <ToolBar ClipToBounds="False"  Style="{StaticResource MaterialDesignToolBar}">
+                        <ListBox Padding="0" Margin="0">
+                            <ListBox.Resources>
+                                <!-- Style cho ListBoxItem để đổi màu khi được chọn -->
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="Margin" Value="0"/>
+                                </Style>
+                                <!-- Style cho icon -->
+                                <Style TargetType="materialDesign:PackIcon">
+                                    <Setter Property="Height" Value="30"/>
+                                    <Setter Property="Width" Value="30"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="Margin" Value="0"/>
+                                </Style>
+                                <!-- Style cho Label -->
+                                <Style TargetType="Label">
+                                    <Setter Property="FontSize" Value="15"/>
+                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="Foreground" Value="Black"/>
+                                </Style>
+                              
+
+                            </ListBox.Resources>
+                            <!-- Item 1 -->
+                            <ListBoxItem>
+                                <StackPanel VerticalAlignment="Center">
+                                    <materialDesign:PackIcon Kind="DeveloperBoard" Foreground="DarkBlue"/>
+                                    <Label Content="Manage"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <!-- Item 2 -->
+                            <ListBoxItem>
+                                <StackPanel  VerticalAlignment="Center">
+                                    <materialDesign:PackIcon Kind="BookEdit" Foreground="Red"/>
+                                    <Label Content="Report"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <!-- Item 3 -->
+                            <ListBoxItem>
+                                <StackPanel VerticalAlignment="Center">
+                                    <materialDesign:PackIcon Kind="History" Foreground="SlateBlue"/>
+                                    <Label Content="History"/>
+                                </StackPanel>
+                            </ListBoxItem>
+
+                            <!-- Item 4 -->
+                            <ListBoxItem>
+                                <StackPanel VerticalAlignment="Center">
+                                    <materialDesign:PackIcon Kind="FridgeOutline" Foreground="Chocolate"/>
+                                    <Label Content="Progress"/>
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                    </ToolBar>
+                </ToolBarTray>
+            </Border>
+        </Grid>
+    </Border>
+    
+   
+</UserControl>
