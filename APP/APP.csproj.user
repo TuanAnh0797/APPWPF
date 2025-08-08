@@ -11,7 +11,16 @@
     <Compile Update="UserControls\Help\UCHelp.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\Home\ChildrenUC\UCHistory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\Home\ChildrenUC\UCManage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\Home\ChildrenUC\UCProgress.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\Home\ChildrenUC\UCReport.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControls\Home\UCHome.xaml.cs">

@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "E:\\2025\\APP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\viewmodels\\usercontrolviewmodels\\common\\uccontrolbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\common\\uccontrolbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\home\\childrenuc\\ucmanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\childrenuc\\ucmanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\home\\uchome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\uchome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\home\\childrenuc\\ucmanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\childrenuc\\ucmanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\home\\uchome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\uchome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\home\\childrenuc\\ucreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\childrenuc\\ucreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\home\\childrenuc\\ucprogress.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\childrenuc\\ucprogress.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\home\\childrenuc\\uchistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\childrenuc\\uchistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\viewmodels\\usercontrolviewmodels\\common\\uccontrolbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\common\\uccontrolbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\help\\uchelp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -37,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\usercontrols\\tools\\uctools.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\tools\\uctools.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|e:\\2025\\app\\app\\componentui\\realtimeclock.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 294,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,33 +102,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "E:\\2025\\APP\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T09:19:28.196Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UCHomeViewModel.cs",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
-              "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
-              "ToolTip": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
-              "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:47:45.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FuntionHome.cs",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\Models\\Home\\FuntionHome.cs",
-              "RelativeDocumentMoniker": "APP\\Models\\Home\\FuntionHome.cs",
-              "ToolTip": "E:\\2025\\APP\\APP\\Models\\Home\\FuntionHome.cs",
-              "RelativeToolTip": "APP\\Models\\Home\\FuntionHome.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:43:21.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "UCManage.xaml",
               "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Home\\ChildrenUC\\UCManage.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Home\\ChildrenUC\\UCManage.xaml",
@@ -120,69 +126,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UCHelp.xaml",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Help\\UCHelp.xaml",
-              "RelativeDocumentMoniker": "APP\\UserControls\\Help\\UCHelp.xaml",
-              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Help\\UCHelp.xaml",
-              "RelativeToolTip": "APP\\UserControls\\Help\\UCHelp.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-07T09:24:21.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UCSetting.xaml",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Setting\\UCSetting.xaml",
-              "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\UCSetting.xaml",
-              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Setting\\UCSetting.xaml",
-              "RelativeToolTip": "APP\\UserControls\\Setting\\UCSetting.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-07T09:24:14.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UCTools.xaml",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Tools\\UCTools.xaml",
-              "RelativeDocumentMoniker": "APP\\UserControls\\Tools\\UCTools.xaml",
-              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Tools\\UCTools.xaml",
-              "RelativeToolTip": "APP\\UserControls\\Tools\\UCTools.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-07T09:24:04.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UCControlBarViewModel.cs",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
-              "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
-              "ToolTip": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
-              "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FuntionHome.cs",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\Models\\Home\\FuntionHome.cs",
+              "RelativeDocumentMoniker": "APP\\Models\\Home\\FuntionHome.cs",
+              "ToolTip": "E:\\2025\\APP\\APP\\Models\\Home\\FuntionHome.cs",
+              "RelativeToolTip": "APP\\Models\\Home\\FuntionHome.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:20:04.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T09:43:21.963Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "E:\\2025\\APP\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
-              "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:19:28.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "UCHome.xaml",
               "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Home\\UCHome.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Home\\UCHome.xaml",
@@ -194,19 +150,155 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UCControlBarViewModel.cs",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
+              "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
+              "ToolTip": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
+              "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T09:20:04.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UCReport.xaml",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Home\\ChildrenUC\\UCReport.xaml",
+              "RelativeDocumentMoniker": "APP\\UserControls\\Home\\ChildrenUC\\UCReport.xaml",
+              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Home\\ChildrenUC\\UCReport.xaml",
+              "RelativeToolTip": "APP\\UserControls\\Home\\ChildrenUC\\UCReport.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-08T02:12:13.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "APP\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "APP\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T07:18:17.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\App.xaml.cs",
+              "RelativeDocumentMoniker": "APP\\App.xaml.cs",
+              "ToolTip": "E:\\2025\\APP\\APP\\App.xaml.cs",
+              "RelativeToolTip": "APP\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T02:07:48.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UCHomeViewModel.cs",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
+              "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
+              "ToolTip": "E:\\2025\\APP\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
+              "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwEUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T09:47:45.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UCHome.xaml.cs",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Home\\UCHome.xaml.cs",
+              "RelativeDocumentMoniker": "APP\\UserControls\\Home\\UCHome.xaml.cs",
+              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Home\\UCHome.xaml.cs",
+              "RelativeToolTip": "APP\\UserControls\\Home\\UCHome.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T02:08:30.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "APP\\Views\\MainWindow.xaml",
+              "ToolTip": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "APP\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-07T07:18:49.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UCTools.xaml",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Tools\\UCTools.xaml",
+              "RelativeDocumentMoniker": "APP\\UserControls\\Tools\\UCTools.xaml",
+              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Tools\\UCTools.xaml",
+              "RelativeToolTip": "APP\\UserControls\\Tools\\UCTools.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-07T09:24:04.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UCSetting.xaml",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Setting\\UCSetting.xaml",
+              "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\UCSetting.xaml",
+              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Setting\\UCSetting.xaml",
+              "RelativeToolTip": "APP\\UserControls\\Setting\\UCSetting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-07T09:24:14.705Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "UCHelp.xaml",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Help\\UCHelp.xaml",
+              "RelativeDocumentMoniker": "APP\\UserControls\\Help\\UCHelp.xaml",
+              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Help\\UCHelp.xaml",
+              "RelativeToolTip": "APP\\UserControls\\Help\\UCHelp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-07T09:24:21.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UCHistory.xaml",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Home\\ChildrenUC\\UCHistory.xaml",
+              "RelativeDocumentMoniker": "APP\\UserControls\\Home\\ChildrenUC\\UCHistory.xaml",
+              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Home\\ChildrenUC\\UCHistory.xaml",
+              "RelativeToolTip": "APP\\UserControls\\Home\\ChildrenUC\\UCHistory.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-08T02:12:37.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UCProgress.xaml",
+              "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Home\\ChildrenUC\\UCProgress.xaml",
+              "RelativeDocumentMoniker": "APP\\UserControls\\Home\\ChildrenUC\\UCProgress.xaml",
+              "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Home\\ChildrenUC\\UCProgress.xaml",
+              "RelativeToolTip": "APP\\UserControls\\Home\\ChildrenUC\\UCProgress.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-08T02:13:02.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "UCControlBar.xaml",
               "DocumentMoniker": "E:\\2025\\APP\\APP\\UserControls\\Common\\UCControlBar.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Common\\UCControlBar.xaml",
               "ToolTip": "E:\\2025\\APP\\APP\\UserControls\\Common\\UCControlBar.xaml",
               "RelativeToolTip": "APP\\UserControls\\Common\\UCControlBar.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-07T07:24:49.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T07:24:49.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "RealtimeClock.xaml.cs",
               "DocumentMoniker": "E:\\2025\\APP\\APP\\ComponentUI\\RealtimeClock.xaml.cs",
               "RelativeDocumentMoniker": "APP\\ComponentUI\\RealtimeClock.xaml.cs",
@@ -214,45 +306,18 @@
               "RelativeToolTip": "APP\\ComponentUI\\RealtimeClock.xaml.cs",
               "ViewState": "AgIAANkAAAAAAAAAAAAEwAUBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T07:20:52.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T07:20:52.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "RealtimeClock.xaml",
               "DocumentMoniker": "E:\\2025\\APP\\APP\\ComponentUI\\RealtimeClock.xaml",
               "RelativeDocumentMoniker": "APP\\ComponentUI\\RealtimeClock.xaml",
               "ToolTip": "E:\\2025\\APP\\APP\\ComponentUI\\RealtimeClock.xaml",
               "RelativeToolTip": "APP\\ComponentUI\\RealtimeClock.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-07T07:20:27.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "APP\\Views\\MainWindow.xaml",
-              "ToolTip": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml",
-              "RelativeToolTip": "APP\\Views\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-07T07:18:49.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "APP\\Views\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\2025\\APP\\APP\\Views\\MainWindow.xaml.cs",
-              "RelativeToolTip": "APP\\Views\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T07:18:17.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T07:20:27.817Z"
             }
           ]
         }

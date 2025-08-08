@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 E:\2025\APP\APP\App.xaml
-8-473570647
+11-167056982
 
-14413053851
+18-562909224
 215368972634
-ComponentUI\RealtimeClock.xaml;UserControls\Common\UCControlBar.xaml;UserControls\Help\UCHelp.xaml;UserControls\Home\ChildrenUC\UCManage.xaml;UserControls\Home\UCHome.xaml;UserControls\Setting\UCSetting.xaml;UserControls\Tools\UCTools.xaml;Views\MainWindow.xaml;
+ComponentUI\RealtimeClock.xaml;UserControls\Common\UCControlBar.xaml;UserControls\Help\UCHelp.xaml;UserControls\Home\ChildrenUC\UCHistory.xaml;UserControls\Home\ChildrenUC\UCManage.xaml;UserControls\Home\ChildrenUC\UCProgress.xaml;UserControls\Home\ChildrenUC\UCReport.xaml;UserControls\Home\UCHome.xaml;UserControls\Setting\UCSetting.xaml;UserControls\Tools\UCTools.xaml;Views\MainWindow.xaml;
 
 False
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace APP.Models.Home
 {
@@ -10,5 +11,6 @@ namespace APP.Models.Home
     {
         public string NameIcon { get; set; }
         public string NameLabel { get; set; }
+        public Brush ColorIcon { get; set; }
     }
 }

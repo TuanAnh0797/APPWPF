@@ -1,6 +1,7 @@
 ﻿using APP.UserControls;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,30 +20,30 @@ namespace APP.ViewModels.FormViewModels
 
         public MainWindowViewModel()
         {
-            CurrentView = new UCHome();
+            CurrentView = App.ServiceProvider.GetRequiredService<UCHome>();
         }
         [RelayCommand]
         private void ShowHome()
         {
-            CurrentView = new UCHome();
+            CurrentView = App.ServiceProvider.GetRequiredService<UCHome>();
             Selectedpage = "Home";
         }
         [RelayCommand]
         private void ShowTools()
         {
-            CurrentView = new UCTools();
+            CurrentView = App.ServiceProvider.GetRequiredService<UCTools>();
             Selectedpage = "Tools";
         }
         [RelayCommand]
         private void ShowSetting()
         {
-            CurrentView = new UCSetting();
+            CurrentView = App.ServiceProvider.GetRequiredService<UCSetting>();
             Selectedpage = "Setting";
         }
         [RelayCommand]
         private void ShowHelp()
         {
-            CurrentView = new UCHelp();
+            CurrentView = App.ServiceProvider.GetRequiredService<UCHelp>();
             Selectedpage = "Help";
         }
 

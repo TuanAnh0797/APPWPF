@@ -1,5 +1,7 @@
-﻿using APP.ViewModels;
+﻿using APP.UserControls;
+using APP.ViewModels;
 using APP.ViewModels.FormViewModels;
+using APP.ViewModels.UserControlViewModels.Home;
 using Microsoft.Extensions.DependencyInjection;
 using System.Configuration;
 using System.Data;
@@ -19,6 +21,12 @@ namespace APP
             // Đăng ký service và viewmodel
             services.AddSingleton<UCControlBarViewModel>();
             services.AddSingleton<MainWindowViewModel>();
+            services.AddSingleton<UCHomeViewModel>();
+            services.AddSingleton<UCHome>();
+            services.AddSingleton<UCSetting>();
+            services.AddSingleton<UCTools>();
+            services.AddSingleton<UCHelp>();
+
             ServiceProvider = services.BuildServiceProvider();
             base.OnStartup(e);
         }

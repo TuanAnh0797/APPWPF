@@ -62,3 +62,10 @@ E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Setting\UCSetting.baml
 E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Tools\UCTools.baml
 E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCManage.g.cs
 E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCManage.baml
+E:\2025\APP\APP\obj\Debug\net8.0-windows\APP.sourcelink.json
+E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCHistory.g.cs
+E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCProgress.g.cs
+E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCReport.g.cs
+E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCHistory.baml
+E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCProgress.baml
+E:\2025\APP\APP\obj\Debug\net8.0-windows\UserControls\Home\ChildrenUC\UCReport.baml

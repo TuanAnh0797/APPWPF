@@ -1,4 +1,7 @@
-﻿using System;
+﻿using APP.ViewModels.FormViewModels;
+using APP.ViewModels.UserControlViewModels.Home;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +23,12 @@ namespace APP.UserControls
     /// </summary>
     public partial class UCHome : UserControl
     {
+        private UCHomeViewModel _viewModel;
         public UCHome()
         {
             InitializeComponent();
+            _viewModel = App.ServiceProvider.GetRequiredService<UCHomeViewModel>();
+            DataContext = _viewModel;
         }
     }
 }
