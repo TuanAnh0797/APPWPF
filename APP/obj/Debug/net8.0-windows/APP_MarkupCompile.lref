@@ -1,14 +1,14 @@
-﻿
-FE:\2025\APP\APP\App.xaml;;
-FE:\2025\APP\APP\ComponentUI\RealtimeClock.xaml;;
-FE:\2025\APP\APP\Views\MainWindow.xaml;;
-FE:\2025\APP\APP\UserControls\Common\UCControlBar.xaml;;
-FE:\2025\APP\APP\UserControls\Help\UCHelp.xaml;;
-FE:\2025\APP\APP\UserControls\Home\UCHome.xaml;;
-FE:\2025\APP\APP\UserControls\Setting\UCSetting.xaml;;
-FE:\2025\APP\APP\UserControls\Tools\UCTools.xaml;;
-FE:\2025\APP\APP\UserControls\Home\ChildrenUC\UCManage.xaml;;
-FE:\2025\APP\APP\UserControls\Home\ChildrenUC\UCHistory.xaml;;
-FE:\2025\APP\APP\UserControls\Home\ChildrenUC\UCProgress.xaml;;
-FE:\2025\APP\APP\UserControls\Home\ChildrenUC\UCReport.xaml;;
+﻿E:\2025\APPWPF\APP\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+FE:\2025\APPWPF\APP\App.xaml;;
+FE:\2025\APPWPF\APP\ComponentUI\RealtimeClock.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Common\UCControlBar.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Help\UCHelp.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCHistory.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCManage.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCProgress.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCReport.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Home\UCHome.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Setting\UCSetting.xaml;;
+FE:\2025\APPWPF\APP\UserControls\Tools\UCTools.xaml;;
+FE:\2025\APPWPF\APP\Views\MainWindow.xaml;;
 

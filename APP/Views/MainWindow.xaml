@@ -55,7 +55,7 @@
                         <Button Command="{Binding ShowHomeCommand}">
                                 <StackPanel>
                                     <materialDesign:PackIcon Kind="Home" Foreground="OrangeRed" />
-                                    <Label Content="Home" />
+                                    <Label Content="{DynamicResource Home}" />
                                 </StackPanel>
                             </Button>
                             <Separator></Separator>
@@ -133,10 +133,11 @@
                     <materialDesign:Chip FontWeight="Bold" Content="Tuan Anh" Icon="A" HorizontalAlignment="Right" Background="White" Grid.Column="2">
                         <materialDesign:Chip.ContextMenu>
                             <ContextMenu materialDesign:MenuAssist.MenuItemsPresenterMargin="0" Placement="Bottom" StaysOpen="True">
-                                <MenuItem Header="{Binding Lang[title_ChangePassword], FallbackValue='Change Password'}" Icon="{materialDesign:PackIcon Kind=LockReset}"/>
-                                <MenuItem Header="{Binding Lang[title_Login], FallbackValue='Login'}" Icon="{materialDesign:PackIcon Kind=Login}" />
-                                <MenuItem Header="{Binding Lang[title_Logout], FallbackValue='Logout'}" Icon="{materialDesign:PackIcon Kind=Logout}"/>
-                                <MenuItem Header="{Binding Lang[title_UserManagement], FallbackValue='User Management'}" Icon="{materialDesign:PackIcon Kind=AccountGroup}"/>
+                                <MenuItem Header="Change Password" Icon="{materialDesign:PackIcon Kind=LockReset}"/>
+                                <MenuItem Header="Login" Icon="{materialDesign:PackIcon Kind=Login}" />
+                                <MenuItem Header="Logout" Icon="{materialDesign:PackIcon Kind=Logout}"/>
+                                <MenuItem Header="User Management" Icon="{materialDesign:PackIcon Kind=AccountGroup}"/>
+                                <MenuItem Header="Change language" Icon="{materialDesign:PackIcon Kind=Language}" Command="{Binding ChangeLanguageCommand}"/>
                             </ContextMenu>
                         </materialDesign:Chip.ContextMenu>
                     </materialDesign:Chip>

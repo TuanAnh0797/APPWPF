@@ -21,44 +21,6 @@
             <TextBlock Text="My Content" />
         </GroupBox>-->
 
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.Resources>
-                <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
-                    <Setter Property="Padding" Value="10"></Setter>
-                    <Setter Property="FontSize" Value="20"></Setter>
-                    <Setter Property="Margin" Value="0,0,0,10"></Setter>
-                </Style>
-                <Style TargetType="StackPanel">
-                    <Setter Property="Margin" Value="0,0,15,0"></Setter>
-                </Style>
-            </Grid.Resources>
-
-            <StackPanel Grid.Column="0" Orientation="Vertical">
-                <Grid >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <TextBox materialDesign:HintAssist.Hint="Password" Width="auto" Margin="0,0,10,10"></TextBox>
-                    <TextBox Grid.Column="1" materialDesign:HintAssist.Hint="Password" Width="auto"></TextBox>
-                </Grid>
-                <TextBox materialDesign:HintAssist.Hint="Password"></TextBox>
-            </StackPanel>
-            <StackPanel Grid.Column="1" Orientation="Vertical">
-                <TextBox materialDesign:HintAssist.Hint="Password"></TextBox>
-                <TextBox materialDesign:HintAssist.Hint="Password"></TextBox>
-            </StackPanel>
-            <StackPanel Grid.Column="2" Orientation="Vertical">
-                <TextBox materialDesign:HintAssist.Hint="Password"></TextBox>
-                <TextBox materialDesign:HintAssist.Hint="Password"></TextBox>
-            </StackPanel>
-            <TextBox Grid.Column="3" materialDesign:HintAssist.Hint="Password" Margin="0,0,10,10"></TextBox>
-        </Grid>
+        
     </Grid>
 </UserControl>

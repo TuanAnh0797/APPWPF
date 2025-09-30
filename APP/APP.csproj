@@ -13,9 +13,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="Resources\Language\StringResources.en.xaml" />
+    <Page Remove="Resources\Language\StringResources.vi.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="UserControls\Help\ChildrenUC\" />
     <Folder Include="UserControls\Setting\ChildrenUC\" />
     <Folder Include="UserControls\Tools\ChildrenUC\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Language\StringResources.en.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Language\StringResources.vi.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

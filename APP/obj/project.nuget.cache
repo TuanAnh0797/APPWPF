@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dvgOCg6h5Qc=",
+  "dgSpecHash": "ibSfyBTTB2A=",
   "success": true,
-  "projectFilePath": "E:\\2025\\APP\\APP\\APP.csproj",
+  "projectFilePath": "E:\\2025\\APPWPF\\APP\\APP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tranm\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\tranm\\.nuget\\packages\\harfbuzzsharp\\8.3.0.1\\harfbuzzsharp.8.3.0.1.nupkg.sha512",
@@ -33,9 +33,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'OpenTK 3.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\2025\\APP\\APP\\APP.csproj",
+      "projectPath": "E:\\2025\\APPWPF\\APP\\APP.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\2025\\APP\\APP\\APP.csproj",
+      "filePath": "E:\\2025\\APPWPF\\APP\\APP.csproj",
       "libraryId": "OpenTK",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -45,9 +45,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'OpenTK.GLWpfControl 3.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\2025\\APP\\APP\\APP.csproj",
+      "projectPath": "E:\\2025\\APPWPF\\APP\\APP.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\2025\\APP\\APP\\APP.csproj",
+      "filePath": "E:\\2025\\APPWPF\\APP\\APP.csproj",
       "libraryId": "OpenTK.GLWpfControl",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -57,9 +57,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'SkiaSharp.Views.WPF 3.116.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\2025\\APP\\APP\\APP.csproj",
+      "projectPath": "E:\\2025\\APPWPF\\APP\\APP.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\2025\\APP\\APP\\APP.csproj",
+      "filePath": "E:\\2025\\APPWPF\\APP\\APP.csproj",
       "libraryId": "SkiaSharp.Views.WPF",
       "targetGraphs": [
         "net8.0-windows7.0"

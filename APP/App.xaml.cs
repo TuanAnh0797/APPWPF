@@ -1,4 +1,6 @@
-﻿using APP.UserControls;
+﻿using APP.Interface.language;
+using APP.Service;
+using APP.UserControls;
 using APP.ViewModels;
 using APP.ViewModels.FormViewModels;
 using APP.ViewModels.UserControlViewModels.Home;
@@ -26,6 +28,8 @@ namespace APP
             services.AddSingleton<UCSetting>();
             services.AddSingleton<UCTools>();
             services.AddSingleton<UCHelp>();
+            // Servive language
+            services.AddSingleton<ILocalizationService,LocalizationService>();
 
             ServiceProvider = services.BuildServiceProvider();
             base.OnStartup(e);

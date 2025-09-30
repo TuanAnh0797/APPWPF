@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\2025\APP\APP\obj\Debug\net8.0-windows\
+E:\2025\APPWPF\APP\obj\Debug\net8.0-windows\
 APP
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-E:\2025\APP\APP\App.xaml
+E:\2025\APPWPF\APP\App.xaml
 11-167056982
-
-20-148361030
+21890082943
+22-973861764
 215368972634
 ComponentUI\RealtimeClock.xaml;UserControls\Common\UCControlBar.xaml;UserControls\Help\UCHelp.xaml;UserControls\Home\ChildrenUC\UCHistory.xaml;UserControls\Home\ChildrenUC\UCManage.xaml;UserControls\Home\ChildrenUC\UCProgress.xaml;UserControls\Home\ChildrenUC\UCReport.xaml;UserControls\Home\UCHome.xaml;UserControls\Setting\UCSetting.xaml;UserControls\Tools\UCTools.xaml;Views\MainWindow.xaml;
 
-True
+False
 
