@@ -1,4 +1,7 @@
-﻿using System;
+﻿using APP.ViewModels.UserControlViewModels.Home;
+using APP.ViewModels.UserControlViewModels.Tools;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +23,13 @@ namespace APP.UserControls
     /// </summary>
     public partial class UCTools : UserControl
     {
+        private UCToolsViewModel _viewModel;
         public UCTools()
         {
             InitializeComponent();
+            InitializeComponent();
+            _viewModel = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+            DataContext = _viewModel;
         }
     }
 }

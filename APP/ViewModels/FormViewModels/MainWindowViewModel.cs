@@ -1,11 +1,17 @@
 ﻿using APP.Interface.language;
 using APP.Service;
 using APP.UserControls;
+using APP.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using LiveChartsCore;
+using LiveChartsCore.SkiaSharpView;
 using Microsoft.Extensions.DependencyInjection;
+using SkiaSharp;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,37 +26,64 @@ namespace APP.ViewModels.FormViewModels
         private UserControl currentView;
         [ObservableProperty]
         private string selectedpage = "Home";
+        [ObservableProperty]
+        private string pageIcon = "Home";
+        [ObservableProperty]
+        private string currentUser = "Guest";
+        [ObservableProperty]
+        private Visibility isLoginVisibility =  Visibility.Visible;
+        [ObservableProperty]
+        private Visibility isLogoutVisibility = Visibility.Collapsed;
+        
+
 
         private ILocalizationService _localizationService;
+        private UserSession _userSession;
+        private AuthorizationService _authorizationService;
 
-        public MainWindowViewModel(ILocalizationService localizationService)
+        public MainWindowViewModel(ILocalizationService localizationService, UserSession userSession, AuthorizationService authorizationService)
         {
             _localizationService = localizationService;
             CurrentView = App.ServiceProvider.GetRequiredService<UCHome>();
+            _authorizationService = authorizationService;
+            _userSession = userSession;
+            _userSession.PropertyChanged += _userSession_PropertyChanged;
         }
+
+        private void _userSession_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            
+             
+        }
+
         [RelayCommand]
         private void ShowHome()
         {
             CurrentView = App.ServiceProvider.GetRequiredService<UCHome>();
             Selectedpage = _localizationService.GetString("Home");
+            PageIcon = "Home";
+
         }
         [RelayCommand]
         private void ShowTools()
         {
             CurrentView = App.ServiceProvider.GetRequiredService<UCTools>();
             Selectedpage = _localizationService.GetString("Tools");
+            PageIcon = "Tools";
         }
         [RelayCommand]
         private void ShowSetting()
         {
             CurrentView = App.ServiceProvider.GetRequiredService<UCSetting>();
             Selectedpage = _localizationService.GetString("Setting");
+            PageIcon = "CogOutline";
         }
         [RelayCommand]
         private void ShowHelp()
         {
             CurrentView = App.ServiceProvider.GetRequiredService<UCHelp>();
             Selectedpage = _localizationService.GetString("Help");
+            PageIcon = "Help";
         }
         [RelayCommand]
         private void ChangeLanguage(string language = "vi")
@@ -71,8 +104,35 @@ namespace APP.ViewModels.FormViewModels
                 _localizationService.ChangeLanguage(language);
             }
         }
+        [RelayCommand]
+        private void Login()
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
+        }
+
+        [RelayCommand]
+        private void Logout()
+        {
+            _authorizationService.Logout();
+            CurrentUser = "Guest";
+        }
 
 
 
+        partial void OnCurrentUserChanged(string value)
+        {
+           if ( value == "Guest")
+           {
+                IsLoginVisibility = Visibility.Visible;
+                IsLogoutVisibility = Visibility.Collapsed;
+            }
+           else
+           {
+                IsLoginVisibility = Visibility.Collapsed;
+                IsLogoutVisibility = Visibility.Visible;
+            }
+        }
     }
 }
+

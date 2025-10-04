@@ -5,8 +5,237 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:APP.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-       
-    </Grid>
+             d:DesignHeight="450" d:DesignWidth="800"
+               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Border Background="White" Margin="10,0,10,10" CornerRadius="5">
+        <Border.Effect>
+            <DropShadowEffect Color="Gray" Direction="315" ShadowDepth="4" 
+           BlurRadius="10" Opacity="0.5"/>
+        </Border.Effect>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Margin="20" Grid.Column="0" >
+                <!-- Thẻ Card để bo viền form -->
+                <materialDesign:Card Background="WhiteSmoke" Padding="10"  Style="{StaticResource  MaterialDesignOutlinedCard}" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Tiêu đề -->
+                        <TextBlock Text="PHIẾU PHÂN TÍCH NGUYÊN NHÂN LỖI/HỦY"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center"
+                    Margin="0 0 0 20"
+                    Grid.Row="0"
+                    Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
+
+                        <!-- Nội dung form -->
+                        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                            <StackPanel Orientation="Vertical">
+
+
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Ca:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                    <Label Grid.Column="2" VerticalAlignment="Center">Số khuôn:</Label>
+                                    <TextBox Grid.Column="3"></TextBox>
+                                </Grid>
+
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Model:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                    <CheckBox Grid.Column="2">Auto</CheckBox>
+                                    <Label Grid.Column="3" VerticalAlignment="Center">Số lượng:</Label>
+                                    <TextBox Grid.Column="4"></TextBox>
+                                </Grid>
+
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                     
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Mã linh kiện:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                    
+                                </Grid>
+
+
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Tên lỗi:</Label>
+                                    <ComboBox Grid.Column="1"></ComboBox>
+
+                                </Grid>
+
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Vị trí gây ra lỗi:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                </Grid>
+
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Người thao tác lỗi:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                </Grid>
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Vị trí phát hiện lỗi:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                </Grid>
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Nguyên nhân:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                </Grid>
+
+
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Đối sách:</Label>
+                                    <TextBox Grid.Column="1"></TextBox>
+                                </Grid>
+                                
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <!-- Nút chức năng -->
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0">
+                            <Button Content="Hủy" Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0 0 10 0"/>
+                            <Button Content="Lưu" Style="{StaticResource MaterialDesignOutlinedButton}" />
+                        </StackPanel>
+                    </Grid>
+                </materialDesign:Card>
+            </Grid>
+
+
+            <materialDesign:Card Grid.Column="1"  Style="{StaticResource MaterialDesignOutlinedCard}"  Margin="20">
+
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="PrinterPreview" Foreground="DimGray" Height="30" Width="30"/>
+                            <TextBlock VerticalAlignment="Center">Preview</TextBlock>
+                        </StackPanel>
+
+                    </Label>
+
+                    <Border  Grid.Row="1"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    Padding="20"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="20"
+                    CornerRadius="4"
+                    SnapsToDevicePixels="True"
+                    >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="170"></ColumnDefinition>
+                                <ColumnDefinition  Width="160"></ColumnDefinition>
+                                <ColumnDefinition  Width="120"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"></RowDefinition>
+                                <RowDefinition Height="100"></RowDefinition>
+                                <RowDefinition Height="100"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
+                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Model Name</TextBlock>
+                            </Border>
+                            <Border Grid.Column="1" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
+                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Mold Code</TextBlock>
+                            </Border>
+                            <Border Grid.Column="2" Grid.Row="0" BorderThickness="2,2,2,0" BorderBrush="Black">
+                                <Image Source="{Binding QrCodeImage}" Margin="10" />
+                            </Border>
+                            <Border Grid.Column="2" Grid.Row="1" BorderThickness="2,2,2,0" BorderBrush="Black">
+                                <Image Source="{Binding QrCodeImage}" Margin="10" />
+                            </Border>
+                            <Border Grid.Column="2" Grid.Row="2" BorderThickness="2" BorderBrush="Black">
+                                <Image Source="{Binding QrCodeImage}" Margin="10" />
+                            </Border>
+
+                        </Grid>
+                    </Border>
+
+                </Grid>
+
+
+            </materialDesign:Card>
+
+
+        </Grid>
+
+
+    </Border>
+
 </UserControl>

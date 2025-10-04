@@ -1,14 +1,11 @@
-﻿E:\2025\APPWPF\APP\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
-FE:\2025\APPWPF\APP\App.xaml;;
-FE:\2025\APPWPF\APP\ComponentUI\RealtimeClock.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Common\UCControlBar.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Help\UCHelp.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCHistory.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCManage.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCProgress.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Home\ChildrenUC\UCReport.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Home\UCHome.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Setting\UCSetting.xaml;;
-FE:\2025\APPWPF\APP\UserControls\Tools\UCTools.xaml;;
-FE:\2025\APPWPF\APP\Views\MainWindow.xaml;;
+﻿
+FD:\Project\APPWPF\APP\App.xaml;;
+FD:\Project\APPWPF\APP\ComponentUI\RealtimeClock.xaml;;
+FD:\Project\APPWPF\APP\UserControls\Common\UCControlBar.xaml;;
+FD:\Project\APPWPF\APP\UserControls\Help\UCHelp.xaml;;
+FD:\Project\APPWPF\APP\UserControls\Home\UCHome.xaml;;
+FD:\Project\APPWPF\APP\UserControls\Setting\UCSetting.xaml;;
+FD:\Project\APPWPF\APP\UserControls\Tools\UCTools.xaml;;
+FD:\Project\APPWPF\APP\Views\LoginWindow.xaml;;
+FD:\Project\APPWPF\APP\Views\MainWindow.xaml;;
 
