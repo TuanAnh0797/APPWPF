@@ -85,6 +85,9 @@
     <None Update="DLL\Interop.bpac.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\Database\VFDB.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\TemplatePrint\Temp.lbx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

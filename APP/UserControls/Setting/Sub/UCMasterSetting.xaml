@@ -21,7 +21,7 @@
             </Button>
         </Grid>
         <Grid Grid.Row="1">
-            <DataGrid
+            <DataGrid x:Name="MyDataGrid"
      AutoGenerateColumns="False" 
      ItemsSource="{Binding ErrorMasters}" 
      CanUserAddRows="False"

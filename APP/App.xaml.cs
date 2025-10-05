@@ -16,6 +16,7 @@ using Microsoft.Extensions.Options;
 using SQLitePCL;
 using System.Configuration;
 using System.Data;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -33,10 +34,15 @@ namespace APP
             Batteries.Init();
 
             var services = new ServiceCollection();
-            //Authorization
+
+            //Database
+            string pathdb = Directory.GetCurrentDirectory() + "\\Resources\\Database\\VFDB.db";
             services.AddDbContext<AppDbContext>(option => {
-                option.UseSqlite("Data Source=D:\\Project\\Database\\VFDB.db");
+                option.UseSqlite($"Data Source={pathdb}");
             });
+
+            //Authorization
+
             services.AddSingleton<UserSession>();
             services.AddSingleton<AuthorizationService>();
 

@@ -43,6 +43,23 @@
                             <StackPanel Orientation="Vertical">
 
 
+                                <StackPanel.Resources>
+                                    <Style TargetType="Label">
+                                        <Setter Property="FontWeight" Value="Medium"></Setter>
+                                        <Setter Property="FontSize" Value="13"></Setter>
+                                    </Style>
+                                    <Style TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignComboBox}">
+                                        <Setter Property="FontWeight" Value="Medium"></Setter>
+                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                    </Style>
+                                    <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
+                                        <Setter Property="FontWeight" Value="Medium"></Setter>
+                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+                                
                                 <Grid Margin="10">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -53,7 +70,7 @@
 
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Ca:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
+                                    <ComboBox Grid.Column="1"></ComboBox>
                                     <Label Grid.Column="2" VerticalAlignment="Center">Số khuôn:</Label>
                                     <TextBox Grid.Column="3"></TextBox>
                                 </Grid>
@@ -62,7 +79,6 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
-
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -71,7 +87,7 @@
                                     <TextBox Grid.Column="1"></TextBox>
                                     <CheckBox Grid.Column="2">Auto</CheckBox>
                                     <Label Grid.Column="3" VerticalAlignment="Center">Số lượng:</Label>
-                                    <TextBox Grid.Column="4"></TextBox>
+                                    <materialDesign:NumericUpDown Grid.Column="4" Minimum="1"></materialDesign:NumericUpDown>
                                 </Grid>
 
                                 <Grid Margin="10">
@@ -96,7 +112,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Tên lỗi:</Label>
-                                    <ComboBox Grid.Column="1"></ComboBox>
+                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True"></ComboBox>
 
                                 </Grid>
 
@@ -139,7 +155,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Nguyên nhân:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
+                                    <ComboBox Grid.Column="1"></ComboBox>
                                 </Grid>
 
 
@@ -151,7 +167,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Đối sách:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
+                                    <ComboBox Grid.Column="1"></ComboBox>
                                 </Grid>
                                 
                             </StackPanel>
@@ -159,8 +175,14 @@
 
                         <!-- Nút chức năng -->
                         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0">
-                            <Button Content="Hủy" Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0 0 10 0"/>
-                            <Button Content="Lưu" Style="{StaticResource MaterialDesignOutlinedButton}" />
+                            <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0 0 10 0">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="Printer" Width="30" Height="30" VerticalAlignment="Center"></materialDesign:PackIcon>
+                                    <Label>Print</Label>
+                                </StackPanel>
+                               
+                            </Button>
+                           
                         </StackPanel>
                     </Grid>
                 </materialDesign:Card>
@@ -177,12 +199,11 @@
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
 
-                    <Label Grid.Row="0">
+                    <Label Grid.Row="0" Margin="5">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="PrinterPreview" Foreground="DimGray" Height="30" Width="30"/>
-                            <TextBlock VerticalAlignment="Center">Preview</TextBlock>
+                            <materialDesign:PackIcon Kind="PrinterPreview" Foreground="DimGray" Height="30" Width="30" Margin="0,0,10,0"/>
+                            <TextBlock FontWeight="Medium" FontSize="15" VerticalAlignment="Center">Preview</TextBlock>
                         </StackPanel>
-
                     </Label>
 
                     <Border  Grid.Row="1"
@@ -209,10 +230,10 @@
                             </Grid.RowDefinitions>
 
                             <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
-                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Model Name</TextBlock>
+                                <TextBlock FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center">Model Name</TextBlock>
                             </Border>
                             <Border Grid.Column="1" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
-                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Mold Code</TextBlock>
+                                <TextBlock FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center">Mold Code</TextBlock>
                             </Border>
                             <Border Grid.Column="2" Grid.Row="0" BorderThickness="2,2,2,0" BorderBrush="Black">
                                 <Image Source="{Binding QrCodeImage}" Margin="10" />

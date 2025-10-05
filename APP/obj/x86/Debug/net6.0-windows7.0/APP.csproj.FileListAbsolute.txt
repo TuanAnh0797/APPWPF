@@ -128,3 +128,4 @@ D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\refint\APP.dll
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.pdb
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.genruntimeconfig.cache
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\ref\APP.dll
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\Database\VFDB.db
