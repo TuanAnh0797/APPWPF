@@ -20,16 +20,17 @@ public partial class UCMasterSettingViewModel : ObservableObject
 {
     [ObservableProperty]
     ObservableCollection<ErrorMaster> errorMasters = new ObservableCollection<ErrorMaster>();
-
     [ObservableProperty]
     string nameError;
     [ObservableProperty]
     string reason;
     [ObservableProperty]
     string action;
-
-
     private readonly AppDbContext _db;
+
+
+    public event Action SettingChanged;
+
     public UCMasterSettingViewModel(AppDbContext db)
     {
         _db = db;
@@ -55,6 +56,7 @@ public partial class UCMasterSettingViewModel : ObservableObject
        datachange.Reason = errorMaster.Reason;
        _db.SaveChanges();
        Reload();
+        SettingChanged?.Invoke();
    }
 
     [RelayCommand]
@@ -64,6 +66,7 @@ public partial class UCMasterSettingViewModel : ObservableObject
         _db.ErrorMaster.Remove(datachange);
         _db.SaveChanges();
         Reload();
+        SettingChanged?.Invoke();
     }
     [RelayCommand]
     private void ShowAdd()
@@ -89,6 +92,7 @@ public partial class UCMasterSettingViewModel : ObservableObject
         await _db.ErrorMaster.AddAsync(errorMaster);
         await _db.SaveChangesAsync();
         Reload();
+        SettingChanged?.Invoke();
     }
     
 

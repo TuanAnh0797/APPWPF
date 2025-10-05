@@ -47,13 +47,14 @@ namespace APP
             services.AddSingleton<AuthorizationService>();
 
             // Đăng ký service và viewmodel
+            services.AddSingleton<UCMasterSettingViewModel>();
             services.AddSingleton<UCControlBarViewModel>();
             services.AddSingleton<MainWindowViewModel>();
             services.AddSingleton<LoginWindowViewModel>();
             services.AddSingleton<UCHomeViewModel>();
             services.AddSingleton<UCToolsViewModel>();
             services.AddSingleton<UCSettingViewModel>();
-            services.AddSingleton<UCMasterSettingViewModel>();
+           
             services.AddSingleton<UCPLCSettingViewModel>();
             services.AddSingleton<UCPrinterSettingViewModel>();
 

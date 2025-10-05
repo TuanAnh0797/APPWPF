@@ -70,9 +70,9 @@
 
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Ca:</Label>
-                                    <ComboBox Grid.Column="1"></ComboBox>
+                                    <ComboBox Grid.Column="1" ItemsSource="{Binding Shifts}" SelectedItem="{Binding Shift, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></ComboBox>
                                     <Label Grid.Column="2" VerticalAlignment="Center">Số khuôn:</Label>
-                                    <TextBox Grid.Column="3"></TextBox>
+                                    <TextBox Grid.Column="3" Text="{Binding Mold, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
 
                                 <Grid Margin="10">
@@ -84,22 +84,19 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column="0" VerticalAlignment="Center">Model:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
-                                    <CheckBox Grid.Column="2">Auto</CheckBox>
+                                    <TextBox Grid.Column="1" Text="{Binding Model, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                                    <CheckBox IsChecked="{Binding IsAuto, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" Margin="5,0,5,0" Grid.Column="2">Auto</CheckBox>
                                     <Label Grid.Column="3" VerticalAlignment="Center">Số lượng:</Label>
-                                    <materialDesign:NumericUpDown Grid.Column="4" Minimum="1"></materialDesign:NumericUpDown>
+                                    <materialDesign:NumericUpDown Grid.Column="4" Minimum="1" Value="{Binding Quantity, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></materialDesign:NumericUpDown>
                                 </Grid>
 
                                 <Grid Margin="10">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
-                                     
                                     </Grid.ColumnDefinitions>
-
-
                                     <Label Grid.Column="0" VerticalAlignment="Center">Mã linh kiện:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
+                                    <TextBox Grid.Column="1" Text="{Binding CodeMaterial}"></TextBox>
                                     
                                 </Grid>
 
@@ -112,7 +109,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Tên lỗi:</Label>
-                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True"></ComboBox>
+                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding NameErrors}" SelectedItem="{Binding NameError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="NameError"></ComboBox>
 
                                 </Grid>
 
@@ -124,7 +121,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Vị trí gây ra lỗi:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
+                                    <TextBox Grid.Column="1" Text="{Binding Position, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
 
                                 <Grid Margin="10">
@@ -135,7 +132,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Người thao tác lỗi:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
+                                    <TextBox Grid.Column="1" Text="{Binding Person, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
                                 <Grid Margin="10">
                                     <Grid.ColumnDefinitions>
@@ -145,7 +142,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Vị trí phát hiện lỗi:</Label>
-                                    <TextBox Grid.Column="1"></TextBox>
+                                    <TextBox Grid.Column="1" Text="{Binding PositionError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
                                 <Grid Margin="10">
                                     <Grid.ColumnDefinitions>
@@ -155,7 +152,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Nguyên nhân:</Label>
-                                    <ComboBox Grid.Column="1"></ComboBox>
+                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Reasons}" SelectedItem="{Binding Reason, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Reason"></ComboBox>
                                 </Grid>
 
 
@@ -167,7 +164,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Đối sách:</Label>
-                                    <ComboBox Grid.Column="1"></ComboBox>
+                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Actions}" SelectedItem="{Binding Action, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Action"></ComboBox>
                                 </Grid>
                                 
                             </StackPanel>
@@ -230,19 +227,19 @@
                             </Grid.RowDefinitions>
 
                             <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
-                                <TextBlock FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center">Model Name</TextBlock>
+                                <TextBlock TextWrapping="Wrap" Text="{Binding Model, UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border Grid.Column="1" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
-                                <TextBlock FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center">Mold Code</TextBlock>
+                                <TextBlock TextWrapping="Wrap" Text="{Binding Mold, UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                             </Border>
                             <Border Grid.Column="2" Grid.Row="0" BorderThickness="2,2,2,0" BorderBrush="Black">
-                                <Image Source="{Binding QrCodeImage}" Margin="10" />
+                                <Image Source="{Binding QrCodeImage1,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
                             </Border>
                             <Border Grid.Column="2" Grid.Row="1" BorderThickness="2,2,2,0" BorderBrush="Black">
-                                <Image Source="{Binding QrCodeImage}" Margin="10" />
+                                <Image Source="{Binding QrCodeImage2,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
                             </Border>
                             <Border Grid.Column="2" Grid.Row="2" BorderThickness="2" BorderBrush="Black">
-                                <Image Source="{Binding QrCodeImage}" Margin="10" />
+                                <Image Source="{Binding QrCodeImage3,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
                             </Border>
 
                         </Grid>
