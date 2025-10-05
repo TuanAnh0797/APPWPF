@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="APP.UserControls.Setting.Sub.UCPLCSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:APP.UserControls.Setting.Sub"
+             mc:Ignorable="d" 
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Left">
+            <StackPanel.Resources>
+                <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+                    <Setter Property="Margin" Value="5"></Setter>
+                    <Setter Property="Width"  Value="200"></Setter>
+                    <Setter Property="Padding"  Value="5"></Setter>
+                </Style>
+                <Style TargetType="Label">
+                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                    <Setter Property="Width" Value="120"></Setter>
+                    <Setter Property="FontWeight" Value="Medium"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <StackPanel Orientation="Horizontal">
+                <Label>IP Address:</Label>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Port:</Label>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Model Address(DM):</Label>
+                <TextBox></TextBox>
+                <Label>Number Register:</Label>
+                <TextBox></TextBox>
+                <Label Width="100">Current Value:</Label>
+                <TextBox IsReadOnly="True"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Mold Address(DM):</Label>
+                <TextBox></TextBox>
+                <Label>Number Register:</Label>
+                <TextBox></TextBox>
+                <Label  Width="100">Current Value:</Label>
+                <TextBox  IsReadOnly="True"></TextBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20"> 
+            
+            <Button Margin="0,0,20,0">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon VerticalAlignment="Center" Kind="ContentSaveAll"></materialDesign:PackIcon>
+                    <Label Foreground="White">Save</Label>
+                </StackPanel>
+            </Button>
+            <Button>
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon  VerticalAlignment="Center" Kind="Connection"></materialDesign:PackIcon>
+                    <Label Foreground="White">Save and Connect</Label>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

@@ -34,7 +34,7 @@ public partial class LoginWindowViewModel : ObservableObject
     private async Task Login()
     {
         Status = "";
-        bool rs = await _authorizationService.LoginAsync(userID, password);
+        bool rs = await _authorizationService.LoginAsync(userID, password,IsRemember);
         if (rs)
         {
             WeakReferenceMessenger.Default.Send(new CloseWindowMessage());

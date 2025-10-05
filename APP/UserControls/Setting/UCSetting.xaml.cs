@@ -1,4 +1,7 @@
-﻿using System;
+﻿using APP.ViewModels.UserControlViewModels.Home;
+using APP.ViewModels.UserControlViewModels.Setting;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +23,12 @@ namespace APP.UserControls
     /// </summary>
     public partial class UCSetting : UserControl
     {
+        private UCSettingViewModel _viewModel;
         public UCSetting()
         {
             InitializeComponent();
+            _viewModel = App.ServiceProvider.GetRequiredService<UCSettingViewModel>();
+            DataContext = _viewModel;
         }
     }
 }

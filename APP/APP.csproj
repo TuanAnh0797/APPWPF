@@ -2,14 +2,29 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x86;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UserControls\Setting\ChildrenUC\**" />
+    <Compile Remove="UserControls\Tools\ChildrenUC\**" />
+    <EmbeddedResource Remove="UserControls\Setting\ChildrenUC\**" />
+    <EmbeddedResource Remove="UserControls\Tools\ChildrenUC\**" />
+    <None Remove="UserControls\Setting\ChildrenUC\**" />
+    <None Remove="UserControls\Tools\ChildrenUC\**" />
+    <Page Remove="UserControls\Setting\ChildrenUC\**" />
+    <Page Remove="UserControls\Tools\ChildrenUC\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="App.xaml.cs~RF738d03fd.TMP" />
+    <None Remove="Resources\Image\database.png" />
+    <None Remove="Resources\Image\plc.png" />
+    <None Remove="Resources\Image\printer.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,8 +34,7 @@
 
   <ItemGroup>
     <Folder Include="UserControls\Help\ChildrenUC\" />
-    <Folder Include="UserControls\Setting\ChildrenUC\" />
-    <Folder Include="UserControls\Tools\ChildrenUC\" />
+    <Folder Include="ViewModels\UserControlViewModels\Tools\Sub\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,20 +47,47 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-    <PackageReference Include="LiveChartsCore" Version="2.0.0-rc5.4" />
-    <PackageReference Include="LiveChartsCore.SkiaSharpView" Version="2.0.0-rc5.4" />
-    <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc5.4" />
-    <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
-    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
-    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="8.0.20" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.20" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
-    <PackageReference Include="NLog" Version="6.0.2" />
-    <PackageReference Include="NLog.Config" Version="4.7.15" />
-    <PackageReference Include="QRCoder" Version="1.6.0" />
-    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.2" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+	  <PackageReference Include="LiveChartsCore" Version="2.0.0-rc5.4" />
+	  <PackageReference Include="LiveChartsCore.SkiaSharpView" Version="2.0.0-rc5.4" />
+	  <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc5.4" />
+	  <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
+	  <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+	  <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="8.0.20" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="6.0.36" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+	  <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
+	  <PackageReference Include="NLog" Version="6.0.2" />
+	  <PackageReference Include="NLog.Config" Version="4.7.15" />
+	  <PackageReference Include="QRCoder" Version="1.6.0" />
+	  <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Interop.bpac">
+      <HintPath>DLL\Interop.bpacx64.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Image\database.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\plc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\printer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DLL\Interop.bpac.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\TemplatePrint\Temp.lbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

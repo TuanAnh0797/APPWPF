@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="APP.UserControls.Setting.Sub.UCPrinterSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:APP.UserControls.Setting.Sub"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Left">
+            <StackPanel.Resources>
+                <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+                    <Setter Property="Margin" Value="5"></Setter>
+                    <Setter Property="Width"  Value="200"></Setter>
+                    <Setter Property="Padding"  Value="5"></Setter>
+                </Style>
+                <Style TargetType="Label">
+                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                    <Setter Property="Width" Value="120"></Setter>
+                    <Setter Property="FontWeight" Value="Medium"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <StackPanel Orientation="Horizontal">
+                <Label>Model Printer:</Label>
+                <ComboBox Style="{StaticResource MaterialDesignOutlinedComboBox}" Padding="5" Width="200" Margin="5,0,10,0" ItemsSource="{Binding ModelPrinters}" SelectedItem="{Binding ModelPrinter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="ModelName"></ComboBox>
+                <Button Background="SteelBlue" Height="35" Command="{Binding PrintTestCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon VerticalAlignment="Center" Kind="Printer"></materialDesign:PackIcon>
+                        <Label Width="auto" Foreground="White">Print Test</Label>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Path Temp:</Label>
+                <TextBox Width="400" Text="{Binding PathTemp, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20">
+
+            <Button Margin="0,0,20,0">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon VerticalAlignment="Center" Kind="ContentSaveAll"></materialDesign:PackIcon>
+                    <Label Foreground="White">Save</Label>
+                </StackPanel>
+            </Button>
+          
+        </StackPanel>
+
+    </Grid>
+</UserControl>

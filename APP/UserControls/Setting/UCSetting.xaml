@@ -5,8 +5,52 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:APP.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-       
-    </Grid>
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+
+    <Border Background="White" Margin="10,0,10,10" CornerRadius="5">
+        <Border.Effect>
+            <DropShadowEffect Color="Gray" Direction="315" ShadowDepth="4" 
+BlurRadius="10" Opacity="0.5"/>
+        </Border.Effect>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <StackPanel.Resources>
+                    <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedButton}">
+                        <Setter Property="Background" Value="LightGray"/>
+                        <Setter Property="Height" Value="40"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="BorderBrush" Value="Gray"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Button Command="{Binding ShowPLCSettingCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="pack://application:,,,/Resources/Image/plc.png" Width="20" Height="20"/>
+                        <Label>PLC Setting</Label>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding ShowPrinterSettingCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="pack://application:,,,/Resources/Image/printer.png" Width="20" Height="20"/>
+                        <Label>Printer Setting</Label>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding ShowMasterSettingCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="pack://application:,,,/Resources/Image/database.png" Width="20" Height="20"/>
+                        <Label>Master Setting</Label>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <ContentControl Grid.Row="1" Content="{Binding CurrentView}" />
+        </Grid>
+
+    </Border>
+
+   
 </UserControl>

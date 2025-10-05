@@ -11,15 +11,21 @@ namespace APP.Database;
 public class AppDbContext : DbContext
 {
     public DbSet<User> Users => Set<User>();
-
+    public DbSet<RememberUser> RememberUser => Set<RememberUser>();
+    public DbSet<ErrorMaster> ErrorMaster => Set<ErrorMaster>();
+    public DbSet<PLCSetting> PLCSetting => Set<PLCSetting>();
+    public DbSet<PrinterSetting> PrinterSetting => Set<PrinterSetting>();
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
     }
-   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<User>().HasKey(e => e.UserID);
+        modelBuilder.Entity<RememberUser>().HasKey(e=> e.Id);
+        modelBuilder.Entity<ErrorMaster>().HasKey(e => e.ID);
+        modelBuilder.Entity<PLCSetting>().HasKey(e => e.Name);
+        modelBuilder.Entity<PrinterSetting>().HasKey(e => e.ModelName);
     }
 }

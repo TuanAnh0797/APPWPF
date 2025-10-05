@@ -27,23 +27,23 @@
                 <lvc:CartesianChart Series="{Binding CartesianSeries}"
                                         XAxes="{Binding XAxes}"
                                         YAxes="{Binding YAxes}"
-                                        LegendPosition="Top"
+                                       
                                         />
             </Border>
             <Border Grid.Row="0" Grid.Column="1" BorderThickness="0,0,0,1" BorderBrush="Gray">
                 <lvc:CartesianChart Series="{Binding LineSeries}"
                                     XAxes="{Binding LineXAxes}"
                                     YAxes="{Binding LineYAxes}"
-                                    LegendPosition="Top"
+                                   
                                    />
             </Border>
             <Border Grid.Row="1" Grid.Column="0" BorderThickness="0,0,1,0" BorderBrush="Gray">
-                <lvc:PieChart Series="{Binding PieSeries}" LegendPosition="Right" />
+                <lvc:PieChart Series="{Binding PieSeries}"  />
             </Border>
             <Border Grid.Row="1" Grid.Column="1" BorderThickness="0" BorderBrush="Gray">
                 <lvc:PolarChart Series="{Binding RadarSeries}"
                     AngleAxes="{Binding RadarAxes}"
-                    LegendPosition="Right"/>
+                    />
             </Border>
         </Grid>
 

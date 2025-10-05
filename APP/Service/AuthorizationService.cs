@@ -22,7 +22,7 @@ public class AuthorizationService
         _session = session;
     }
 
-    public async Task<bool> LoginAsync(string userid, string password)
+    public async Task<bool> LoginAsync(string userid, string password, bool UseRemember)
     {
         var user = await _db.Users.FirstOrDefaultAsync(u =>
             u.UserID == userid && u.PassWord == password);
@@ -32,6 +32,22 @@ public class AuthorizationService
             _session.CurrentUser = user;
             var Main = App.ServiceProvider.GetRequiredService<MainWindowViewModel>();
             Main.CurrentUser = user.UserName;
+
+
+            if (UseRemember)
+            {
+                var data = _db.RememberUser.ToList();
+                foreach (RememberUser item in data)
+                {
+                     _db.RememberUser.Remove(item);
+                }
+
+               
+
+                RememberUser rememberUser = new RememberUser() {UserID = user.UserID, PassWord = user.PassWord };
+                await _db.RememberUser.AddAsync(rememberUser);
+                _db.SaveChanges();
+            }
             return true;
         }
 
@@ -41,6 +57,11 @@ public class AuthorizationService
     public void Logout()
     {
         _session.CurrentUser = null;
+        var data = _db.RememberUser.ToList();
+        foreach (RememberUser item in data)
+        {
+            _db.RememberUser.Remove(item);
+        }
     }
 
     public bool HasRole(params string[] roles)

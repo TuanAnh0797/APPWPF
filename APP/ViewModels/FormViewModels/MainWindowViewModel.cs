@@ -1,4 +1,6 @@
-﻿using APP.Interface.language;
+﻿using APP.Database;
+using APP.Interface.language;
+using APP.Models.Database;
 using APP.Service;
 using APP.UserControls;
 using APP.Views;
@@ -40,9 +42,11 @@ namespace APP.ViewModels.FormViewModels
         private ILocalizationService _localizationService;
         private UserSession _userSession;
         private AuthorizationService _authorizationService;
+        private readonly AppDbContext _db;
 
-        public MainWindowViewModel(ILocalizationService localizationService, UserSession userSession, AuthorizationService authorizationService)
+        public MainWindowViewModel(ILocalizationService localizationService, UserSession userSession, AuthorizationService authorizationService, AppDbContext db)
         {
+            _db = db;
             _localizationService = localizationService;
             CurrentView = App.ServiceProvider.GetRequiredService<UCHome>();
             _authorizationService = authorizationService;
@@ -52,9 +56,13 @@ namespace APP.ViewModels.FormViewModels
 
         private void _userSession_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            
-             
+              ShowToolsCommand.NotifyCanExecuteChanged();
+              ShowSettingCommand.NotifyCanExecuteChanged();
         }
+
+        private bool CanTool() => _authorizationService.HasRole( "Admin","Operater");
+        private bool CanSetting() => _authorizationService.HasRole("Admin");
+
 
         [RelayCommand]
         private void ShowHome()
@@ -64,14 +72,14 @@ namespace APP.ViewModels.FormViewModels
             PageIcon = "Home";
 
         }
-        [RelayCommand]
+        [RelayCommand(CanExecute = nameof(CanTool))]
         private void ShowTools()
         {
             CurrentView = App.ServiceProvider.GetRequiredService<UCTools>();
             Selectedpage = _localizationService.GetString("Tools");
             PageIcon = "Tools";
         }
-        [RelayCommand]
+        [RelayCommand(CanExecute = nameof(CanSetting))]
         private void ShowSetting()
         {
             CurrentView = App.ServiceProvider.GetRequiredService<UCSetting>();
@@ -117,8 +125,6 @@ namespace APP.ViewModels.FormViewModels
             _authorizationService.Logout();
             CurrentUser = "Guest";
         }
-
-
 
         partial void OnCurrentUserChanged(string value)
         {

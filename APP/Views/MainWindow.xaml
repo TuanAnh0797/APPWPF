@@ -85,9 +85,6 @@
                             <Separator></Separator>
                         </StackPanel>
                    
-
-
-
                     <!-- Version ở dưới -->
                     <Label Grid.Row="2" Content="Version:2025" FontStyle="Italic"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" FontSize="16" FontWeight="Medium" Foreground="Black"/>
                 </Grid>
