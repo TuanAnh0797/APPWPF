@@ -58,6 +58,8 @@ namespace APP
             services.AddSingleton<UCHome>();
             services.AddSingleton<UCSetting>();
             services.AddSingleton<UCMasterSetting>();
+            services.AddSingleton<UCMaterialSettingViewModel>();
+            services.AddSingleton<UCMaterialSetting>();
             services.AddSingleton<UCPLCSetting>();
             services.AddSingleton<UCPrinterSetting>();
             services.AddSingleton<UCTools>();

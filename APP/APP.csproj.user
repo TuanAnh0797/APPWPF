@@ -17,6 +17,9 @@
     <Compile Update="UserControls\Setting\Sub\UCMasterSetting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\Setting\Sub\UCMaterialSetting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\Setting\Sub\UCPLCSetting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -38,5 +41,10 @@
     <Compile Update="Views\UserManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UserControls\Setting\Sub\UCMaterialSetting.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

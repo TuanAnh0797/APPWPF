@@ -37,8 +37,6 @@ public partial class UCToolsViewModel : ObservableObject
     [ObservableProperty]
     int quantity;
     [ObservableProperty]
-    string codeMaterial;
-    [ObservableProperty]
     ObservableCollection<ErrorMaster> nameErrors = new ObservableCollection<ErrorMaster>();
     [ObservableProperty]
     ErrorMaster nameError;
@@ -56,23 +54,46 @@ public partial class UCToolsViewModel : ObservableObject
     ObservableCollection<ErrorMaster> actions = new ObservableCollection<ErrorMaster>();
     [ObservableProperty]
     ErrorMaster action;
+    [ObservableProperty]
+    ObservableCollection<Material> codeMaterials = new ObservableCollection<Material>();
+    [ObservableProperty]
+    Material codeMaterial;
+
+
     private readonly AppDbContext _db;
     private readonly UCMasterSettingViewModel _uCMasterSettingViewModel;
+    private readonly UCMaterialSettingViewModel _uCMaterialSettingViewModel;
 
-    public UCToolsViewModel(AppDbContext db, UCMasterSettingViewModel uCMasterSettingViewModel)
+    public UCToolsViewModel(AppDbContext db, UCMasterSettingViewModel uCMasterSettingViewModel, UCMaterialSettingViewModel uCMaterialSettingViewModel)
     {
         _db = db;
         _uCMasterSettingViewModel = uCMasterSettingViewModel;
         _uCMasterSettingViewModel.SettingChanged += _uCMasterSettingViewModel_SettingChanged;
-        Reload();
+        _uCMaterialSettingViewModel = uCMaterialSettingViewModel;
+        //_uCMaterialSettingViewModel.SettingChanged += _uCMaterialSettingViewModel_SettingChanged;
+        ReloadErrorMaster();
+        //ReloadMaterialMaster();
     }
 
+    private void _uCMaterialSettingViewModel_SettingChanged()
+    {
+        ReloadMaterialMaster();
+    }
     private void _uCMasterSettingViewModel_SettingChanged()
     {
-        Reload();
+        ReloadErrorMaster();
     }
 
-    private void Reload()
+    private void ReloadMaterialMaster()
+    {
+        CodeMaterials.Clear();
+        var data = _db.Material.ToList();
+        foreach (var item in data)
+        {
+            CodeMaterials.Add(item);
+        }
+    }
+    private void ReloadErrorMaster()
     {
         NameErrors.Clear();
         var data = _db.ErrorMaster.ToList();
@@ -81,7 +102,6 @@ public partial class UCToolsViewModel : ObservableObject
             NameErrors.Add(item);
         }
     }
-
     #region On
     partial void OnNameErrorChanged(ErrorMaster value)
     {
@@ -101,8 +121,18 @@ public partial class UCToolsViewModel : ObservableObject
             Actions.Add(item);
         }
     }
-    #endregion
 
+    partial void OnModelChanged(string value)
+    {
+        CodeMaterials.Clear();
+        var data = _db.Material.Where(p=> p.ModelName == value);
+        foreach (var item in data)
+        {
+            CodeMaterials.Add(item);
+        }
+    }
+
+    #endregion
     private BitmapImage GenerateQrCode(string text)
     {
         using var generator = new QRCodeGenerator();

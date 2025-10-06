@@ -46,7 +46,7 @@ BlurRadius="10" Opacity="0.5"/>
                         <Label>Error Setting</Label>
                     </StackPanel>
                 </Button>
-                <Button Command="{Binding ShowMasterSettingCommand}">
+                <Button Command="{Binding ShowMaterialSettingCommand}">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="pack://application:,,,/Resources/Image/material.png" Width="20" Height="20"/>
                         <Label>Material Setting</Label>

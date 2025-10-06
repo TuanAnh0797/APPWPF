@@ -97,7 +97,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column="0" VerticalAlignment="Center">Mã linh kiện:</Label>
-                                    <ComboBox  x:Name="TxtCode" Grid.Column="1" ItemsSource="{Binding CodeMaterials}" SelectedItem="{Binding CodeMaterial}">
+                                    <ComboBox  x:Name="TxtCode" Grid.Column="1" ItemsSource="{Binding CodeMaterials}" SelectedItem="{Binding CodeMaterial}" DisplayMemberPath="MaterialName">
                                         <!--<i:Interaction.Triggers>
                                             <i:EventTrigger EventName="KeyUp">
                                                 <i:InvokeCommandAction Command="{Binding MaterialKeyUpCommand}" CommandParameter="{Binding Text, ElementName=TxtCode}"/>
