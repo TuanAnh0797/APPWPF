@@ -2,6 +2,7 @@
 using APP.Models.Database;
 using APP.ViewModels.UserControlViewModels.Setting.Sub;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using QRCoder;
 using System;
 using System.Collections.Generic;
@@ -121,4 +122,9 @@ public partial class UCToolsViewModel : ObservableObject
         image.EndInit();
         return image;
     }
+    //[RelayCommand]
+    //private void MaterialKeyUp(object parameter)
+    //{
+       
+    //}
 }

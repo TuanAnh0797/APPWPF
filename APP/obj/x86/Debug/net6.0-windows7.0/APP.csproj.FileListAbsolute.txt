@@ -262,3 +262,5 @@ E:\2025\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.genruntimeconfig.cache
 E:\2025\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\ref\APP.dll
 E:\2025\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\Views\UserManagement.g.cs
 E:\2025\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\Views\UserManagement.baml
+E:\2025\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\Views\Test.g.cs
+E:\2025\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\Views\Test.baml

@@ -43,7 +43,13 @@ BlurRadius="10" Opacity="0.5"/>
                 <Button Command="{Binding ShowMasterSettingCommand}">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="pack://application:,,,/Resources/Image/database.png" Width="20" Height="20"/>
-                        <Label>Master Setting</Label>
+                        <Label>Error Setting</Label>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding ShowMasterSettingCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="pack://application:,,,/Resources/Image/material.png" Width="20" Height="20"/>
+                        <Label>Material Setting</Label>
                     </StackPanel>
                 </Button>
             </StackPanel>

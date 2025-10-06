@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:APP.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Border Background="White" Margin="10,0,10,10" CornerRadius="5">
         <Border.Effect>
             <DropShadowEffect Color="Gray" Direction="315" ShadowDepth="4" 
@@ -31,7 +32,7 @@
 
                         <!-- Tiêu đề -->
                         <TextBlock Text="PHIẾU PHÂN TÍCH NGUYÊN NHÂN LỖI/HỦY"
-                    FontSize="20"
+                    FontSize="25"
                     FontWeight="Bold"
                     HorizontalAlignment="Center"
                     Margin="0 0 0 20"
@@ -46,21 +47,21 @@
                                 <StackPanel.Resources>
                                     <Style TargetType="Label">
                                         <Setter Property="FontWeight" Value="Medium"></Setter>
-                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="FontSize" Value="18"></Setter>
                                     </Style>
                                     <Style TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignComboBox}">
                                         <Setter Property="FontWeight" Value="Medium"></Setter>
-                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="FontSize" Value="18"></Setter>
                                         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
                                     </Style>
                                     <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
                                         <Setter Property="FontWeight" Value="Medium"></Setter>
-                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="FontSize" Value="18"></Setter>
                                         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
                                     </Style>
                                 </StackPanel.Resources>
                                 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -75,7 +76,7 @@
                                     <TextBox Grid.Column="3" Text="{Binding Mold, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -87,21 +88,26 @@
                                     <TextBox Grid.Column="1" Text="{Binding Model, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                     <CheckBox IsChecked="{Binding IsAuto, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" Margin="5,0,5,0" Grid.Column="2">Auto</CheckBox>
                                     <Label Grid.Column="3" VerticalAlignment="Center">Số lượng:</Label>
-                                    <materialDesign:NumericUpDown Grid.Column="4" Minimum="1" Value="{Binding Quantity, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></materialDesign:NumericUpDown>
+                                    <materialDesign:NumericUpDown HorizontalContentAlignment="Center" Grid.Column="4" FontSize="18" Minimum="1" Value="{Binding Quantity, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></materialDesign:NumericUpDown>
                                 </Grid>
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column="0" VerticalAlignment="Center">Mã linh kiện:</Label>
-                                    <TextBox Grid.Column="1" Text="{Binding CodeMaterial}"></TextBox>
-                                    
+                                    <ComboBox  x:Name="TxtCode" Grid.Column="1" ItemsSource="{Binding CodeMaterials}" SelectedItem="{Binding CodeMaterial}">
+                                        <!--<i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="KeyUp">
+                                                <i:InvokeCommandAction Command="{Binding MaterialKeyUpCommand}" CommandParameter="{Binding Text, ElementName=TxtCode}"/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>-->
+                                    </ComboBox>
                                 </Grid>
 
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -113,7 +119,7 @@
 
                                 </Grid>
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -124,7 +130,7 @@
                                     <TextBox Grid.Column="1" Text="{Binding Position, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -134,7 +140,7 @@
                                     <Label Grid.Column="0" VerticalAlignment="Center">Người thao tác lỗi:</Label>
                                     <TextBox Grid.Column="1" Text="{Binding Person, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -144,7 +150,7 @@
                                     <Label Grid.Column="0" VerticalAlignment="Center">Vị trí phát hiện lỗi:</Label>
                                     <TextBox Grid.Column="1" Text="{Binding PositionError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -152,11 +158,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Nguyên nhân:</Label>
-                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Reasons}" SelectedItem="{Binding Reason, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Reason"></ComboBox>
+                                    <ComboBox Grid.Column="1"  ItemsSource="{Binding Reasons}" SelectedItem="{Binding Reason, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Reason"></ComboBox>
                                 </Grid>
-
-
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -166,20 +170,38 @@
                                     <Label Grid.Column="0" VerticalAlignment="Center">Đối sách:</Label>
                                     <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Actions}" SelectedItem="{Binding Action, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Action"></ComboBox>
                                 </Grid>
-                                
+                                <Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Cách xử lý:</Label>
+                                    <ComboBox Grid.Column="1"  ItemsSource="{Binding Actions}" SelectedItem="{Binding Action, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Action"></ComboBox>
+                                </Grid>
+                                <Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">QC xác nhận:</Label>
+                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding NameErrors}" SelectedItem="{Binding NameError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="NameError"></ComboBox>
+
+                                </Grid>
+
                             </StackPanel>
                         </ScrollViewer>
-
                         <!-- Nút chức năng -->
                         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0">
-                            <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0 0 10 0">
-                                <StackPanel Orientation="Horizontal">
-                                    <materialDesign:PackIcon Kind="Printer" Width="30" Height="30" VerticalAlignment="Center"></materialDesign:PackIcon>
-                                    <Label>Print</Label>
+                            <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0 0 10 0" Width="120" Height="120">
+                                <StackPanel Orientation="Vertical">
+                                    <materialDesign:PackIcon Kind="Printer" Width="80" Height="80" VerticalAlignment="Center"></materialDesign:PackIcon>
+                                    <Label HorizontalAlignment="Center" FontWeight="Bold" FontSize="20">Print</Label>
                                 </StackPanel>
-                               
                             </Button>
-                           
                         </StackPanel>
                     </Grid>
                 </materialDesign:Card>
