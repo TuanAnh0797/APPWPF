@@ -132,7 +132,7 @@
 
                     <componenUI:RealtimeClock Grid.Column="1" HorizontalAlignment="Center" ></componenUI:RealtimeClock>
 
-                    <materialDesign:Chip  FontWeight="Bold" Content="{Binding CurrentUser}" Icon="A" HorizontalAlignment="Right" Background="White" Grid.Column="2">
+                    <materialDesign:Chip  FontWeight="Bold" Content="{Binding CurrentUser}" Icon="{Binding Avatar}" HorizontalAlignment="Right" Background="White" Grid.Column="2">
 
 
                         <materialDesign:Chip.ContextMenu>
@@ -140,7 +140,7 @@
                                 <!--<MenuItem Header="Change Password" Icon="{materialDesign:PackIcon Kind=LockReset}"/>-->
                                 <MenuItem Visibility="{Binding IsLoginVisibility}" Header="Login" Icon="{materialDesign:PackIcon Kind=Login}" Command="{Binding LoginCommand}" />
                                 <MenuItem Visibility="{Binding IsLogoutVisibility}" Header="Logout" Icon="{materialDesign:PackIcon Kind=Logout}" Command="{Binding LogoutCommand}"/>
-                                <!--<MenuItem Header="User Management" Icon="{materialDesign:PackIcon Kind=AccountGroup}"/>-->
+                                <MenuItem Visibility="{Binding IsAdmin}" Header="User Management" Icon="{materialDesign:PackIcon Kind=AccountGroup}" Command="{Binding UserManagementMethodCommand}"/>
                                 <MenuItem Header="Change language" Icon="{materialDesign:PackIcon Kind=Language}" Command="{Binding ChangeLanguageCommand}"/>
                             </ContextMenu>
                         </materialDesign:Chip.ContextMenu>

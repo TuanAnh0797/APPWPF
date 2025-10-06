@@ -9,6 +9,7 @@ using APP.ViewModels.UserControlViewModels.Home;
 using APP.ViewModels.UserControlViewModels.Setting;
 using APP.ViewModels.UserControlViewModels.Setting.Sub;
 using APP.ViewModels.UserControlViewModels.Tools;
+using APP.Views;
 using LiveChartsCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -42,11 +43,9 @@ namespace APP
             });
 
             //Authorization
-
             services.AddSingleton<UserSession>();
             services.AddSingleton<AuthorizationService>();
-
-            // Đăng ký service và viewmodel
+            // service & viewmodel
             services.AddSingleton<UCMasterSettingViewModel>();
             services.AddSingleton<UCControlBarViewModel>();
             services.AddSingleton<MainWindowViewModel>();
@@ -54,11 +53,8 @@ namespace APP
             services.AddSingleton<UCHomeViewModel>();
             services.AddSingleton<UCToolsViewModel>();
             services.AddSingleton<UCSettingViewModel>();
-           
             services.AddSingleton<UCPLCSettingViewModel>();
             services.AddSingleton<UCPrinterSettingViewModel>();
-
-
             services.AddSingleton<UCHome>();
             services.AddSingleton<UCSetting>();
             services.AddSingleton<UCMasterSetting>();
@@ -66,20 +62,17 @@ namespace APP
             services.AddSingleton<UCPrinterSetting>();
             services.AddSingleton<UCTools>();
             services.AddSingleton<UCHelp>();
-
             //Printer
             services.AddSingleton<PrinterService>();
-            
-
             // Servive language
             services.AddSingleton<ILocalizationService,LocalizationService>();
+            //ManagementUser
+            services.AddSingleton<UserManagementViewModel>();
+            services.AddSingleton<UserManagement>();
+            //Init
             ServiceProvider = services.BuildServiceProvider();
-
-
-
-
-
-
+           
+           
             //Remember
             var db = ServiceProvider.GetRequiredService<AppDbContext>();
             var userremember = db.RememberUser.FirstOrDefault();
@@ -88,8 +81,6 @@ namespace APP
                 var au = ServiceProvider.GetRequiredService<AuthorizationService>();
                 await au.LoginAsync(userremember.UserID, userremember.PassWord, true);
             }
-
-
             base.OnStartup(e);
         }
          

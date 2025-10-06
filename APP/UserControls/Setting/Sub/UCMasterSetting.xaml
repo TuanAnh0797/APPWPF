@@ -88,7 +88,7 @@
                   Padding="10"
                   HorizontalAlignment="Center"
                   VerticalAlignment="Center"
-                  Visibility="Collapsed">
+                  Visibility="Collapsed" Background="AliceBlue">
             
                 <GroupBox.Header>
                     <StackPanel Orientation="Horizontal">

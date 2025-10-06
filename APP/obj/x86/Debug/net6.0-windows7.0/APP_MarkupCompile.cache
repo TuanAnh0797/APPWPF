@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\
+E:\2025\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\
 APP
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\Project\APPWPF\APP\App.xaml
-11-2082913404
+E:\2025\APPWPF\APP\App.xaml
+121002215919
 21890082943
-381819301991
-230-728907851
-ComponentUI\RealtimeClock.xaml;UserControls\Common\UCControlBar.xaml;UserControls\Help\UCHelp.xaml;UserControls\Home\UCHome.xaml;UserControls\Setting\Sub\UCMasterSetting.xaml;UserControls\Setting\Sub\UCPLCSetting.xaml;UserControls\Setting\Sub\UCPrinterSetting.xaml;UserControls\Setting\UCSetting.xaml;UserControls\Tools\UCTools.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;
+401431929972
+2309528232
+ComponentUI\RealtimeClock.xaml;UserControls\Common\UCControlBar.xaml;UserControls\Help\UCHelp.xaml;UserControls\Home\UCHome.xaml;UserControls\Setting\Sub\UCMasterSetting.xaml;UserControls\Setting\Sub\UCPLCSetting.xaml;UserControls\Setting\Sub\UCPrinterSetting.xaml;UserControls\Setting\UCSetting.xaml;UserControls\Tools\UCTools.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\UserManagement.xaml;
 
 False
 
