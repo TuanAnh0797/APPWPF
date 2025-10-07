@@ -28,44 +28,44 @@
             </StackPanel.Resources>
             <StackPanel Orientation="Horizontal">
                 <Label>IP Address:</Label>
-                <TextBox></TextBox>
+                <TextBox Text="{Binding IPAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Label>Port:</Label>
-                <TextBox></TextBox>
+                <TextBox Text="{Binding Port, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Label>Model Address(DM):</Label>
-                <TextBox></TextBox>
+                <TextBox Text="{Binding ModelAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                 <Label>Number Register:</Label>
-                <TextBox></TextBox>
+                <TextBox Text="{Binding ModelAddressNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                 <Label Width="100">Current Value:</Label>
-                <TextBox IsReadOnly="True"></TextBox>
+                <TextBox Text="{Binding CurrentModel}" IsReadOnly="True"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Label>Mold Address(DM):</Label>
-                <TextBox></TextBox>
+                <TextBox Text="{Binding MoldAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                 <Label>Number Register:</Label>
-                <TextBox></TextBox>
+                <TextBox Text="{Binding MoldAddressNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                 <Label  Width="100">Current Value:</Label>
-                <TextBox  IsReadOnly="True"></TextBox>
+                <TextBox  Text="{Binding CurrentMold}"  IsReadOnly="True"></TextBox>
             </StackPanel>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20"> 
             
-            <Button Margin="0,0,20,0">
+            <Button Margin="0,0,20,0" Command="{Binding SaveCommand}">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon VerticalAlignment="Center" Kind="ContentSaveAll"></materialDesign:PackIcon>
                     <Label Foreground="White">Save</Label>
                 </StackPanel>
             </Button>
-            <Button>
+            <!--<Button Command="{Binding SaveAndConnectCommand}">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon  VerticalAlignment="Center" Kind="Connection"></materialDesign:PackIcon>
                     <Label Foreground="White">Save and Connect</Label>
                 </StackPanel>
-            </Button>
+            </Button>-->
         </StackPanel>
         
     </Grid>

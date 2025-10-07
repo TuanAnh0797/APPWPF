@@ -15,6 +15,11 @@ public class AppDbContext : DbContext
     public DbSet<ErrorMaster> ErrorMaster => Set<ErrorMaster>();
     public DbSet<PLCSetting> PLCSetting => Set<PLCSetting>();
     public DbSet<PrinterSetting> PrinterSetting => Set<PrinterSetting>();
+    public DbSet<History> History => Set<History>();
+    public DbSet<Material> Material => Set<Material>();
+
+
+
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
@@ -27,5 +32,7 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<ErrorMaster>().HasKey(e => e.ID);
         modelBuilder.Entity<PLCSetting>().HasKey(e => e.Name);
         modelBuilder.Entity<PrinterSetting>().HasKey(e => e.ModelName);
+        modelBuilder.Entity<Material>().HasKey(e => new { e.ModelName, e.MaterialCode });
+        modelBuilder.Entity<History>().HasKey(e => e.Id);
     }
 }

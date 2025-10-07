@@ -36,7 +36,10 @@ namespace APP.ViewModels.FormViewModels
         private Visibility isLoginVisibility =  Visibility.Visible;
         [ObservableProperty]
         private Visibility isLogoutVisibility = Visibility.Collapsed;
-        
+        [ObservableProperty]
+        private Visibility isAdmin = Visibility.Collapsed;
+        [ObservableProperty]
+        private string avatar = "G";
 
 
         private ILocalizationService _localizationService;
@@ -52,12 +55,63 @@ namespace APP.ViewModels.FormViewModels
             _authorizationService = authorizationService;
             _userSession = userSession;
             _userSession.PropertyChanged += _userSession_PropertyChanged;
-        }
 
+
+            if (currentUser != null)
+            {
+                if (_userSession.Role == "Admin")
+                {
+                    IsAdmin = Visibility.Visible;
+                }
+                else
+                {
+                    IsAdmin = Visibility.Collapsed;
+                }
+                if (_userSession.CurrentUser == null)
+                {
+                    Avatar = "G";
+                    return;
+                }
+                Avatar = _userSession.CurrentUser.UserName.Split(' ').Last().Substring(0, 1).ToUpper();
+
+
+            }
+            else
+            {
+                IsAdmin = Visibility.Collapsed;
+            }
+           
+
+
+
+        }
         private void _userSession_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
               ShowToolsCommand.NotifyCanExecuteChanged();
               ShowSettingCommand.NotifyCanExecuteChanged();
+
+            if (sender != null)
+            {
+               UserSession userSession = sender as UserSession;
+                if (userSession.Role == "Admin" )
+                {
+                    IsAdmin = Visibility.Visible;
+                }
+                else
+                {
+                    IsAdmin = Visibility.Collapsed;
+                }
+                if (_userSession.CurrentUser == null)
+                {
+                    Avatar = "G";
+                    return;
+                }
+                Avatar = _userSession.CurrentUser.UserName.Split(' ').Last().Substring(0, 1).ToUpper();
+            }
+            else
+            {
+                IsAdmin = Visibility.Collapsed;
+            }
         }
 
         private bool CanTool() => _authorizationService.HasRole( "Admin","Operater");
@@ -70,6 +124,7 @@ namespace APP.ViewModels.FormViewModels
             CurrentView = App.ServiceProvider.GetRequiredService<UCHome>();
             Selectedpage = _localizationService.GetString("Home");
             PageIcon = "Home";
+            
 
         }
         [RelayCommand(CanExecute = nameof(CanTool))]
@@ -78,6 +133,7 @@ namespace APP.ViewModels.FormViewModels
             CurrentView = App.ServiceProvider.GetRequiredService<UCTools>();
             Selectedpage = _localizationService.GetString("Tools");
             PageIcon = "Tools";
+           
         }
         [RelayCommand(CanExecute = nameof(CanSetting))]
         private void ShowSetting()
@@ -92,6 +148,7 @@ namespace APP.ViewModels.FormViewModels
             CurrentView = App.ServiceProvider.GetRequiredService<UCHelp>();
             Selectedpage = _localizationService.GetString("Help");
             PageIcon = "Help";
+          
         }
         [RelayCommand]
         private void ChangeLanguage(string language = "vi")
@@ -116,7 +173,7 @@ namespace APP.ViewModels.FormViewModels
         private void Login()
         {
             LoginWindow loginWindow = new LoginWindow();
-            loginWindow.Show();
+            loginWindow.ShowDialog();
         }
 
         [RelayCommand]
@@ -125,6 +182,14 @@ namespace APP.ViewModels.FormViewModels
             _authorizationService.Logout();
             CurrentUser = "Guest";
         }
+        [RelayCommand(CanExecute = nameof(CanSetting))]
+        private void UserManagementMethod()
+        {
+           UserManagement  userManagement = new UserManagement();
+           userManagement.ShowDialog();
+        }
+
+        
 
         partial void OnCurrentUserChanged(string value)
         {

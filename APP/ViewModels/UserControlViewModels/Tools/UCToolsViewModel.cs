@@ -1,7 +1,11 @@
 ﻿using APP.Database;
 using APP.Models.Database;
+using APP.Models.Printer;
+using APP.Service;
 using APP.ViewModels.UserControlViewModels.Setting.Sub;
+using APP.ViewModels.UserControlViewModels.Tools.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using QRCoder;
 using System;
 using System.Collections.Generic;
@@ -11,6 +15,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Media.Imaging;
 
 namespace APP.ViewModels.UserControlViewModels.Tools;
@@ -18,13 +23,9 @@ namespace APP.ViewModels.UserControlViewModels.Tools;
 public partial class UCToolsViewModel : ObservableObject
 {
     [ObservableProperty]
-    private BitmapImage qrCodeImage1 = null;
+    private BitmapImage qrCodeImage = null;
     [ObservableProperty]
-    private BitmapImage qrCodeImage2 = null;
-    [ObservableProperty]
-    private BitmapImage qrCodeImage3 = null;
-    [ObservableProperty]
-    List<string> shifts = new List<string>() { "1","2","3"};
+    List<string> shifts = new List<string>() { "A","B","C"};
     [ObservableProperty]
     string shift;
     [ObservableProperty]
@@ -34,9 +35,7 @@ public partial class UCToolsViewModel : ObservableObject
     [ObservableProperty]
     bool isAuto = true;
     [ObservableProperty]
-    int quantity;
-    [ObservableProperty]
-    string codeMaterial;
+    int quantity = 1;
     [ObservableProperty]
     ObservableCollection<ErrorMaster> nameErrors = new ObservableCollection<ErrorMaster>();
     [ObservableProperty]
@@ -55,23 +54,72 @@ public partial class UCToolsViewModel : ObservableObject
     ObservableCollection<ErrorMaster> actions = new ObservableCollection<ErrorMaster>();
     [ObservableProperty]
     ErrorMaster action;
+    [ObservableProperty]
+    ObservableCollection<Material> codeMaterials = new ObservableCollection<Material>();
+    [ObservableProperty]
+    Material codeMaterial;
+    [ObservableProperty]
+    string nameMaterial;
+    [ObservableProperty]
+    string colorMaterial;
+    [ObservableProperty]
+    ObservableCollection<HistoryView> historyData = new ObservableCollection<HistoryView>();
+    
+
     private readonly AppDbContext _db;
     private readonly UCMasterSettingViewModel _uCMasterSettingViewModel;
+    private readonly UCMaterialSettingViewModel _uCMaterialSettingViewModel;
+    private PrinterService _printerService;
+    private PLCService _pLCService;
 
-    public UCToolsViewModel(AppDbContext db, UCMasterSettingViewModel uCMasterSettingViewModel)
+    public UCToolsViewModel(AppDbContext db, UCMasterSettingViewModel uCMasterSettingViewModel, UCMaterialSettingViewModel uCMaterialSettingViewModel, PrinterService printerService, PLCService pLCService )
     {
         _db = db;
+        _printerService = printerService;
         _uCMasterSettingViewModel = uCMasterSettingViewModel;
         _uCMasterSettingViewModel.SettingChanged += _uCMasterSettingViewModel_SettingChanged;
-        Reload();
+        _uCMaterialSettingViewModel = uCMaterialSettingViewModel;
+        _pLCService = pLCService;
+        _pLCService.ModelChanged += _pLCService_ModelChanged;
+        _pLCService.MoldChanged += _pLCService_MoldChanged;
+        //_uCMaterialSettingViewModel.SettingChanged += _uCMaterialSettingViewModel_SettingChanged;
+        ReloadErrorMaster();
+        UpdateHistory();
+        //ReloadMaterialMaster();
     }
 
+    private void _pLCService_MoldChanged(string obj)
+    {
+        if (IsAuto)
+        {
+            Mold = obj;
+        }
+    }
+    private void _pLCService_ModelChanged(string obj)
+    {
+        if (IsAuto)
+        {
+            Model = obj;
+        }
+    }
+    private void _uCMaterialSettingViewModel_SettingChanged()
+    {
+        ReloadMaterialMaster();
+    }
     private void _uCMasterSettingViewModel_SettingChanged()
     {
-        Reload();
+        ReloadErrorMaster();
     }
-
-    private void Reload()
+    private void ReloadMaterialMaster()
+    {
+        CodeMaterials.Clear();
+        var data = _db.Material.ToList();
+        foreach (var item in data)
+        {
+            CodeMaterials.Add(item);
+        }
+    }
+    private void ReloadErrorMaster()
     {
         NameErrors.Clear();
         var data = _db.ErrorMaster.ToList();
@@ -80,7 +128,6 @@ public partial class UCToolsViewModel : ObservableObject
             NameErrors.Add(item);
         }
     }
-
     #region On
     partial void OnNameErrorChanged(ErrorMaster value)
     {
@@ -100,8 +147,33 @@ public partial class UCToolsViewModel : ObservableObject
             Actions.Add(item);
         }
     }
-    #endregion
 
+    partial void OnModelChanged(string value)
+    {
+        CodeMaterials.Clear();
+        var data = _db.Material.Where(p=> p.ModelName == value);
+        foreach (var item in data)
+        {
+            CodeMaterials.Add(item);
+        }
+    }
+
+    partial void OnCodeMaterialChanged(Material value)
+    {
+        if (value != null)
+        {
+            QrCodeImage = GenerateQrCode(value.MaterialName);
+            NameMaterial = value.MaterialName;
+        }
+        else
+        {
+            QrCodeImage = null;
+            NameMaterial = "";
+        }
+        
+    }
+
+    #endregion
     private BitmapImage GenerateQrCode(string text)
     {
         using var generator = new QRCodeGenerator();
@@ -121,4 +193,91 @@ public partial class UCToolsViewModel : ObservableObject
         image.EndInit();
         return image;
     }
+    //[RelayCommand]
+    //private void MaterialKeyUp(object parameter)
+    //{
+
+    //}
+    [RelayCommand]
+    private void Print()
+    {
+        try
+        {
+            ModelPrint dataprint = new ModelPrint()
+            {
+                Day = DateTime.Now.Day.ToString(),
+                Month = DateTime.Now.Month.ToString(),
+                Year = DateTime.Now.Year.ToString(),
+                Shift = Shift,
+                Mold = Mold,
+                Hour = DateTime.Now.ToString("HH:mm:ss"),
+                Model = Model,
+                Quantity = Quantity.ToString(),
+                MaterialCode = CodeMaterial.MaterialCode,
+                MaterialName = NameMaterial,
+                Person = Person,
+                NameError = NameError.NameError,
+                Reason = Reason.Reason,
+                MaterialColor = ColorMaterial
+            };
+            _printerService.Print(dataprint);
+
+            History history = new History()
+            {
+                Shift = Shift,
+                Mold = Mold,
+                ModelName = Model,
+                Quantity = Quantity,
+                MaterialName = NameMaterial,
+                MaterialCode = CodeMaterial.MaterialCode,
+                MaterialColor = ColorMaterial,
+                NameError = NameError.NameError,
+                Position = "VF",
+                Persion = Person,
+                PositionError = "VF",
+                Reason = Reason.reason,
+                Action = "",
+                TimeInsert = DateTime.Now,
+            };
+            _db.History.Add(history);
+            _db.SaveChanges();
+            UpdateHistory();
+
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show(ex.Message);
+        }
+        
+    }
+    private void UpdateHistory()
+    {
+      var result = _db.History
+     .Where(p => p.TimeInsert.Date == DateTime.Now.Date)
+     .GroupBy(p => new { p.ModelName,p.MaterialName })
+     .Select(g => new
+     {
+         g.Key.MaterialName,
+         g.Key.ModelName,
+         TotalQuantity = g.Sum(x => x.Quantity),
+     })
+     .ToList();
+        HistoryData.Clear();
+        int index = 1;
+        foreach (var item in result)
+        {
+            HistoryData.Add(new HistoryView()
+            {
+                STT = index.ToString(),
+                Model = item.ModelName,
+                Material = item.MaterialName,
+                Quantity = item.TotalQuantity.ToString(),
+
+            });
+            index ++;
+        }
+    }
+
+  
 }

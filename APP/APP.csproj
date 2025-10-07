@@ -23,6 +23,7 @@
   <ItemGroup>
     <None Remove="App.xaml.cs~RF738d03fd.TMP" />
     <None Remove="Resources\Image\database.png" />
+    <None Remove="Resources\Image\material.png" />
     <None Remove="Resources\Image\plc.png" />
     <None Remove="Resources\Image\printer.png" />
   </ItemGroup>
@@ -73,6 +74,9 @@
     <Resource Include="Resources\Image\database.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Image\material.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Image\plc.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -89,6 +93,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\TemplatePrint\Temp.lbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\TemplatePrint\temp2.lbx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

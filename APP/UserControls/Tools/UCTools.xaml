@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:APP.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Border Background="White" Margin="10,0,10,10" CornerRadius="5">
         <Border.Effect>
             <DropShadowEffect Color="Gray" Direction="315" ShadowDepth="4" 
@@ -16,7 +17,7 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
             <Grid Margin="20" Grid.Column="0" >
@@ -29,14 +30,23 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
 
-                        <!-- Tiêu đề -->
-                        <TextBlock Text="PHIẾU PHÂN TÍCH NGUYÊN NHÂN LỖI/HỦY"
-                    FontSize="20"
-                    FontWeight="Bold"
-                    HorizontalAlignment="Center"
-                    Margin="0 0 0 20"
-                    Grid.Row="0"
-                    Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Height="100" Width="100" Source="{Binding QrCodeImage,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
+                            <!-- Tiêu đề -->
+                            <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="PHIẾU PHÂN TÍCH NGUYÊN NHÂN LỖI/HỦY"
+FontSize="25"
+FontWeight="Bold"
+HorizontalAlignment="Center"
+Margin="0 0 0 20"
+Grid.Row="0"
+Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
+                        </Grid>
+                        
+                       
 
                         <!-- Nội dung form -->
                         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
@@ -46,21 +56,21 @@
                                 <StackPanel.Resources>
                                     <Style TargetType="Label">
                                         <Setter Property="FontWeight" Value="Medium"></Setter>
-                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="FontSize" Value="18"></Setter>
                                     </Style>
                                     <Style TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignComboBox}">
                                         <Setter Property="FontWeight" Value="Medium"></Setter>
-                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="FontSize" Value="18"></Setter>
                                         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
                                     </Style>
                                     <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
                                         <Setter Property="FontWeight" Value="Medium"></Setter>
-                                        <Setter Property="FontSize" Value="13"></Setter>
+                                        <Setter Property="FontSize" Value="18"></Setter>
                                         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
                                     </Style>
                                 </StackPanel.Resources>
                                 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -75,7 +85,7 @@
                                     <TextBox Grid.Column="3" Text="{Binding Mold, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -87,21 +97,41 @@
                                     <TextBox Grid.Column="1" Text="{Binding Model, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                     <CheckBox IsChecked="{Binding IsAuto, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" Margin="5,0,5,0" Grid.Column="2">Auto</CheckBox>
                                     <Label Grid.Column="3" VerticalAlignment="Center">Số lượng:</Label>
-                                    <materialDesign:NumericUpDown Grid.Column="4" Minimum="1" Value="{Binding Quantity, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></materialDesign:NumericUpDown>
+                                    <materialDesign:NumericUpDown HorizontalContentAlignment="Center" Grid.Column="4" FontSize="18" Minimum="1" Value="{Binding Quantity, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></materialDesign:NumericUpDown>
                                 </Grid>
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column="0" VerticalAlignment="Center">Mã linh kiện:</Label>
-                                    <TextBox Grid.Column="1" Text="{Binding CodeMaterial}"></TextBox>
-                                    
+                                    <ComboBox  x:Name="TxtCode" Grid.Column="1" ItemsSource="{Binding CodeMaterials}" SelectedItem="{Binding CodeMaterial}" DisplayMemberPath="MaterialCode">
+                                        <!--<i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="KeyUp">
+                                                <i:InvokeCommandAction Command="{Binding MaterialKeyUpCommand}" CommandParameter="{Binding Text, ElementName=TxtCode}"/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>-->
+                                    </ComboBox>
+                                    <Label Grid.Column="2" VerticalAlignment="Center">Màu:</Label>
+                                    <TextBox  Grid.Column="3"  Text="{Binding ColorMaterial,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                                </Grid>
+                                <Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Tên linh kiện:</Label>
+                                    <TextBox  Grid.Column="1" IsReadOnly="True" Text="{Binding NameMaterial}"></TextBox>
+                                   
+
+
                                 </Grid>
 
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -113,7 +143,7 @@
 
                                 </Grid>
 
-                                <Grid Margin="10">
+                                <!--<Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -122,9 +152,9 @@
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Vị trí gây ra lỗi:</Label>
                                     <TextBox Grid.Column="1" Text="{Binding Position, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                                </Grid>
+                                </Grid>-->
 
-                                <Grid Margin="10">
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -134,7 +164,7 @@
                                     <Label Grid.Column="0" VerticalAlignment="Center">Người thao tác lỗi:</Label>
                                     <TextBox Grid.Column="1" Text="{Binding Person, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                                 </Grid>
-                                <Grid Margin="10">
+                                <!--<Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -143,8 +173,8 @@
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Vị trí phát hiện lỗi:</Label>
                                     <TextBox Grid.Column="1" Text="{Binding PositionError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                                </Grid>
-                                <Grid Margin="10">
+                                </Grid>-->
+                                <Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -152,11 +182,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Nguyên nhân:</Label>
-                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Reasons}" SelectedItem="{Binding Reason, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Reason"></ComboBox>
+                                    <ComboBox Grid.Column="1"  ItemsSource="{Binding Reasons}" SelectedItem="{Binding Reason, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Reason"></ComboBox>
                                 </Grid>
-
-
-                                <Grid Margin="10">
+                                <!--<Grid Margin="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -165,87 +193,101 @@
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Đối sách:</Label>
                                     <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Actions}" SelectedItem="{Binding Action, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Action"></ComboBox>
+                                </Grid>-->
+                                <!--<Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Cách xử lý:</Label>
+                                    <ComboBox Grid.Column="1"  ItemsSource="{Binding Actions}" SelectedItem="{Binding Action, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Action"></ComboBox>
                                 </Grid>
-                                
+                                <Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">QC xác nhận:</Label>
+                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding NameErrors}" SelectedItem="{Binding NameError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="NameError"></ComboBox>
+
+                                </Grid>-->
+
                             </StackPanel>
                         </ScrollViewer>
-
                         <!-- Nút chức năng -->
                         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0">
-                            <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0 0 10 0">
-                                <StackPanel Orientation="Horizontal">
-                                    <materialDesign:PackIcon Kind="Printer" Width="30" Height="30" VerticalAlignment="Center"></materialDesign:PackIcon>
-                                    <Label>Print</Label>
+                            <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0 0 10 0" Width="120" Height="120" Command="{Binding PrintCommand}">
+                                <StackPanel Orientation="Vertical">
+                                    <materialDesign:PackIcon Kind="Printer" Width="80" Height="80" VerticalAlignment="Center"></materialDesign:PackIcon>
+                                    <Label HorizontalAlignment="Center" FontWeight="Bold" FontSize="20">Print</Label>
                                 </StackPanel>
-                               
                             </Button>
-                           
                         </StackPanel>
                     </Grid>
                 </materialDesign:Card>
             </Grid>
 
 
-            <materialDesign:Card Grid.Column="1"  Style="{StaticResource MaterialDesignOutlinedCard}"  Margin="20">
+          
+
+
+
+            <materialDesign:Card Grid.Column="1"  Style="{StaticResource MaterialDesignOutlinedCard}"  Margin="0,20,20,20">
 
 
                 <Grid>
-
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
+                    <Label HorizontalAlignment="Center" FontSize="20" FontWeight="Bold">BẢNG THỐNG KÊ SỐ LƯỢNG HUỶ</Label>
+                    <DataGrid Grid.Row="1" Margin="10"
+AutoGenerateColumns="False" 
+ItemsSource="{Binding HistoryData}" 
+CanUserAddRows="False"
 
-                    <Label Grid.Row="0" Margin="5">
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="PrinterPreview" Foreground="DimGray" Height="30" Width="30" Margin="0,0,10,0"/>
-                            <TextBlock FontWeight="Medium" FontSize="15" VerticalAlignment="Center">Preview</TextBlock>
-                        </StackPanel>
-                    </Label>
-
-                    <Border  Grid.Row="1"
-                    Background="White"
-                    BorderBrush="Black"
-                    BorderThickness="1"
-                    Padding="20"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Margin="20"
-                    CornerRadius="4"
-                    SnapsToDevicePixels="True"
-                    >
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="170"></ColumnDefinition>
-                                <ColumnDefinition  Width="160"></ColumnDefinition>
-                                <ColumnDefinition  Width="120"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="100"></RowDefinition>
-                                <RowDefinition Height="100"></RowDefinition>
-                                <RowDefinition Height="100"></RowDefinition>
-                            </Grid.RowDefinitions>
-
-                            <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
-                                <TextBlock TextWrapping="Wrap" Text="{Binding Model, UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-                            </Border>
-                            <Border Grid.Column="1" Grid.RowSpan="3" BorderThickness="2,2,0,2" BorderBrush="Black">
-                                <TextBlock TextWrapping="Wrap" Text="{Binding Mold, UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-                            </Border>
-                            <Border Grid.Column="2" Grid.Row="0" BorderThickness="2,2,2,0" BorderBrush="Black">
-                                <Image Source="{Binding QrCodeImage1,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
-                            </Border>
-                            <Border Grid.Column="2" Grid.Row="1" BorderThickness="2,2,2,0" BorderBrush="Black">
-                                <Image Source="{Binding QrCodeImage2,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
-                            </Border>
-                            <Border Grid.Column="2" Grid.Row="2" BorderThickness="2" BorderBrush="Black">
-                                <Image Source="{Binding QrCodeImage3,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
-                            </Border>
-
-                        </Grid>
-                    </Border>
+GridLinesVisibility="None"
+ IsReadOnly="True"
+RowBackground="White"
+AlternatingRowBackground="#F5F5F5"
+HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="BorderBrush" Value="Gray"/>
+                                <Setter Property="BorderThickness" Value="0.5"/>
+                                <Setter Property="Padding" Value="4"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                <Setter Property="FontSize" Value="18"></Setter>
+                                
+                            </Style>
+                        </DataGrid.CellStyle>
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background" Value="SteelBlue"/>
+                                <!-- màu bạn muốn -->
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="Height" Value="40"/>
+                                <Setter Property="FontSize" Value="20"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="STT" Binding="{Binding STT}" Width="50"/>
+                            <DataGridTextColumn Header="Model" Binding="{Binding Model}" Width="*"/>
+                            <DataGridTextColumn Header="Linh kiện" Binding="{Binding Material}" Width="*"/>
+                            <DataGridTextColumn Header="Số lượng huỷ" Binding="{Binding Quantity}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
 
                 </Grid>
+                
+
 
 
             </materialDesign:Card>

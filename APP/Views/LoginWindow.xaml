@@ -11,12 +11,8 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:helpers="clr-namespace:APP.Helper"
-        >
+        xmlns:helpers="clr-namespace:APP.Helper"  >
 
-
-    
-    
     <GroupBox Style="{StaticResource MaterialDesignCardGroupBox}" Background="WhiteSmoke">
         <GroupBox.Effect>
             <DropShadowEffect BlurRadius="15" 

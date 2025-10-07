@@ -43,14 +43,36 @@ public class PrinterService
         if (IsTest)
         {
             DocumentClass doc = new DocumentClass();
-            string TemplatePath = Directory.GetCurrentDirectory() + "\\Resources\\TemplatePrint\\Temp.lbx";
+            string TemplatePath = Directory.GetCurrentDirectory() + "\\Resources\\TemplatePrint\\temp2.lbx";
             if (doc.Open(TemplatePath) != false)
             {
-                doc.GetObject("ModelName").Text = "Model Name";
-                doc.GetObject("MoldCode").Text = "Mold Code";
-                doc.GetObject("Code1").Text = "QR1";
-                doc.GetObject("Code2").Text = "QR2";
-                doc.GetObject("Code3").Text = "QR3";
+                doc.StartPrint("", PrintOptionConstants.bpoDefault);
+                doc.PrintOut(1, PrintOptionConstants.bpoDefault);
+                doc.EndPrint();
+                doc.Close();
+            }
+        }
+        else
+        {
+            DocumentClass doc = new DocumentClass();
+            string TemplatePath = Directory.GetCurrentDirectory() + "\\Resources\\TemplatePrint\\temp2.lbx";
+            if (doc.Open(TemplatePath) != false)
+            {
+                doc.GetObject("Barcode").Text = modelPrint.MaterialCode;
+                doc.GetObject("Day").Text = modelPrint.Day;
+                doc.GetObject("Month").Text = modelPrint.Month;
+                doc.GetObject("Year").Text = modelPrint.Year;
+                doc.GetObject("Shift").Text = modelPrint.Shift;
+                doc.GetObject("Mold").Text = modelPrint.Mold;
+                doc.GetObject("Hour").Text = modelPrint.Hour;
+                doc.GetObject("Model").Text = modelPrint.Model;
+                doc.GetObject("Quantity").Text = modelPrint.Quantity;
+                doc.GetObject("MaterialName").Text = modelPrint.MaterialName;
+                doc.GetObject("MaterialCode").Text = modelPrint.MaterialCode;
+                doc.GetObject("NameError").Text = modelPrint.NameError;
+                doc.GetObject("Person").Text = modelPrint.Person;
+                doc.GetObject("Reason").Text = modelPrint.Reason;
+                doc.GetObject("Color").Text = modelPrint.MaterialColor;
                 doc.StartPrint("", PrintOptionConstants.bpoDefault);
                 doc.PrintOut(1, PrintOptionConstants.bpoDefault);
                 doc.EndPrint();

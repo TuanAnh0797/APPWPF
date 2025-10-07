@@ -52,39 +52,46 @@
                     </Grid.RowDefinitions>
 
                     <!-- Menu -->
-                   
-                        <StackPanel Grid.Row="0" >
-                       
+
+                    <StackPanel Grid.Row="0" >
+
                         <Button Command="{Binding ShowHomeCommand}">
-                                <StackPanel>
-                                    <materialDesign:PackIcon Kind="Home" Foreground="SteelBlue" />
-                                    <Label Content="{DynamicResource Home}" />
-                                </StackPanel>
-                            </Button>
-                            <Separator></Separator>
-                            <Button Command="{Binding ShowToolsCommand}">
-                                <StackPanel>
-                                    <materialDesign:PackIcon Kind="Tools" Foreground="#607D8B" />
-                                    <Label Content="Tools" />
-                                </StackPanel>
-                            </Button>
-                            <Separator></Separator>
-                            <Button Command="{Binding ShowSettingCommand}">
-                                <StackPanel>
-                                    <materialDesign:PackIcon Kind="CogOutline" Foreground="#212121" />
-                                    <Label Content="Setting"/>
-                                </StackPanel>
-                            </Button>
-                            <Separator></Separator>
-                            <Button Command="{Binding ShowHelpCommand}">
-                                <StackPanel>
-                                    <materialDesign:PackIcon Kind="Help" Foreground="YellowGreen" />
-                                    <Label Content="Help" />
-                                </StackPanel>
-                            </Button>
-                            <Separator></Separator>
-                        </StackPanel>
-                   
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="Home" Foreground="SteelBlue" />
+                                <Label Content="{DynamicResource Home}" />
+                            </StackPanel>
+                        </Button>
+                        <Separator></Separator>
+                        <Button Command="{Binding ShowToolsCommand}">
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="Tools" Foreground="#607D8B" />
+                                <Label Content="Tools" />
+                            </StackPanel>
+                        </Button>
+                        <Separator></Separator>
+                        <Button Command="{Binding ShowSettingCommand}">
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="CogOutline" Foreground="#212121" />
+                                <Label Content="Setting"/>
+                            </StackPanel>
+                        </Button>
+                        <Separator></Separator>
+                        <Button>
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="ReportBoxMultiple" Foreground="OrangeRed" />
+                                <Label Content="Report"/>
+                            </StackPanel>
+                        </Button>
+                        <Separator></Separator>
+                        <Button Command="{Binding ShowHelpCommand}">
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="Help" Foreground="YellowGreen" />
+                                <Label Content="Help" />
+                            </StackPanel>
+                        </Button>
+                        <Separator></Separator>
+                    </StackPanel>
+
                     <!-- Version ở dưới -->
                     <Label Grid.Row="2" Content="Version:2025" FontStyle="Italic"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" FontSize="16" FontWeight="Medium" Foreground="Black"/>
                 </Grid>
@@ -98,18 +105,18 @@
             </Grid.RowDefinitions>
             <materialDesign:ColorZone Padding="10,5,5,5" Mode="Standard" BorderBrush="Gray" BorderThickness="0.8">
 
-               
-                    <DockPanel>
-                        <uc:UCControlBar DockPanel.Dock="Right"></uc:UCControlBar>
-                        <StackPanel Orientation="Horizontal">
-                            <ToggleButton  IsChecked="{Binding ElementName=DrawerHost, Path=IsLeftDrawerOpen, Mode=TwoWay}"  BorderBrush="Transparent"  Foreground="Black" Background="Transparent" Style="{StaticResource MaterialDesignHamburgerToggleButton}" />
+
+                <DockPanel>
+                    <uc:UCControlBar DockPanel.Dock="Right"></uc:UCControlBar>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleButton  IsChecked="{Binding ElementName=DrawerHost, Path=IsLeftDrawerOpen, Mode=TwoWay}"  BorderBrush="Transparent"  Foreground="Black" Background="Transparent" Style="{StaticResource MaterialDesignHamburgerToggleButton}" />
                         <TextBlock Margin="20,0,0,0" Text="VF-PCM Defective Product Reporting System" FontSize="20" FontWeight="Bold" Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center">
                             <TextBlock.Effect>
                                 <DropShadowEffect Color="Black"  Direction="315" ShadowDepth="2" BlurRadius="4" Opacity="0.4"/>
                             </TextBlock.Effect>
                         </TextBlock>
                     </StackPanel>
-                    </DockPanel>
+                </DockPanel>
             </materialDesign:ColorZone>
             <Grid Grid.Row="1" Background="#e8e3e3">
                 <Grid.RowDefinitions>
@@ -123,7 +130,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    
+
                     <StackPanel Grid.Column="0" Orientation="Horizontal">
                         <materialDesign:PackIcon VerticalAlignment="Center" Width="35" Height="35" Kind="{Binding PageIcon}" Foreground="DarkSlateBlue" />
                         <TextBlock Grid.Column="0" Text="{Binding Selectedpage, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" FontSize="30" FontWeight="Bold" Foreground="DarkSlateBlue" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -132,7 +139,7 @@
 
                     <componenUI:RealtimeClock Grid.Column="1" HorizontalAlignment="Center" ></componenUI:RealtimeClock>
 
-                    <materialDesign:Chip  FontWeight="Bold" Content="{Binding CurrentUser}" Icon="A" HorizontalAlignment="Right" Background="White" Grid.Column="2">
+                    <materialDesign:Chip  FontWeight="Bold" Content="{Binding CurrentUser}" Icon="{Binding Avatar}" HorizontalAlignment="Right" Background="White" Grid.Column="2">
 
 
                         <materialDesign:Chip.ContextMenu>
@@ -140,17 +147,17 @@
                                 <!--<MenuItem Header="Change Password" Icon="{materialDesign:PackIcon Kind=LockReset}"/>-->
                                 <MenuItem Visibility="{Binding IsLoginVisibility}" Header="Login" Icon="{materialDesign:PackIcon Kind=Login}" Command="{Binding LoginCommand}" />
                                 <MenuItem Visibility="{Binding IsLogoutVisibility}" Header="Logout" Icon="{materialDesign:PackIcon Kind=Logout}" Command="{Binding LogoutCommand}"/>
-                                <!--<MenuItem Header="User Management" Icon="{materialDesign:PackIcon Kind=AccountGroup}"/>-->
+                                <MenuItem Visibility="{Binding IsAdmin}" Header="User Management" Icon="{materialDesign:PackIcon Kind=AccountGroup}" Command="{Binding UserManagementMethodCommand}"/>
                                 <MenuItem Header="Change language" Icon="{materialDesign:PackIcon Kind=Language}" Command="{Binding ChangeLanguageCommand}"/>
                             </ContextMenu>
                         </materialDesign:Chip.ContextMenu>
                     </materialDesign:Chip>
                 </Grid>
-               
+
                 <ContentControl Grid.Row="1" Content="{Binding CurrentView}" />
             </Grid>
         </Grid>
     </materialDesign:DrawerHost>
-   
+
 </Window>
 

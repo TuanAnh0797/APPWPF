@@ -5,10 +5,13 @@ FD:\Project\APPWPF\APP\UserControls\Common\UCControlBar.xaml;;
 FD:\Project\APPWPF\APP\UserControls\Help\UCHelp.xaml;;
 FD:\Project\APPWPF\APP\UserControls\Home\UCHome.xaml;;
 FD:\Project\APPWPF\APP\UserControls\Setting\Sub\UCMasterSetting.xaml;;
+FD:\Project\APPWPF\APP\UserControls\Setting\Sub\UCMaterialSetting.xaml;;
 FD:\Project\APPWPF\APP\UserControls\Setting\Sub\UCPLCSetting.xaml;;
 FD:\Project\APPWPF\APP\UserControls\Setting\Sub\UCPrinterSetting.xaml;;
 FD:\Project\APPWPF\APP\UserControls\Setting\UCSetting.xaml;;
 FD:\Project\APPWPF\APP\UserControls\Tools\UCTools.xaml;;
 FD:\Project\APPWPF\APP\Views\LoginWindow.xaml;;
 FD:\Project\APPWPF\APP\Views\MainWindow.xaml;;
+FD:\Project\APPWPF\APP\Views\Test.xaml;;
+FD:\Project\APPWPF\APP\Views\UserManagement.xaml;;
 

@@ -15,5 +15,5 @@ public class PLCSetting
     public int AddressMold { get; set; }
     public int TotalRegisterModel { get; set; }
     public int TotalRegisterMold { get; set; }
-    public string TimeUpdate { get; set; }
+    public DateTime TimeUpdate { get; set; }
 }

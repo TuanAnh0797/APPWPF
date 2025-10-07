@@ -8,9 +8,22 @@ namespace APP.Models.Printer;
 
 public  class ModelPrint
 {
-    public string ModelName { get; set; }
-    public string MoldCode { get; set; }
-    public string QRCode1 { get; set; }
-    public string QRCode2 { get; set; }
-    public string QRCode3 { get; set; }
+    public string Day { get; set; } = "";
+    public string Month { get; set; } = "";
+    public string Year { get; set; } = "";
+    public string Shift { get; set; } = "";
+    public string Mold { get; set; } = "";
+    public string Hour { get; set; } = "";
+    public string Model { get; set; } = "";
+    public string Quantity { get; set; } = "";
+    public string MaterialName { get; set; } = "";
+    public string MaterialCode { get; set; } = "";
+    public string MaterialColor { get; set; } = "";
+    public string NameError { get; set; } = "";
+    public string Person { get; set; } = "";
+    public string Reason { get; set; } = "";
+
+
+
+
 }
