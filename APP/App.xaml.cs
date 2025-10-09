@@ -41,7 +41,6 @@ namespace APP
             services.AddDbContext<AppDbContext>(option => {
                 option.UseSqlite($"Data Source={pathdb}");
             });
-
             //Authorization
             services.AddSingleton<UserSession>();
             services.AddSingleton<AuthorizationService>();
@@ -51,7 +50,6 @@ namespace APP
             services.AddSingleton<MainWindowViewModel>();
             services.AddSingleton<LoginWindowViewModel>();
             services.AddSingleton<UCHomeViewModel>();
-           
             services.AddSingleton<UCSettingViewModel>();
             services.AddSingleton<UCPLCSettingViewModel>();
             services.AddSingleton<UCPrinterSettingViewModel>();
@@ -62,9 +60,7 @@ namespace APP
             services.AddSingleton<UCMaterialSetting>();
             services.AddSingleton<UCPLCSetting>();
             services.AddSingleton<UCPrinterSetting>();
-
             services.AddSingleton<PLCService>();
-
             services.AddSingleton<UCToolsViewModel>();
             services.AddSingleton<UCTools>();
             services.AddSingleton<UCHelp>();
@@ -77,8 +73,6 @@ namespace APP
             services.AddSingleton<UserManagement>();
             //Init
             ServiceProvider = services.BuildServiceProvider();
-           
-           
             //Remember
             var db = ServiceProvider.GetRequiredService<AppDbContext>();
             var userremember = db.RememberUser.FirstOrDefault();
