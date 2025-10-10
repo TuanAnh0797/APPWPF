@@ -6,6 +6,7 @@ using APP.ViewModels.UserControlViewModels.Setting.Sub;
 using APP.ViewModels.UserControlViewModels.Tools.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.EntityFrameworkCore;
 using QRCoder;
 using System;
 using System.Collections.Generic;
@@ -259,6 +260,8 @@ public partial class UCToolsViewModel : ObservableObject
     }
     private void UpdateHistory()
     {
+
+
       var result = _db.History
      .Where(p => p.TimeInsert.Date == DateTime.Now.Date)
      .GroupBy(p => new { p.ModelName,p.MaterialName })
@@ -269,6 +272,7 @@ public partial class UCToolsViewModel : ObservableObject
          TotalQuantity = g.Sum(x => x.Quantity),
      })
      .ToList();
+
         HistoryData.Clear();
         int index = 1;
         foreach (var item in result)
