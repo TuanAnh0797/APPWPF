@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Project\\APPWPF\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\formviewmodels\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -238,7 +238,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 294,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -250,12 +250,11 @@
               "RelativeToolTip": "APP\\Helper\\PLC.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAowAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T09:02:04.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T09:02:04.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PLCService.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Service\\PLCService.cs",
               "RelativeDocumentMoniker": "APP\\Service\\PLCService.cs",
@@ -263,18 +262,17 @@
               "RelativeToolTip": "APP\\Service\\PLCService.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAEwHYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T09:00:26.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T09:00:26.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\App.xaml.cs",
               "RelativeDocumentMoniker": "APP\\App.xaml.cs",
               "ToolTip": "D:\\Project\\APPWPF\\APP\\App.xaml.cs",
               "RelativeToolTip": "APP\\App.xaml.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAmwF0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAmwEwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T02:07:48.925Z",
               "EditorCaption": ""
@@ -289,25 +287,24 @@
               "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T06:26:27.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T06:26:27.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "UCToolsViewModel.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwE4AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAgwPgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T03:35:43.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UCPLCSettingViewModel.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
@@ -315,12 +312,11 @@
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T06:02:42.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T06:02:42.697Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
@@ -328,12 +324,11 @@
               "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAAAnwH4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:19:28.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T09:19:28.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "APP\\Views\\MainWindow.xaml.cs",
@@ -341,12 +336,11 @@
               "RelativeToolTip": "APP\\Views\\MainWindow.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAhwBoAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T07:18:17.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T07:18:17.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UCMasterSetting.xaml.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
@@ -354,8 +348,7 @@
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T06:05:20.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T06:05:20.701Z"
             },
             {
               "$type": "Document",
@@ -367,8 +360,7 @@
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwBcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T06:02:27.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T06:02:27.887Z"
             },
             {
               "$type": "Document",
@@ -380,8 +372,7 @@
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\UCSettingViewModel.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T05:34:25.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T05:34:25.555Z"
             },
             {
               "$type": "Document",
@@ -393,8 +384,7 @@
               "RelativeToolTip": "APP\\Database\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T17:48:00.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T17:48:00.205Z"
             },
             {
               "$type": "Document",
@@ -406,8 +396,7 @@
               "RelativeToolTip": "APP\\Models\\Database\\PLCSetting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T07:03:14.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T07:03:14.308Z"
             },
             {
               "$type": "Document",
@@ -419,8 +408,7 @@
               "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\LoginWindowViewModel.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowDMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T18:55:23.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T18:55:23.085Z"
             },
             {
               "$type": "Document",
@@ -432,8 +420,7 @@
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMaterialSettingViewModel.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAgwDUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T06:03:46.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T06:03:46.075Z"
             },
             {
               "$type": "Document",
@@ -444,8 +431,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-05T05:13:45.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T05:13:45.26Z"
             },
             {
               "$type": "Document",
@@ -456,8 +442,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml",
               "RelativeToolTip": "APP\\UserControls\\Setting\\UCSetting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-07T06:33:34.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T06:33:34.732Z"
             },
             {
               "$type": "Document",
@@ -469,8 +454,7 @@
               "RelativeToolTip": "APP\\Service\\PrinterService.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAMwCgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T07:12:38.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T07:12:38.702Z"
             },
             {
               "$type": "Document",
@@ -481,8 +465,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-07T06:03:53.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T06:03:53.518Z"
             },
             {
               "$type": "Document",
@@ -493,8 +476,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml",
               "RelativeToolTip": "APP\\UserControls\\Tools\\UCTools.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-06T16:35:48.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T16:35:48.306Z"
             },
             {
               "$type": "Document",
@@ -506,8 +488,7 @@
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Tools\\Models\\HistoryView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T08:21:44.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T08:21:44.561Z"
             },
             {
               "$type": "Document",
@@ -519,8 +500,7 @@
               "RelativeToolTip": "APP\\Models\\Printer\\ModelPrint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T07:57:14.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T07:57:14.199Z"
             },
             {
               "$type": "Document",
@@ -532,8 +512,7 @@
               "RelativeToolTip": "APP\\Models\\Database\\History.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T07:48:04.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T07:48:04.588Z"
             },
             {
               "$type": "Document",
@@ -545,8 +524,7 @@
               "RelativeToolTip": "APP\\Models\\Home\\FuntionHome.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:43:21.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T09:43:21.963Z"
             },
             {
               "$type": "Document",
@@ -558,8 +536,7 @@
               "RelativeToolTip": "APP\\Models\\Database\\Material.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T06:02:57.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T06:02:57.747Z"
             },
             {
               "$type": "Document",
@@ -571,8 +548,7 @@
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPrinterSettingViewModel.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAswBcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T06:02:55.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T06:02:55.528Z"
             },
             {
               "$type": "Document",
@@ -794,8 +770,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\Resources\\Language\\StringResources.en.xaml",
               "RelativeToolTip": "APP\\Resources\\Language\\StringResources.en.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-30T02:04:20.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T02:04:20.901Z"
             },
             {
               "$type": "Document",
@@ -888,8 +863,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\App.xaml",
               "RelativeToolTip": "APP\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-30T02:08:13.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T02:08:13.128Z"
             },
             {
               "$type": "Document",

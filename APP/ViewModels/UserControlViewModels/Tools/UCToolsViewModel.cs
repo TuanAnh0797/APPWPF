@@ -222,6 +222,10 @@ public partial class UCToolsViewModel : ObservableObject
             };
             _printerService.Print(dataprint);
 
+
+
+
+
             History history = new History()
             {
                 Shift = Shift,
@@ -239,6 +243,8 @@ public partial class UCToolsViewModel : ObservableObject
                 Action = "",
                 TimeInsert = DateTime.Now,
             };
+            SaveHistoryToCsv(history, $"C:\\Logger\\{DateTime.Now.ToString("DataDD_MM_YYYY")}.csv");
+
             _db.History.Add(history);
             _db.SaveChanges();
             UpdateHistory();
@@ -279,5 +285,20 @@ public partial class UCToolsViewModel : ObservableObject
         }
     }
 
-  
+    private  static void SaveHistoryToCsv(History history, string filePath)
+    {
+        bool fileExists = File.Exists(filePath);
+        using (var writer = new StreamWriter(filePath, true, Encoding.UTF8))
+        {
+            // Nếu file mới tạo, thêm header
+            if (!fileExists)
+            {
+                writer.WriteLine("Shift,Mold,ModelName,Quantity,MaterialName,MaterialCode,MaterialColor,NameError,Position,Persion,PositionError,Reason,Action,TimeInsert");
+            }
+            // Ghi dữ liệu một dòng
+            writer.WriteLine($"{history.Shift},{history.Mold},{history.ModelName},{history.Quantity},{history.MaterialName},{history.MaterialCode},{history.MaterialColor},{history.NameError},{history.Position},{history.Persion},{history.PositionError},{history.Reason},{history.Action},{history.TimeInsert:yyyy-MM-dd HH:mm:ss}");
+        }
+    }
+
+
 }
