@@ -9,14 +9,14 @@ namespace APP.Models.Database;
 
 public partial class ErrorMaster : ObservableObject
 {
-    public int ID { get; set; }
+    public int? ID { get; set; }
     [ObservableProperty]
-    public string nameError;
+    public string? nameError;
     [ObservableProperty]
-    public string reason;
+    public string? reason;
     [ObservableProperty]
-    public string action;
-    public string TimeUpdate { get; set; }
+    public string? action;
+    public string? TimeUpdate { get; set; }
     public ErrorMaster()
     {
 

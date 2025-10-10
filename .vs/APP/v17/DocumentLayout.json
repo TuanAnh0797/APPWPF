@@ -1,233 +1,233 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\APPWPF\\",
+  "WorkspaceRootPath": "D:\\Project\\APPWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\sub\\ucmastersetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucmastersetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\service\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\service\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucplcsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucplcsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\formviewmodels\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\helper\\plc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\helper\\plc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\database\\plcsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\plcsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\formviewmodels\\loginwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\loginwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmastersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmastersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmaterialsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmaterialsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\ucsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\ucsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\tools\\uctools.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\tools\\uctools.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\tools\\models\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\tools\\models\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\sub\\ucmastersetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucmastersetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\ucsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\ucsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\service\\printerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\service\\printerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\printer\\modelprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\printer\\modelprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\database\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\sub\\ucmaterialsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucmaterialsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucprintersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucprintersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\database\\errormaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\database\\errormaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\errormaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmastersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmastersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\sub\\ucmastersetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucmastersetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\service\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\service\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucplcsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucplcsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\formviewmodels\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\helper\\plc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\helper\\plc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\database\\plcsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\plcsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\formviewmodels\\loginwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\formviewmodels\\loginwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmaterialsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucmaterialsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\ucsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\ucsettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\tools\\uctools.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\tools\\uctools.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\tools\\models\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\tools\\models\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\sub\\ucmastersetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucmastersetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\ucsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\ucsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\service\\printerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\service\\printerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\printer\\modelprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\printer\\modelprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\database\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\home\\funtionhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\sub\\ucmaterialsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucmaterialsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucprintersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\setting\\sub\\ucprintersettingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\service\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\service\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\service\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\app.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\app.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\app.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\home\\uchome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\home\\uchome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\uchome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\sub\\ucprintersetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\sub\\ucprintersetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucprintersetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\database\\printersetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\database\\printersetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\printersetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\sub\\ucplcsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\sub\\ucplcsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucplcsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\sub\\ucprintersetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\sub\\ucprintersetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\sub\\ucprintersetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\setting\\ucsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\setting\\ucsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\setting\\ucsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\home\\uchome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\home\\uchome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\home\\uchome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\database\\rememberuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\database\\rememberuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\rememberuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\models\\database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\models\\database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\models\\database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\service\\usersession .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\service\\usersession .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\service\\usersession .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\converter\\rolevisibilityconverter .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\converter\\rolevisibilityconverter .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\converter\\rolevisibilityconverter .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\helper\\passwordboxhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\helper\\passwordboxhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\helper\\passwordboxhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\tools\\uctools.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\tools\\uctools.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\tools\\uctools.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\componentui\\realtimeclock.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\componentui\\realtimeclock.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\componentui\\realtimeclock.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\service\\localizationservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\service\\localizationservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\service\\localizationservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\interface\\language\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\interface\\language\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\interface\\language\\ilocalizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\resources\\language\\stringresources.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\resources\\language\\stringresources.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\resources\\language\\stringresources.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\resources\\language\\stringresources.vi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\resources\\language\\stringresources.vi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\resources\\language\\stringresources.vi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\common\\uccontrolbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\common\\uccontrolbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\common\\uccontrolbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\help\\uchelp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\help\\uchelp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\help\\uchelp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\componentui\\realtimeclock.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\componentui\\realtimeclock.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\componentui\\realtimeclock.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\appwpf\\app\\usercontrols\\common\\uccontrolbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\usercontrols\\common\\uccontrolbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\usercontrols\\common\\uccontrolbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -238,89 +238,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 294,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PLC.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Helper\\PLC.cs",
-              "RelativeDocumentMoniker": "APP\\Helper\\PLC.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Helper\\PLC.cs",
-              "RelativeToolTip": "APP\\Helper\\PLC.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAowAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T09:02:04.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PLCService.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Service\\PLCService.cs",
-              "RelativeDocumentMoniker": "APP\\Service\\PLCService.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Service\\PLCService.cs",
-              "RelativeToolTip": "APP\\Service\\PLCService.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAEwHYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T09:00:26.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\App.xaml.cs",
-              "RelativeDocumentMoniker": "APP\\App.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\App.xaml.cs",
-              "RelativeToolTip": "APP\\App.xaml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T02:07:48.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserManagementViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
-              "RelativeDocumentMoniker": "APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
-              "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T06:26:27.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UCToolsViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAqwAwBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAQwPgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T03:35:43.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T03:35:43.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UCPLCSettingViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPLCSettingViewModel.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -328,11 +266,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\MainWindowViewModel.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAAAnwH4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -340,11 +278,96 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "UCMasterSettingViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
+              "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
+              "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T06:02:27.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Database\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "APP\\Database\\AppDbContext.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Database\\AppDbContext.cs",
+              "RelativeToolTip": "APP\\Database\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T17:48:00.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorMaster.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Database\\ErrorMaster.cs",
+              "RelativeDocumentMoniker": "APP\\Models\\Database\\ErrorMaster.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Database\\ErrorMaster.cs",
+              "RelativeToolTip": "APP\\Models\\Database\\ErrorMaster.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T07:02:39.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserManagementViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
+              "RelativeDocumentMoniker": "APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
+              "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\UserManagementViewModel.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T06:26:27.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\App.xaml.cs",
+              "RelativeDocumentMoniker": "APP\\App.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\App.xaml.cs",
+              "RelativeToolTip": "APP\\App.xaml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAmwEwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T02:07:48.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PLCService.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Service\\PLCService.cs",
+              "RelativeDocumentMoniker": "APP\\Service\\PLCService.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Service\\PLCService.cs",
+              "RelativeToolTip": "APP\\Service\\PLCService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAEwHYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T09:00:26.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PLC.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Helper\\PLC.cs",
+              "RelativeDocumentMoniker": "APP\\Helper\\PLC.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Helper\\PLC.cs",
+              "RelativeToolTip": "APP\\Helper\\PLC.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T09:02:04.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Views\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "APP\\Views\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Views\\MainWindow.xaml.cs",
               "RelativeToolTip": "APP\\Views\\MainWindow.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAhwBoAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -352,28 +375,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Database\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "APP\\Database\\AppDbContext.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Database\\AppDbContext.cs",
-              "RelativeToolTip": "APP\\Database\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T17:48:00.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UCMasterSetting.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -381,23 +387,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UCMasterSettingViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
-              "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
-              "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMasterSettingViewModel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T06:02:27.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "UCSettingViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\UCSettingViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\UCSettingViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Setting\\UCSettingViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\UCSettingViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\UCSettingViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\UCSettingViewModel.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -405,11 +399,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PLCSetting.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Database\\PLCSetting.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Database\\PLCSetting.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Database\\PLCSetting.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Database\\PLCSetting.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Database\\PLCSetting.cs",
               "RelativeToolTip": "APP\\Models\\Database\\PLCSetting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -417,11 +411,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "LoginWindowViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\FormViewModels\\LoginWindowViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\FormViewModels\\LoginWindowViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\FormViewModels\\LoginWindowViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\FormViewModels\\LoginWindowViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\FormViewModels\\LoginWindowViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\FormViewModels\\LoginWindowViewModel.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowDMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -429,11 +423,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UCMaterialSettingViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMaterialSettingViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMaterialSettingViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMaterialSettingViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMaterialSettingViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMaterialSettingViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCMaterialSettingViewModel.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAgwDUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -441,33 +435,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UCMasterSetting.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCMasterSetting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-05T05:13:45.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "UCSetting.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\UCSetting.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml",
               "RelativeToolTip": "APP\\UserControls\\Setting\\UCSetting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-07T06:33:34.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "PrinterService.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Service\\PrinterService.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Service\\PrinterService.cs",
               "RelativeDocumentMoniker": "APP\\Service\\PrinterService.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Service\\PrinterService.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Service\\PrinterService.cs",
               "RelativeToolTip": "APP\\Service\\PrinterService.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAMwCgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -475,33 +469,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "UCMaterialSetting.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCMaterialSetting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-07T06:03:53.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UCTools.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Tools\\UCTools.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml",
               "RelativeToolTip": "APP\\UserControls\\Tools\\UCTools.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-06T16:35:48.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "HistoryView.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\Models\\HistoryView.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\Models\\HistoryView.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Tools\\Models\\HistoryView.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\Models\\HistoryView.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\Models\\HistoryView.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Tools\\Models\\HistoryView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -509,11 +503,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ModelPrint.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Printer\\ModelPrint.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Printer\\ModelPrint.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Printer\\ModelPrint.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Printer\\ModelPrint.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Printer\\ModelPrint.cs",
               "RelativeToolTip": "APP\\Models\\Printer\\ModelPrint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -521,11 +515,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "History.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Database\\History.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Database\\History.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Database\\History.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Database\\History.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Database\\History.cs",
               "RelativeToolTip": "APP\\Models\\Database\\History.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -533,11 +527,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "FuntionHome.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Home\\FuntionHome.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Home\\FuntionHome.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Home\\FuntionHome.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Home\\FuntionHome.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Home\\FuntionHome.cs",
               "RelativeToolTip": "APP\\Models\\Home\\FuntionHome.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -545,11 +539,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Material.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Database\\Material.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Database\\Material.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Database\\Material.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Database\\Material.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Database\\Material.cs",
               "RelativeToolTip": "APP\\Models\\Database\\Material.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -557,11 +551,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "UCPrinterSettingViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPrinterSettingViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPrinterSettingViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPrinterSettingViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPrinterSettingViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPrinterSettingViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Setting\\Sub\\UCPrinterSettingViewModel.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAswBcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -569,23 +563,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ErrorMaster.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Database\\ErrorMaster.cs",
-              "RelativeDocumentMoniker": "APP\\Models\\Database\\ErrorMaster.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Database\\ErrorMaster.cs",
-              "RelativeToolTip": "APP\\Models\\Database\\ErrorMaster.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T07:02:39.802Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 27,
               "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Views\\LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Views\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "APP\\Views\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Views\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Views\\LoginWindow.xaml.cs",
               "RelativeToolTip": "APP\\Views\\LoginWindow.xaml.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAmwCMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -595,9 +577,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "AuthorizationService.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Service\\AuthorizationService.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Service\\AuthorizationService.cs",
               "RelativeDocumentMoniker": "APP\\Service\\AuthorizationService.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Service\\AuthorizationService.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Service\\AuthorizationService.cs",
               "RelativeToolTip": "APP\\Service\\AuthorizationService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAwA8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -607,9 +589,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Views\\LoginWindow.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Views\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "APP\\Views\\LoginWindow.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\Views\\LoginWindow.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Views\\LoginWindow.xaml",
               "RelativeToolTip": "APP\\Views\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-04T18:04:44.265Z"
@@ -618,9 +600,9 @@
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "APP.csproj",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\APP.csproj",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\APP.csproj",
               "RelativeDocumentMoniker": "APP\\APP.csproj",
-              "ToolTip": "D:\\APPWPF\\APP\\APP.csproj",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\APP.csproj",
               "RelativeToolTip": "APP\\APP.csproj",
               "ViewState": "AgIAACwAAAAAAAAAAAAQwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -630,9 +612,9 @@
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "UCHome.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Home\\UCHome.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml",
               "RelativeToolTip": "APP\\UserControls\\Home\\UCHome.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-07T07:30:24.536Z"
@@ -641,9 +623,9 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "APP",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\APP.csproj",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\APP.csproj",
               "RelativeDocumentMoniker": "APP\\APP.csproj",
-              "ToolTip": "D:\\APPWPF\\APP\\APP.csproj",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\APP.csproj",
               "RelativeToolTip": "APP\\APP.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-05T08:37:39.044Z"
@@ -652,9 +634,9 @@
               "$type": "Document",
               "DocumentIndex": 38,
               "Title": "UCSetting.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml.cs",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\UCSetting.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\UCSetting.xaml.cs",
               "RelativeToolTip": "APP\\UserControls\\Setting\\UCSetting.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwB4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -664,9 +646,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Views\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "APP\\Views\\MainWindow.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Views\\MainWindow.xaml",
               "RelativeToolTip": "APP\\Views\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-07T07:18:49.439Z"
@@ -675,9 +657,9 @@
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "UCPrinterSetting.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-05T05:13:30.012Z"
@@ -686,9 +668,9 @@
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "PrinterSetting.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Database\\PrinterSetting.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Database\\PrinterSetting.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Database\\PrinterSetting.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Database\\PrinterSetting.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Database\\PrinterSetting.cs",
               "RelativeToolTip": "APP\\Models\\Database\\PrinterSetting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -698,9 +680,9 @@
               "$type": "Document",
               "DocumentIndex": 36,
               "Title": "UCPLCSetting.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPLCSetting.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPLCSetting.xaml.cs",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\Sub\\UCPLCSetting.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPLCSetting.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPLCSetting.xaml.cs",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCPLCSetting.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -710,9 +692,9 @@
               "$type": "Document",
               "DocumentIndex": 37,
               "Title": "UCPrinterSetting.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml.cs",
               "RelativeDocumentMoniker": "APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml.cs",
               "RelativeToolTip": "APP\\UserControls\\Setting\\Sub\\UCPrinterSetting.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -722,9 +704,9 @@
               "$type": "Document",
               "DocumentIndex": 39,
               "Title": "UCHome.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml.cs",
               "RelativeDocumentMoniker": "APP\\UserControls\\Home\\UCHome.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Home\\UCHome.xaml.cs",
               "RelativeToolTip": "APP\\UserControls\\Home\\UCHome.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwB4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -734,9 +716,9 @@
               "$type": "Document",
               "DocumentIndex": 40,
               "Title": "RememberUser.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Database\\RememberUser.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Database\\RememberUser.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Database\\RememberUser.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Database\\RememberUser.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Database\\RememberUser.cs",
               "RelativeToolTip": "APP\\Models\\Database\\RememberUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -746,9 +728,9 @@
               "$type": "Document",
               "DocumentIndex": 41,
               "Title": "User.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Models\\Database\\User.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Models\\Database\\User.cs",
               "RelativeDocumentMoniker": "APP\\Models\\Database\\User.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Models\\Database\\User.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Models\\Database\\User.cs",
               "RelativeToolTip": "APP\\Models\\Database\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -758,9 +740,9 @@
               "$type": "Document",
               "DocumentIndex": 42,
               "Title": "UCHomeViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAQwBMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -770,9 +752,9 @@
               "$type": "Document",
               "DocumentIndex": 43,
               "Title": "UserSession .cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Service\\UserSession .cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Service\\UserSession .cs",
               "RelativeDocumentMoniker": "APP\\Service\\UserSession .cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Service\\UserSession .cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Service\\UserSession .cs",
               "RelativeToolTip": "APP\\Service\\UserSession .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -782,9 +764,9 @@
               "$type": "Document",
               "DocumentIndex": 51,
               "Title": "StringResources.en.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Resources\\Language\\StringResources.en.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Resources\\Language\\StringResources.en.xaml",
               "RelativeDocumentMoniker": "APP\\Resources\\Language\\StringResources.en.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\Resources\\Language\\StringResources.en.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Resources\\Language\\StringResources.en.xaml",
               "RelativeToolTip": "APP\\Resources\\Language\\StringResources.en.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-30T02:04:20.901Z"
@@ -793,9 +775,9 @@
               "$type": "Document",
               "DocumentIndex": 44,
               "Title": "RoleVisibilityConverter .cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Converter\\RoleVisibilityConverter .cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Converter\\RoleVisibilityConverter .cs",
               "RelativeDocumentMoniker": "APP\\Converter\\RoleVisibilityConverter .cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Converter\\RoleVisibilityConverter .cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Converter\\RoleVisibilityConverter .cs",
               "RelativeToolTip": "APP\\Converter\\RoleVisibilityConverter .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -805,9 +787,9 @@
               "$type": "Document",
               "DocumentIndex": 45,
               "Title": "PasswordBoxHelper.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Helper\\PasswordBoxHelper.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Helper\\PasswordBoxHelper.cs",
               "RelativeDocumentMoniker": "APP\\Helper\\PasswordBoxHelper.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Helper\\PasswordBoxHelper.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Helper\\PasswordBoxHelper.cs",
               "RelativeToolTip": "APP\\Helper\\PasswordBoxHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -817,9 +799,9 @@
               "$type": "Document",
               "DocumentIndex": 52,
               "Title": "StringResources.vi.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Resources\\Language\\StringResources.vi.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Resources\\Language\\StringResources.vi.xaml",
               "RelativeDocumentMoniker": "APP\\Resources\\Language\\StringResources.vi.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\Resources\\Language\\StringResources.vi.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Resources\\Language\\StringResources.vi.xaml",
               "RelativeToolTip": "APP\\Resources\\Language\\StringResources.vi.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-30T02:05:05.791Z"
@@ -828,9 +810,9 @@
               "$type": "Document",
               "DocumentIndex": 46,
               "Title": "UCTools.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml.cs",
               "RelativeDocumentMoniker": "APP\\UserControls\\Tools\\UCTools.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Tools\\UCTools.xaml.cs",
               "RelativeToolTip": "APP\\UserControls\\Tools\\UCTools.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAACBjwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -840,9 +822,9 @@
               "$type": "Document",
               "DocumentIndex": 48,
               "Title": "LocalizationService .cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Service\\LocalizationService .cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Service\\LocalizationService .cs",
               "RelativeDocumentMoniker": "APP\\Service\\LocalizationService .cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Service\\LocalizationService .cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Service\\LocalizationService .cs",
               "RelativeToolTip": "APP\\Service\\LocalizationService .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -852,9 +834,9 @@
               "$type": "Document",
               "DocumentIndex": 49,
               "Title": "ILocalizationService.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\Interface\\language\\ILocalizationService.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\Interface\\language\\ILocalizationService.cs",
               "RelativeDocumentMoniker": "APP\\Interface\\language\\ILocalizationService.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\Interface\\language\\ILocalizationService.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\Interface\\language\\ILocalizationService.cs",
               "RelativeToolTip": "APP\\Interface\\language\\ILocalizationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -864,9 +846,9 @@
               "$type": "Document",
               "DocumentIndex": 47,
               "Title": "RealtimeClock.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml",
               "RelativeDocumentMoniker": "APP\\ComponentUI\\RealtimeClock.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml",
               "RelativeToolTip": "APP\\ComponentUI\\RealtimeClock.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-07T07:20:27.817Z"
@@ -875,9 +857,9 @@
               "$type": "Document",
               "DocumentIndex": 50,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\App.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\App.xaml",
               "RelativeDocumentMoniker": "APP\\App.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\App.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\App.xaml",
               "RelativeToolTip": "APP\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-30T02:08:13.128Z"
@@ -886,9 +868,9 @@
               "$type": "Document",
               "DocumentIndex": 53,
               "Title": "UCControlBarViewModel.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Common\\UCControlBarViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -898,9 +880,9 @@
               "$type": "Document",
               "DocumentIndex": 54,
               "Title": "UCHelp.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Help\\UCHelp.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Help\\UCHelp.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Help\\UCHelp.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Help\\UCHelp.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Help\\UCHelp.xaml",
               "RelativeToolTip": "APP\\UserControls\\Help\\UCHelp.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-07T09:24:21.657Z"
@@ -909,9 +891,9 @@
               "$type": "Document",
               "DocumentIndex": 56,
               "Title": "UCControlBar.xaml",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\UserControls\\Common\\UCControlBar.xaml",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\UserControls\\Common\\UCControlBar.xaml",
               "RelativeDocumentMoniker": "APP\\UserControls\\Common\\UCControlBar.xaml",
-              "ToolTip": "D:\\APPWPF\\APP\\UserControls\\Common\\UCControlBar.xaml",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Common\\UCControlBar.xaml",
               "RelativeToolTip": "APP\\UserControls\\Common\\UCControlBar.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-07T07:24:49.921Z"
@@ -920,23 +902,13 @@
               "$type": "Document",
               "DocumentIndex": 55,
               "Title": "RealtimeClock.xaml.cs",
-              "DocumentMoniker": "D:\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml.cs",
               "RelativeDocumentMoniker": "APP\\ComponentUI\\RealtimeClock.xaml.cs",
-              "ToolTip": "D:\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml.cs",
+              "ToolTip": "D:\\Project\\APPWPF\\APP\\ComponentUI\\RealtimeClock.xaml.cs",
               "RelativeToolTip": "APP\\ComponentUI\\RealtimeClock.xaml.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAEwPMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T07:20:52.739Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 11,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }
