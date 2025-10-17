@@ -9,12 +9,14 @@ namespace APP.Models.Database;
 
 public partial class Material : ObservableObject
 {
-    public int ID { get; set; }
+    public int? ID { get; set; }
     [ObservableProperty]
-    public string modelName;
+    public string? modelName;
     [ObservableProperty]
-    public string materialName;
+    public string? mold;
     [ObservableProperty]
-    public string materialCode;
-    public string TimeUpdate { get; set; }
+    public string? materialName;
+    [ObservableProperty]
+    public string? materialCode;
+    public string? TimeUpdate { get; set; }
 }

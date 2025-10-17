@@ -23,27 +23,114 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" Grid.Column="0" BorderThickness="0,0,1,1" BorderBrush="Gray">
-                <lvc:CartesianChart Series="{Binding CartesianSeries}"
-                                        XAxes="{Binding XAxes}"
-                                        YAxes="{Binding YAxes}"
-                                       
-                                        />
+            <Border Grid.Row="0" Grid.Column="0"  BorderThickness="0,0,1,1" BorderBrush="Gray">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label HorizontalAlignment="Center" FontSize="20" FontWeight="Bold">BẢNG THỐNG KÊ SỐ LƯỢNG HUỶ TRONG NGÀY</Label>
+                    <DataGrid Grid.Row="1" Margin="10"
+AutoGenerateColumns="False" 
+ItemsSource="{Binding HistoryData}" 
+CanUserAddRows="False"
+
+GridLinesVisibility="None"
+ IsReadOnly="True"
+RowBackground="White"
+AlternatingRowBackground="#F5F5F5"
+HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="BorderBrush" Value="Gray"/>
+                                <Setter Property="BorderThickness" Value="0.5"/>
+                                <Setter Property="Padding" Value="4"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                <Setter Property="FontSize" Value="18"></Setter>
+
+                            </Style>
+                        </DataGrid.CellStyle>
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background" Value="SteelBlue"/>
+                                <!-- màu bạn muốn -->
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="Height" Value="40"/>
+                                <Setter Property="FontSize" Value="20"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="STT" Binding="{Binding STT}" Width="50">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                        <Setter Property="TextAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Model" Binding="{Binding Model}" Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                        <Setter Property="TextAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Linh kiện" Binding="{Binding Material}" Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                        <Setter Property="TextAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Số lượng huỷ" Binding="{Binding Quantity}" Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                        <Setter Property="TextAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                </Grid>
+
             </Border>
             <Border Grid.Row="0" Grid.Column="1" BorderThickness="0,0,0,1" BorderBrush="Gray">
-                <lvc:CartesianChart Series="{Binding LineSeries}"
-                                    XAxes="{Binding LineXAxes}"
-                                    YAxes="{Binding LineYAxes}"
-                                   
-                                   />
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,0" FontWeight="Bold">SỐ LƯỢNG NGUYÊN VẬT LIỆU HUỶ TRONG THÁNG</Label>
+                    <lvc:CartesianChart Grid.Row="1" Series="{Binding ErrorbyMaterialSeries}"
+                    XAxes="{Binding XAxes, UpdateSourceTrigger=PropertyChanged}"
+                    YAxes="{Binding YAxes, UpdateSourceTrigger=PropertyChanged}"  />
+                </Grid>
+                
             </Border>
-            <Border Grid.Row="1" Grid.Column="0" BorderThickness="0,0,1,0" BorderBrush="Gray">
-                <lvc:PieChart Series="{Binding PieSeries}"  />
-            </Border>
-            <Border Grid.Row="1" Grid.Column="1" BorderThickness="0" BorderBrush="Gray">
-                <lvc:PolarChart Series="{Binding RadarSeries}"
-                    AngleAxes="{Binding RadarAxes}"
-                    />
+           
+            <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="0" BorderBrush="Gray">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,0" FontWeight="Bold">SỐ LƯỢNG NGUYÊN VẬT LIỆU HUỶ THEO NGÀY</Label>
+                    <lvc:CartesianChart Grid.Row="1" Series="{Binding ErrorbyDateSeries}"
+     XAxes="{Binding XAxesByDate, UpdateSourceTrigger=PropertyChanged}"
+     YAxes="{Binding YAxesByDate, UpdateSourceTrigger=PropertyChanged}"  />
+                </Grid>
             </Border>
         </Grid>
 

@@ -2,11 +2,14 @@
 using APP.Models.Database;
 using APP.Models.Printer;
 using APP.Service;
+using APP.ViewModels.FormViewModels;
+using APP.ViewModels.UserControlViewModels.Home;
 using APP.ViewModels.UserControlViewModels.Setting.Sub;
 using APP.ViewModels.UserControlViewModels.Tools.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using QRCoder;
 using System;
 using System.Collections.Generic;
@@ -133,20 +136,31 @@ public partial class UCToolsViewModel : ObservableObject
     partial void OnNameErrorChanged(ErrorMaster value)
     {
         Reasons.Clear();
-        var data = NameErrors.Where(p => p.NameError == value.NameError);
-        foreach (var item in data)
+        if (value != null)
         {
-            Reasons.Add(item);
+            var data = NameErrors.Where(p => p.NameError == value.NameError);
+            foreach (var item in data)
+            {
+                Reasons.Add(item);
+            }
         }
+
+       
     }
     partial void OnReasonChanged(ErrorMaster value)
     {
-        Actions.Clear();
-        var data = Reasons.Where(p => p.Reason == value.Reason);
-        foreach (var item in data)
+
+        if (value != null)
         {
-            Actions.Add(item);
+            Actions.Clear();
+            var data = Reasons.Where(p => p.Reason == value.Reason);
+            foreach (var item in data)
+            {
+                Actions.Add(item);
+            }
         }
+
+       
     }
 
     partial void OnModelChanged(string value)
@@ -204,29 +218,26 @@ public partial class UCToolsViewModel : ObservableObject
     {
         try
         {
-            ModelPrint dataprint = new ModelPrint()
-            {
-                Day = DateTime.Now.Day.ToString(),
-                Month = DateTime.Now.Month.ToString(),
-                Year = DateTime.Now.Year.ToString(),
-                Shift = Shift,
-                Mold = Mold,
-                Hour = DateTime.Now.ToString("HH:mm:ss"),
-                Model = Model,
-                Quantity = Quantity.ToString(),
-                MaterialCode = CodeMaterial.MaterialCode,
-                MaterialName = NameMaterial,
-                Person = Person,
-                NameError = NameError.NameError,
-                Reason = Reason.Reason,
-                MaterialColor = ColorMaterial
-            };
-            _printerService.Print(dataprint);
+            //ModelPrint dataprint = new ModelPrint()
+            //{
+            //    Day = DateTime.Now.Day.ToString(),
+            //    Month = DateTime.Now.Month.ToString(),
+            //    Year = DateTime.Now.Year.ToString(),
+            //    Shift = Shift,
+            //    Mold = Mold,
+            //    Hour = DateTime.Now.ToString("HH:mm:ss"),
+            //    Model = Model,
+            //    Quantity = Quantity.ToString(),
+            //    MaterialCode = CodeMaterial.MaterialCode,
+            //    MaterialName = NameMaterial,
+            //    Person = Person,
+            //    NameError = NameError.NameError,
+            //    Reason = Reason.Reason,
+            //    MaterialColor = ColorMaterial
+            //};
+            //_printerService.Print(dataprint);
 
-
-
-
-
+            MessageBoxResult rs = MessageBox.Show("Đã in phiếu thành công chưa?", "Xác nhận in phiếu", MessageBoxButton.YesNo,MessageBoxImage.Question);
             History history = new History()
             {
                 Shift = Shift,
@@ -244,11 +255,25 @@ public partial class UCToolsViewModel : ObservableObject
                 Action = "",
                 TimeInsert = DateTime.Now,
             };
-            SaveHistoryToCsv(history, $"C:\\Logger\\{DateTime.Now.ToString("DataDD_MM_YYYY")}.csv");
+            if (rs == MessageBoxResult.Yes)
+            {
+                SaveHistoryToCsv(history, $"C:\\Logger\\{DateTime.Now.ToString("DataDD_MM_YYYY")}.csv");
+                _db.History.Add(history);
+                _db.SaveChanges();
+                Person = "";
+                ColorMaterial = "";
+                Reason = null;
+                NameError = null;
+                CodeMaterial = null;
+                UpdateHistory();
+            }
+            else
+            {
+                SaveHistoryToCsv(history, $"C:\\Logger\\Fail\\{DateTime.Now.ToString("DataDD_MM_YYYY")}.csv");
+            }
 
-            _db.History.Add(history);
-            _db.SaveChanges();
-            UpdateHistory();
+
+           
 
         }
         catch (Exception ex)
@@ -287,6 +312,10 @@ public partial class UCToolsViewModel : ObservableObject
             });
             index ++;
         }
+
+        var home = App.ServiceProvider.GetRequiredService<UCHomeViewModel>();
+        home.UpdateHistory();
+        home.UpdateChart();
     }
 
     private  static void SaveHistoryToCsv(History history, string filePath)

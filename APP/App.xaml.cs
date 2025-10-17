@@ -81,9 +81,7 @@ namespace APP
                 var au = ServiceProvider.GetRequiredService<AuthorizationService>();
                 await au.LoginAsync(userremember.UserID, userremember.PassWord, true);
             }
-
             //Start Monitor
-
             var PLC = App.ServiceProvider.GetRequiredService<PLCService>();
             PLC.Start();
 

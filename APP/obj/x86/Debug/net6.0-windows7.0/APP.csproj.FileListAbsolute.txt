@@ -408,3 +408,10 @@ D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.pdb
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.genruntimeconfig.cache
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\ref\APP.dll
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\Database\VFDB.db
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Microsoft.Office.Interop.Excel.dll
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\System.Configuration.ConfigurationManager.dll
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\System.Data.OleDb.dll
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\System.Diagnostics.PerformanceCounter.dll
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\System.Security.Permissions.dll
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
