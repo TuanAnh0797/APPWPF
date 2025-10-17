@@ -1,15 +1,18 @@
 ﻿using APP.Database;
 using APP.Helper;
+using APP.Models.Database;
 using APP.ViewModels.UserControlViewModels.Setting.Sub;
 using NLog.Config;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Data;
 
 namespace APP.Service;
@@ -122,8 +125,15 @@ public class PLCService
             {
                 Console.WriteLine($"PLC error: {ex.Message}");
             }
-
             await Task.Delay(5000, token);
+        }
+    }
+    private static void SaveHistoryToCsv(string history, string filePath)
+    {
+        bool fileExists = File.Exists(filePath);
+        using (var writer = new StreamWriter(filePath, true, Encoding.UTF8))
+        {
+            writer.WriteLine(history);
         }
     }
 

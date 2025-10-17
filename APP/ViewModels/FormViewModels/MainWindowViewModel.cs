@@ -181,6 +181,10 @@ namespace APP.ViewModels.FormViewModels
         {
             _authorizationService.Logout();
             CurrentUser = "Guest";
+            CurrentView = App.ServiceProvider.GetRequiredService<UCHome>();
+            Selectedpage = _localizationService.GetString("Home");
+            PageIcon = "Home";
+
         }
         [RelayCommand(CanExecute = nameof(CanSetting))]
         private void UserManagementMethod()

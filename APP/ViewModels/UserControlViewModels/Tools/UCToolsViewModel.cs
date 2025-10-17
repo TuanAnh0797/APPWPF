@@ -96,14 +96,21 @@ public partial class UCToolsViewModel : ObservableObject
     {
         if (IsAuto)
         {
-            Mold = obj;
+            App.Current.Dispatcher.Invoke(() =>
+            {
+                Mold = obj;
+            });
+           
         }
     }
     private void _pLCService_ModelChanged(string obj)
     {
         if (IsAuto)
         {
-            Model = obj;
+            App.Current.Dispatcher.Invoke(() =>
+            {
+                Model = obj;
+            });
         }
     }
     private void _uCMaterialSettingViewModel_SettingChanged()
