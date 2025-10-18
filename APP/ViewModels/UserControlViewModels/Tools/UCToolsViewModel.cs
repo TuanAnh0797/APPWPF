@@ -33,7 +33,11 @@ public partial class UCToolsViewModel : ObservableObject
     [ObservableProperty]
     string shift;
     [ObservableProperty]
+    ObservableCollection<string> molds = new ObservableCollection<string>();
+    [ObservableProperty]
     string mold;
+    [ObservableProperty]
+    ObservableCollection<string> models = new ObservableCollection<string>();
     [ObservableProperty]
     string model;
     [ObservableProperty]
@@ -46,6 +50,8 @@ public partial class UCToolsViewModel : ObservableObject
     ErrorMaster nameError;
     [ObservableProperty]
     string position;
+    [ObservableProperty]
+    ObservableCollection<string> persons = new ObservableCollection<string>();
     [ObservableProperty]
     string person;
     [ObservableProperty]
@@ -90,6 +96,46 @@ public partial class UCToolsViewModel : ObservableObject
         ReloadErrorMaster();
         UpdateHistory();
         //ReloadMaterialMaster();
+        LoadMolds();
+        LoadPersons();
+    }
+
+
+    public void LoadPersons()
+    {
+        Persons.Clear();
+        var data = _db.Person.Select(p => p.Name).ToList();
+        foreach (var item in data)
+        {
+            Persons.Add(item);
+        }
+    }
+
+    public void LoadMolds()
+    {
+        Molds.Clear();
+        var data = _db.Material.GroupBy(p => p.Mold).Select(g => g.Key).ToList();
+        foreach (var item in data)
+        {
+            Molds.Add(item);
+        }
+    }
+    partial void OnMoldChanged(string value)
+    {
+        Models.Clear();
+        var data = _db.Material.Where(w=>w.Mold == value).GroupBy(p => p.ModelName).Select(g => g.Key).ToList();
+        foreach (var item in data)
+        {
+            Models.Add(item);
+        }
+        if (Models.Count == 1)
+        {
+            Model = Models[0];
+        }
+        else
+        {
+            Model = "";
+        }
     }
 
     private void _pLCService_MoldChanged(string obj)
@@ -130,6 +176,7 @@ public partial class UCToolsViewModel : ObservableObject
             CodeMaterials.Add(item);
         }
     }
+
     private void ReloadErrorMaster()
     {
         NameErrors.Clear();
@@ -225,24 +272,24 @@ public partial class UCToolsViewModel : ObservableObject
     {
         try
         {
-            //ModelPrint dataprint = new ModelPrint()
-            //{
-            //    Day = DateTime.Now.Day.ToString(),
-            //    Month = DateTime.Now.Month.ToString(),
-            //    Year = DateTime.Now.Year.ToString(),
-            //    Shift = Shift,
-            //    Mold = Mold,
-            //    Hour = DateTime.Now.ToString("HH:mm:ss"),
-            //    Model = Model,
-            //    Quantity = Quantity.ToString(),
-            //    MaterialCode = CodeMaterial.MaterialCode,
-            //    MaterialName = NameMaterial,
-            //    Person = Person,
-            //    NameError = NameError.NameError,
-            //    Reason = Reason.Reason,
-            //    MaterialColor = ColorMaterial
-            //};
-            //_printerService.Print(dataprint);
+            ModelPrint dataprint = new ModelPrint()
+            {
+                Day = DateTime.Now.Day.ToString(),
+                Month = DateTime.Now.Month.ToString(),
+                Year = DateTime.Now.Year.ToString(),
+                Shift = Shift,
+                Mold = Mold,
+                Hour = DateTime.Now.ToString("HH:mm:ss"),
+                Model = Model,
+                Quantity = Quantity.ToString(),
+                MaterialCode = CodeMaterial.MaterialCode,
+                MaterialName = NameMaterial,
+                Person = Person,
+                NameError = NameError.NameError,
+                Reason = Reason.Reason,
+                MaterialColor = ColorMaterial
+            };
+            _printerService.Print(dataprint);
 
             MessageBoxResult rs = MessageBox.Show("Đã in phiếu thành công chưa?", "Xác nhận in phiếu", MessageBoxButton.YesNo,MessageBoxImage.Question);
             History history = new History()

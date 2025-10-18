@@ -415,3 +415,5 @@ D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\System.Diagnostics.Perform
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\System.Security.Permissions.dll
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCPersonSetting.g.cs
+D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCPersonSetting.baml

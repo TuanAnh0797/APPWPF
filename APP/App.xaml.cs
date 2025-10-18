@@ -53,6 +53,7 @@ namespace APP
             services.AddSingleton<UCSettingViewModel>();
             services.AddSingleton<UCPLCSettingViewModel>();
             services.AddSingleton<UCPrinterSettingViewModel>();
+            services.AddSingleton<UCPersonSettingViewModel>();
             services.AddSingleton<UCHome>();
             services.AddSingleton<UCSetting>();
             services.AddSingleton<UCMasterSetting>();
@@ -60,6 +61,7 @@ namespace APP
             services.AddSingleton<UCMaterialSetting>();
             services.AddSingleton<UCPLCSetting>();
             services.AddSingleton<UCPrinterSetting>();
+            services.AddSingleton<UCPersonSetting>();
             services.AddSingleton<PLCService>();
             services.AddSingleton<UCToolsViewModel>();
             services.AddSingleton<UCTools>();

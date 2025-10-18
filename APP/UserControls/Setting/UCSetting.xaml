@@ -52,6 +52,12 @@ BlurRadius="10" Opacity="0.5"/>
                         <Label>Material Setting</Label>
                     </StackPanel>
                 </Button>
+                <Button Command="{Binding ShowPersonSettingCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="pack://application:,,,/Resources/Image/worker.png" Width="20" Height="20"/>
+                        <Label>Person Setting</Label>
+                    </StackPanel>
+                </Button>
             </StackPanel>
             <ContentControl Grid.Row="1" Content="{Binding CurrentView}" />
         </Grid>

@@ -18,6 +18,8 @@ public class AppDbContext : DbContext
     public DbSet<History> History => Set<History>();
     public DbSet<Material> Material => Set<Material>();
 
+    public DbSet<Person> Person => Set<Person>();
+
 
 
     public AppDbContext(DbContextOptions<AppDbContext> options)
@@ -34,5 +36,6 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<PrinterSetting>().HasKey(e => e.ModelName);
         modelBuilder.Entity<Material>().HasKey(e => new { e.ModelName, e.MaterialCode });
         modelBuilder.Entity<History>().HasKey(e => e.Id);
+        modelBuilder.Entity<Person>().HasKey(e => e.ID);
     }
 }

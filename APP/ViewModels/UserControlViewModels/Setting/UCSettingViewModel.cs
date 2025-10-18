@@ -41,5 +41,10 @@ public partial class UCSettingViewModel : ObservableObject
     {
         CurrentView = App.ServiceProvider.GetRequiredService<UCMaterialSetting>();
     }
-  
+    [RelayCommand]
+    private void ShowPersonSetting()
+    {
+        CurrentView = App.ServiceProvider.GetRequiredService<UCPersonSetting>();
+    }
+
 }

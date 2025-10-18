@@ -5,21 +5,47 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:APP.UserControls.Setting.Sub"
              mc:Ignorable="d" 
+              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-
-
-        <Grid Grid.Row="0" Margin="0,0,20,10" HorizontalAlignment="Right">
-            <Button Background="Green" Height="40" Command="{Binding ShowAddCommand}">
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Foreground="White" Width="20" Height="20" VerticalAlignment="Center" Kind="Add"></materialDesign:PackIcon>
-                    <Label Foreground="White">Add</Label>
-                </StackPanel>
-            </Button>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <TextBox x:Name="SearchBox" Style="{StaticResource MaterialDesignOutlinedTextBox}" Padding="5" FontSize="15" materialDesign:HintAssist.Hint="Search">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="KeyUp">
+                            <i:InvokeCommandAction Command="{Binding SearchCommand}" CommandParameter="{Binding Text, ElementName=SearchBox}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="0,0,20,10" HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button Background="Blue" Height="40" Command="{Binding ShowAddCommand}" Margin="0,0,10,0">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Foreground="White" Width="20" Height="20" VerticalAlignment="Center" Kind="Add"></materialDesign:PackIcon>
+                        <Label Foreground="White">Add</Label>
+                    </StackPanel>
+                </Button>
+                <Button Background="Green" Height="40" Command="{Binding ImportExcelFileCommand}" Margin="0,0,10,0">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Foreground="White" Width="20" Height="20" VerticalAlignment="Center" Kind="FileExcel"></materialDesign:PackIcon>
+                        <Label Foreground="White">Import Excel</Label>
+                    </StackPanel>
+                </Button>
+                <Button Background="Gray" Height="40" Command="{Binding ImportCsvFileCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Foreground="White" Width="20" Height="20" VerticalAlignment="Center" Kind="FileCsv"></materialDesign:PackIcon>
+                        <Label Foreground="White">Import CSV</Label>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
             <DataGrid x:Name="MyDataGrid"
@@ -52,7 +78,7 @@
                     </Style>
                 </DataGrid.ColumnHeaderStyle>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="50">
+                    <DataGridTextColumn Header="ID" Binding="{Binding STT}" Width="50">
                         <DataGridTextColumn.ElementStyle>
                             <Style TargetType="TextBlock">
                                 <Setter Property="HorizontalAlignment" Value="Center"/>

@@ -1,9 +1,11 @@
 ﻿using APP.Database;
 using APP.Models.Database;
+using APP.ViewModels.UserControlViewModels.Tools;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Win32;
 using SkiaSharp;
 using System;
@@ -44,31 +46,17 @@ public partial class UCMaterialSettingViewModel : ObservableObject
     }
     private void Reload()
     {
+        int index = 1;
         Materials.Clear();
         var data = _db.Material.ToList().OrderBy(p=> p.ID);
         foreach (var item in data)
         {
+            item.STT = index;
             Materials.Add(item);
+            index++;
         }
     }
-    [RelayCommand]
-    private void Search(string data)
-    {
-        Reload();
-        if (string.IsNullOrEmpty(data))
-        {
-            return;
-        }
-      
-        var filtered = Materials.Where(p => p.ModelName!.Contains(data)
-                                   || p.Mold!.Contains(data)
-                                   || p.MaterialName!.Contains(data)
-                                   || p.MaterialCode!.Contains(data))
-                          .ToList();
-
-        Materials.Clear();
-        foreach (var item in filtered) Materials.Add(item);
-    }
+    
 
 
     [RelayCommand]
@@ -83,6 +71,8 @@ public partial class UCMaterialSettingViewModel : ObservableObject
         _db.SaveChanges();
         Reload();
         SettingChanged?.Invoke();
+        var tool = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+        tool.LoadMolds();
     }
     [RelayCommand]
     private async Task DeleteAsync(Material material)
@@ -92,6 +82,8 @@ public partial class UCMaterialSettingViewModel : ObservableObject
         _db.SaveChanges();
         Reload();
         SettingChanged?.Invoke();
+        var tool = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+        tool.LoadMolds();
     }
     [RelayCommand]
     private void ShowAdd()
@@ -120,6 +112,8 @@ public partial class UCMaterialSettingViewModel : ObservableObject
             await _db.SaveChangesAsync();
             Reload();
             SettingChanged?.Invoke();
+            var tool = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+            tool.LoadMolds();
         }
         catch (Exception ex)
         {
@@ -181,6 +175,8 @@ public partial class UCMaterialSettingViewModel : ObservableObject
                         await _db.SaveChangesAsync();
                         Reload();
                         SettingChanged?.Invoke();
+                        var tool = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+                        tool.LoadMolds();
 
                     }
                 }
@@ -238,6 +234,8 @@ public partial class UCMaterialSettingViewModel : ObservableObject
                 await _db.SaveChangesAsync();
                 Reload();
                 SettingChanged?.Invoke();
+                var tool = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+                tool.LoadMolds();
 
             }
         }
@@ -248,5 +246,23 @@ public partial class UCMaterialSettingViewModel : ObservableObject
 
         }
 
+    }
+    [RelayCommand]
+    private void Search(string data)
+    {
+        Reload();
+        if (string.IsNullOrEmpty(data))
+        {
+            return;
+        }
+
+        var filtered = Materials.Where(p => p.ModelName!.Contains(data)
+                                   || p.Mold!.Contains(data)
+                                   || p.MaterialName!.Contains(data)
+                                   || p.MaterialCode!.Contains(data))
+                          .ToList();
+
+        Materials.Clear();
+        foreach (var item in filtered) Materials.Add(item);
     }
 }

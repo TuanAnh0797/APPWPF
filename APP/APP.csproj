@@ -26,6 +26,7 @@
     <None Remove="Resources\Image\material.png" />
     <None Remove="Resources\Image\plc.png" />
     <None Remove="Resources\Image\printer.png" />
+    <None Remove="Resources\Image\worker.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -84,6 +85,9 @@
     </Resource>
     <Resource Include="Resources\Image\printer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\worker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
