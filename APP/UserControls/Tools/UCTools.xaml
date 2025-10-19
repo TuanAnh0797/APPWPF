@@ -76,14 +76,16 @@ Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
 
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Ca:</Label>
                                     <ComboBox Grid.Column="1" ItemsSource="{Binding Shifts}" SelectedItem="{Binding Shift, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></ComboBox>
-                                    <Label Grid.Column="2" VerticalAlignment="Center">Số khuôn:</Label>
-                                    <!--<ComboBox Grid.Column="3" IsEditable="True" StaysOpenOnEdit="True" Text="{Binding Mold, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></ComboBox>-->
-                                    <ComboBox Grid.Column="3" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Molds, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Text="{Binding Mold, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></ComboBox>
+
+                                    <Label Grid.Column="2" VerticalAlignment="Center">Máy:</Label>
+                                    <ComboBox Grid.Column="3" ItemsSource="{Binding Machines}" SelectedItem="{Binding Machine, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></ComboBox>
+                                    <CheckBox Grid.Column="4" IsChecked="{Binding IsAuto, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" Margin="5,0,5,0" >Auto</CheckBox>
 
 
                                 </Grid>
@@ -93,16 +95,23 @@ Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="auto"></ColumnDefinition>
-                                        <ColumnDefinition Width="auto"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Column="0" VerticalAlignment="Center">Model:</Label>
-                                    <!--<TextBox Grid.Column="1" Text="{Binding Model, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>-->
-                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Models, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Text="{Binding Model, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></ComboBox>
 
-                                    <CheckBox IsChecked="{Binding IsAuto, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Medium" VerticalAlignment="Center" Margin="5,0,5,0" Grid.Column="2">Auto</CheckBox>
-                                    <Label Grid.Column="3" VerticalAlignment="Center">Số lượng:</Label>
-                                    <materialDesign:NumericUpDown HorizontalContentAlignment="Center" Grid.Column="4" FontSize="18" Minimum="1" Value="{Binding Quantity, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></materialDesign:NumericUpDown>
+
+                                    <Label Grid.Column="0" VerticalAlignment="Center">Số khuôn:</Label>
+                                    <!--<ComboBox Grid.Column="3" IsEditable="True" StaysOpenOnEdit="True" Text="{Binding Mold, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></ComboBox>-->
+                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Molds, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Text="{Binding Mold, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></ComboBox>
+
+                                    <Label Grid.Column="2" VerticalAlignment="Center">Model:</Label>
+                                    <!--<TextBox Grid.Column="1" Text="{Binding Model, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>-->
+                                    <ComboBox Grid.Column="3" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding Models, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Text="{Binding Model, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></ComboBox>
+
+
+                                    <Label Grid.Column="4" VerticalAlignment="Center">Số lượng:</Label>
+                                    <materialDesign:NumericUpDown HorizontalContentAlignment="Center" Grid.Column="5" FontSize="18" Minimum="1" Value="{Binding Quantity, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></materialDesign:NumericUpDown>
                                 </Grid>
 
                                 <Grid Margin="5">

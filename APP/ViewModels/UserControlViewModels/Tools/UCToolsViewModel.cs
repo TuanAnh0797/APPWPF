@@ -99,8 +99,6 @@ public partial class UCToolsViewModel : ObservableObject
         LoadMolds();
         LoadPersons();
     }
-
-
     public void LoadPersons()
     {
         Persons.Clear();
