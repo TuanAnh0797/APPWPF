@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Project\\APPWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\report\\ucreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\report\\ucreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\tools\\uctoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\report\\ucreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|solutionrelative:app\\viewmodels\\usercontrolviewmodels\\report\\ucreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20DDA0A6-3363-494F-B27A-8FB0F931B304}|APP\\APP.csproj|d:\\project\\appwpf\\app\\viewmodels\\usercontrolviewmodels\\home\\uchomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -269,7 +269,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 294,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -280,18 +280,17 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\UserControls\\Report\\UCReport.xaml",
               "RelativeToolTip": "APP\\UserControls\\Report\\UCReport.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-19T07:49:46.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T07:49:46.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UCReportViewModel.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Report\\UCReportViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Report\\UCReportViewModel.cs",
               "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Report\\UCReportViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Report\\UCReportViewModel.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAYwKwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAzwKwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T04:25:38.289Z",
               "EditorCaption": ""
@@ -330,18 +329,17 @@
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Home\\UCHomeViewModel.cs",
               "ViewState": "AgIAAOIAAAAAAAAAAAAIwPYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:47:45.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T09:47:45.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UCToolsViewModel.cs",
               "DocumentMoniker": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "RelativeDocumentMoniker": "APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "ToolTip": "D:\\Project\\APPWPF\\APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
               "RelativeToolTip": "APP\\ViewModels\\UserControlViewModels\\Tools\\UCToolsViewModel.cs",
-              "ViewState": "AgIAAHMBAAAAAAAAAAAAAGABAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAAAGABAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T03:35:43.424Z",
               "EditorCaption": ""
@@ -482,8 +480,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\App.xaml",
               "RelativeToolTip": "APP\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-30T02:08:13.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T02:08:13.128Z"
             },
             {
               "$type": "Document",
@@ -941,8 +938,7 @@
               "ToolTip": "D:\\Project\\APPWPF\\APP\\Resources\\Language\\StringResources.en.xaml",
               "RelativeToolTip": "APP\\Resources\\Language\\StringResources.en.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-30T02:04:20.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T02:04:20.901Z"
             },
             {
               "$type": "Document",
