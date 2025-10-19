@@ -116,14 +116,15 @@ public class PLCService
                     }
                 }
             }
-            catch (TaskCanceledException)
+            catch (TaskCanceledException ex)
             {
                 // bị hủy -> thoát vòng lặp
+                SaveHistoryToCsv(ex.ToString(), "C:\\error.txt");
                 break;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"PLC error: {ex.Message}");
+                SaveHistoryToCsv(ex.ToString(), "C:\\error.txt");
             }
             await Task.Delay(5000, token);
         }
