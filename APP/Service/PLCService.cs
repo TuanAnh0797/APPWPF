@@ -110,11 +110,11 @@ public class PLCService
                     //}
 
                     string moldCode = (string)await Plc.ReadData(stream, 5000, "D", AddressMold, AddressMoldNumber, "String");
-                    if (moldCode != LastMold)
-                    {
+                    //if (moldCode != LastMold)
+                    //{
                         MoldChanged?.Invoke(moldCode);
-                        LastMold = moldCode;
-                    }
+                       // LastMold = moldCode;
+                    //}
                 }
             }
             catch (TaskCanceledException ex)
