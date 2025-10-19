@@ -5,6 +5,7 @@ using APP.Service;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -22,6 +23,11 @@ public partial class UCReportViewModel : ObservableObject
 {
     [ObservableProperty]
     ObservableCollection<History> histories = new ObservableCollection<History>();
+
+    [ObservableProperty]
+    ObservableCollection<string> shifts = new ObservableCollection<string>() {"All", "A","B","C"};
+    [ObservableProperty]
+    string shift;
     private readonly AppDbContext _db;
     private PrinterService _printerService;
 
@@ -65,15 +71,33 @@ public partial class UCReportViewModel : ObservableObject
         }
         else
         {
-            int index = 1;
-            Histories.Clear();
-            var data = _db.History.Where(p => p.TimeInsert.Date >= StartDate && p.TimeInsert.Date <= EndDate).OrderByDescending(p => p.Id).ToList();
-            foreach (var item in data)
+
+            if (Shift == "All" || string.IsNullOrEmpty(Shift))
             {
-                item.STT = index;
-                Histories.Add(item);
-                index++;
+                int index = 1;
+                Histories.Clear();
+                var data = _db.History.Where(p => p.TimeInsert.Date >= StartDate && p.TimeInsert.Date <= EndDate).OrderByDescending(p => p.Id).ToList();
+                foreach (var item in data)
+                {
+                    item.STT = index;
+                    Histories.Add(item);
+                    index++;
+                }
             }
+            else
+            {
+                int index = 1;
+                Histories.Clear();
+                var data = _db.History.Where(p => p.Shift == Shift && p.TimeInsert.Date >= StartDate && p.TimeInsert.Date <= EndDate ).OrderByDescending(p => p.Id).ToList();
+                foreach (var item in data)
+                {
+                    item.STT = index;
+                    Histories.Add(item);
+                    index++;
+                }
+            }
+
+            
         }
        
     }
@@ -104,6 +128,59 @@ public partial class UCReportViewModel : ObservableObject
         File.Delete($"C:\\Logger\\{datachange.TimeInsert:dd_MM_yyyy}\\{history.ModelName}_{datachange.TimeInsert:HH_mm_ss_dd_MM_yyyy}.csv");
 
         Reload();
+    }
+
+    [RelayCommand]
+    private async Task ExportCsvFile()
+    {
+
+        try
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV files (*.csv)|*.csv";
+            saveFileDialog.FileName = $"{StartDate:HH_mm_dd_MM_yyyy}({Shift}).csv";
+
+            bool? result = saveFileDialog.ShowDialog();
+            if (result == true)
+            {
+                string filePath = saveFileDialog.FileName;
+                StreamWriter writer = null;
+                try
+                {
+                    writer = new StreamWriter(filePath, false, Encoding.UTF8);
+                    writer.WriteLine("Shift,Mold,ModelName,Quantity,MaterialName,MaterialCode,MaterialColor,NameError,Position,Persion,PositionError,Reason,Action,TimeInsert");
+                    // Ghi dữ liệu
+
+
+                    foreach (var history in Histories)
+                    {
+                        writer.WriteLine($"{history.Shift},{history.Mold},{history.ModelName},{history.Quantity},{history.MaterialName},{history.MaterialCode},{history.MaterialColor},{history.NameError},{history.Position},{history.Persion},{history.PositionError},{history.Reason},{history.Action},{history.TimeInsert:yyyy-MM-dd HH:mm:ss}");
+
+                    }
+
+                    MessageBox.Show($"Lưu file CSV thành công tại:\n{filePath}");
+                }
+                finally
+                {
+                    if (writer != null)
+                        writer.Close();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+
+           MessageBox.Show(ex.ToString());
+        }
+
+
+
+
+       
+
+
+       
+
     }
 
     [RelayCommand]

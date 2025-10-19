@@ -244,6 +244,7 @@ public partial class UCHomeViewModel : ObservableObject
         {
             Labels = result.Select(p=> p.MaterialName).ToArray(),
             ShowSeparatorLines = true,
+             LabelsRotation = 45,
         } };
         DataErrorByMaterial.Clear();
         foreach (var item in result)

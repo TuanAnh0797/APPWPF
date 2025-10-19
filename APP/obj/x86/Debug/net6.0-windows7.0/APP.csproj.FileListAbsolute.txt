@@ -419,3 +419,9 @@ D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.genruntimeconfig.cache
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\ref\APP.dll
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Report\UCReport.g.cs
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Report\UCReport.baml
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\master.xlsx
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\mastercsv.csv
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\masterError.xlsx
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\masterErrorcsv.csv
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\Person.xlsx
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\Personcsv.csv
