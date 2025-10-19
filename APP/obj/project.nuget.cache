@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a6+Y8o8TFXQ=",
+  "dgSpecHash": "/ZHZ+axWIyk=",
   "success": true,
   "projectFilePath": "D:\\Project\\APPWPF\\APP\\APP.csproj",
   "expectedPackageFiles": [
@@ -63,7 +63,11 @@
     "C:\\Users\\AWESOME\\.nuget\\packages\\system.security.permissions\\6.0.1\\system.security.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\AWESOME\\.nuget\\packages\\system.text.encodings.web\\6.0.1\\system.text.encodings.web.6.0.1.nupkg.sha512",
     "C:\\Users\\AWESOME\\.nuget\\packages\\system.text.json\\6.0.11\\system.text.json.6.0.11.nupkg.sha512",
-    "C:\\Users\\AWESOME\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\AWESOME\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\AWESOME\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\AWESOME\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\AWESOME\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\AWESOME\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\6.0.36\\microsoft.netcore.app.host.win-x86.6.0.36.nupkg.sha512"
   ],
   "logs": [
     {

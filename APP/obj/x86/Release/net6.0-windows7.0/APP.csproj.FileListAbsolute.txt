@@ -32,6 +32,7 @@ D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Microsoft.Extensions.Log
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Microsoft.Extensions.Options.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Microsoft.Extensions.Primitives.dll
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Microsoft.Office.Interop.Excel.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Microsoft.Xaml.Behaviors.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\NLog.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\OpenTK.dll
@@ -45,8 +46,12 @@ D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\SQLitePCLRaw.batteries_v
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\SQLitePCLRaw.core.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Collections.Immutable.dll
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Configuration.ConfigurationManager.dll
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Data.OleDb.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Diagnostics.DiagnosticSource.dll
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Diagnostics.PerformanceCounter.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Security.Permissions.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Text.Encodings.Web.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Text.Json.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\osx\native\libHarfBuzzSharp.dylib
@@ -87,6 +92,8 @@ D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\osx-x64\native\
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Interop.bpac.dll
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\APP.csproj.AssemblyReference.cache
@@ -94,8 +101,10 @@ D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\ComponentUI\RealtimeCloc
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Common\UCControlBar.g.cs
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Help\UCHelp.g.cs
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Home\UCHome.g.cs
+D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Report\UCReport.g.cs
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCMasterSetting.g.cs
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCMaterialSetting.g.cs
+D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCPersonSetting.g.cs
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCPLCSetting.g.cs
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCPrinterSetting.g.cs
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\UCSetting.g.cs
@@ -114,8 +123,10 @@ D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\ComponentUI\RealtimeCloc
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Common\UCControlBar.baml
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Help\UCHelp.baml
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Home\UCHome.baml
+D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Report\UCReport.baml
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCMasterSetting.baml
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCMaterialSetting.baml
+D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCPersonSetting.baml
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCPLCSetting.baml
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\Sub\UCPrinterSetting.baml
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\UserControls\Setting\UCSetting.baml
@@ -136,10 +147,3 @@ D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\refint\APP.dll
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\APP.pdb
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\APP.genruntimeconfig.cache
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\ref\APP.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Microsoft.Office.Interop.Excel.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Configuration.ConfigurationManager.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Data.OleDb.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Diagnostics.PerformanceCounter.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\System.Security.Permissions.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll

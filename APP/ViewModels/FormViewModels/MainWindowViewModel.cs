@@ -3,6 +3,7 @@ using APP.Interface.language;
 using APP.Models.Database;
 using APP.Service;
 using APP.UserControls;
+using APP.UserControls.Report;
 using APP.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -142,6 +143,15 @@ namespace APP.ViewModels.FormViewModels
             Selectedpage = _localizationService.GetString("Setting");
             PageIcon = "CogOutline";
         }
+        [RelayCommand(CanExecute = nameof(CanSetting))]
+        private void ShowReport()
+        {
+            CurrentView = App.ServiceProvider.GetRequiredService<UCReport>();
+            Selectedpage = _localizationService.GetString("Report");
+            PageIcon = "ReportBoxMultiple";
+        }
+
+
         [RelayCommand]
         private void ShowHelp()
         {

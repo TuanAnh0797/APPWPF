@@ -14,6 +14,9 @@
     <Compile Update="UserControls\Home\UCHome.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\Report\UCReport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\Setting\Sub\UCMasterSetting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

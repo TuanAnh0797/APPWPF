@@ -33,6 +33,10 @@ public partial class UCToolsViewModel : ObservableObject
     [ObservableProperty]
     string shift;
     [ObservableProperty]
+    List<string> machines = new List<string>() { "VF1", "VF2", "VF3", "VF4" };
+    [ObservableProperty]
+    string machine;
+    [ObservableProperty]
     ObservableCollection<string> molds = new ObservableCollection<string>();
     [ObservableProperty]
     string mold;
@@ -270,6 +274,65 @@ public partial class UCToolsViewModel : ObservableObject
     {
         try
         {
+
+            if (string.IsNullOrEmpty(Shift))
+            {
+                MessageBox.Show("Vui lòng chọn ca làm việc!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(Machine))
+            {
+                MessageBox.Show("Vui lòng chọn máy!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            var Checkmold = _db.Material.Where(p => p.Mold == Mold).FirstOrDefault();
+            if (Checkmold == null)
+            {
+                MessageBox.Show("Mã khuôn không tồn tại trong cài đặt. Hãy kiểm liên hệ với Leader để kiểm tra cài đặt!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            var Checkmodel= _db.Material.Where(p => p.ModelName == Model).FirstOrDefault();
+            if (Checkmodel == null)
+            {
+                MessageBox.Show("Model không tồn tại trong cài đặt. Hãy kiểm liên hệ với Leader để kiểm tra cài đặt!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+           
+            if (NameError == null)
+            {
+                MessageBox.Show("Vui lòng chọn tên lỗi!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            else
+            {
+                var checkerror = _db.ErrorMaster.Where(p => p.NameError == NameError.NameError).FirstOrDefault();
+                if (checkerror == null)
+                {
+                    MessageBox.Show("Tên lỗi không tồn tại trong cài đặt. Hãy kiểm liên hệ với Leader để kiểm tra cài đặt!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+               
+            }
+            if (string.IsNullOrEmpty(Person))
+            {
+                MessageBox.Show("Vui lòng chọn người thao tác!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if (Reason == null)
+            {
+                MessageBox.Show("Vui lòng chọn nguyên nhân!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (CodeMaterial == null)
+            {
+                MessageBox.Show("Vui lòng chọn mã linh kiện!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+
             ModelPrint dataprint = new ModelPrint()
             {
                 Day = DateTime.Now.Day.ToString(),
@@ -290,6 +353,9 @@ public partial class UCToolsViewModel : ObservableObject
             _printerService.Print(dataprint);
 
             MessageBoxResult rs = MessageBox.Show("Đã in phiếu thành công chưa?", "Xác nhận in phiếu", MessageBoxButton.YesNo,MessageBoxImage.Question);
+
+            DateTime now = DateTime.Now;
+
             History history = new History()
             {
                 Shift = Shift,
@@ -300,16 +366,16 @@ public partial class UCToolsViewModel : ObservableObject
                 MaterialCode = CodeMaterial.MaterialCode,
                 MaterialColor = ColorMaterial,
                 NameError = NameError.NameError,
-                Position = "VF",
+                Position = Machine,
                 Persion = Person,
-                PositionError = "VF",
+                PositionError = Machine,
                 Reason = Reason.reason,
                 Action = "",
-                TimeInsert = DateTime.Now,
+                TimeInsert = now,
             };
             if (rs == MessageBoxResult.Yes)
             {
-                SaveHistoryToCsv(history, $"C:\\Logger\\{DateTime.Now.ToString("DataDD_MM_YYYY")}.csv");
+                SaveHistoryToCsv(   history,  $"C:\\Logger\\{now:dd_MM_yyyy}\\{history.ModelName}_{now:HH_mm_ss_dd_MM_yyyy}.csv" );
                 _db.History.Add(history);
                 _db.SaveChanges();
                 Person = "";
@@ -321,7 +387,7 @@ public partial class UCToolsViewModel : ObservableObject
             }
             else
             {
-                SaveHistoryToCsv(history, $"C:\\Logger\\Fail\\{DateTime.Now.ToString("DataDD_MM_YYYY")}.csv");
+                SaveHistoryToCsv(history,  $"C:\\Logger\\Fail\\{now:dd_MM_yyyy}\\{history.ModelName}_{now:HH_mm_ss_dd_MM_yyyy}.csv");
             }
 
 
@@ -372,6 +438,11 @@ public partial class UCToolsViewModel : ObservableObject
 
     private  static void SaveHistoryToCsv(History history, string filePath)
     {
+        string? directory = Path.GetDirectoryName(filePath);
+        if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+        {
+            Directory.CreateDirectory(directory);
+        }
         bool fileExists = File.Exists(filePath);
         using (var writer = new StreamWriter(filePath, true, Encoding.UTF8))
         {

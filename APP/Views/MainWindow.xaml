@@ -76,7 +76,7 @@
                             </StackPanel>
                         </Button>
                         <Separator></Separator>
-                        <Button>
+                        <Button Command="{Binding ShowReportCommand}">
                             <StackPanel>
                                 <materialDesign:PackIcon Kind="ReportBoxMultiple" Foreground="OrangeRed" />
                                 <Label Content="Report"/>
