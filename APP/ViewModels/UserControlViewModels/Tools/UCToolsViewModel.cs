@@ -94,8 +94,12 @@ public partial class UCToolsViewModel : ObservableObject
         _uCMasterSettingViewModel.SettingChanged += _uCMasterSettingViewModel_SettingChanged;
         _uCMaterialSettingViewModel = uCMaterialSettingViewModel;
         _pLCService = pLCService;
+
+
         _pLCService.ModelChanged += _pLCService_ModelChanged;
         _pLCService.MoldChanged += _pLCService_MoldChanged;
+
+        _pLCService.LastMold = "";
         //_uCMaterialSettingViewModel.SettingChanged += _uCMaterialSettingViewModel_SettingChanged;
         ReloadErrorMaster();
         UpdateHistory();

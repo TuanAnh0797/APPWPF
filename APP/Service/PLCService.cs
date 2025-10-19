@@ -32,7 +32,7 @@ public class PLCService
     public event Action<string> ModelChanged;
     public event Action<string> MoldChanged;
     string LastModel = "";
-    string LastMold = "";
+    public string LastMold = "";
 
     bool _isRunning = false;
     private CancellationTokenSource _cts;
@@ -101,12 +101,13 @@ public class PLCService
                     await connectTask;
                     NetworkStream stream = tcpclient.GetStream();
 
-                    string modelName = (string)await Plc.ReadData(stream, 5000, "D", AddressModel, AddressModelNumber, "String");
-                    if (modelName != LastModel)
-                    {
-                        ModelChanged?.Invoke(modelName);
-                        LastModel = modelName;
-                    }
+                    //string modelName = (string)await Plc.ReadData(stream, 5000, "D", AddressModel, AddressModelNumber, "String");
+                    //SaveHistoryToCsv(modelName, "C:\\error.txt");
+                    //if (modelName != LastModel)
+                    //{
+                    //    ModelChanged?.Invoke(modelName);
+                    //    LastModel = modelName;
+                    //}
 
                     string moldCode = (string)await Plc.ReadData(stream, 5000, "D", AddressMold, AddressMoldNumber, "String");
                     if (moldCode != LastMold)
