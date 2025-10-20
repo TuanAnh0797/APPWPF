@@ -200,7 +200,7 @@ public partial class UCMaterialSettingViewModel : ObservableObject
             if (openFileDialog.ShowDialog() == true)
             {
                 string filePath = openFileDialog.FileName;
-                string[] data = File.ReadAllLines(filePath).Skip(1)
+                string[] data = File.ReadAllLines(filePath, Encoding.UTF8).Skip(1)
                     .ToArray();
                 int rs = await _db.Database.ExecuteSqlRawAsync("DELETE from Material");
                 _db.ChangeTracker.Clear();

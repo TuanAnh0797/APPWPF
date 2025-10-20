@@ -147,7 +147,7 @@ public partial class UCPersonSettingViewModel : ObservableObject
             if (openFileDialog.ShowDialog() == true)
             {
                 string filePath = openFileDialog.FileName;
-                string[] data = File.ReadAllLines(filePath).Skip(1)
+                string[] data = File.ReadAllLines(filePath, Encoding.UTF8).Skip(1)
                     .ToArray();
                 int rs = await _db.Database.ExecuteSqlRawAsync("DELETE from Person");
                 _db.ChangeTracker.Clear();

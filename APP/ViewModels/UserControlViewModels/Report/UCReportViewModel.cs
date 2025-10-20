@@ -2,9 +2,12 @@
 using APP.Models.Database;
 using APP.Models.Printer;
 using APP.Service;
+using APP.ViewModels.UserControlViewModels.Home;
+using APP.ViewModels.UserControlViewModels.Tools;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -112,6 +115,12 @@ public partial class UCReportViewModel : ObservableObject
         datachange = history;
         _db.SaveChanges();
         Reload();
+        var home = App.ServiceProvider.GetRequiredService<UCHomeViewModel>();
+        home.UpdateChart();
+        home.UpdateHistory();
+
+        var tool = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+        tool.UpdateHistory();
 
     }
 
@@ -128,6 +137,15 @@ public partial class UCReportViewModel : ObservableObject
         File.Delete($"C:\\Logger\\{datachange.TimeInsert:dd_MM_yyyy}\\{history.ModelName}_{datachange.TimeInsert:HH_mm_ss_dd_MM_yyyy}.csv");
 
         Reload();
+
+
+        var home = App.ServiceProvider.GetRequiredService<UCHomeViewModel>();
+        home.UpdateChart();
+        home.UpdateHistory();
+        var tool = App.ServiceProvider.GetRequiredService<UCToolsViewModel>();
+        tool.UpdateHistory();
+
+
     }
 
     [RelayCommand]

@@ -405,7 +405,7 @@ public partial class UCToolsViewModel : ObservableObject
         }
         
     }
-    private void UpdateHistory()
+    public void UpdateHistory()
     {
 
 
