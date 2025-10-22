@@ -34,7 +34,7 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<ErrorMaster>().HasKey(e => e.ID);
         modelBuilder.Entity<PLCSetting>().HasKey(e => e.Name);
         modelBuilder.Entity<PrinterSetting>().HasKey(e => e.ModelName);
-        modelBuilder.Entity<Material>().HasKey(e => new { e.ModelName, e.MaterialCode });
+        modelBuilder.Entity<Material>().HasKey(e => new { e.ModelName, e.MaterialCode, e.Mold});
         modelBuilder.Entity<History>().HasKey(e => e.Id);
         modelBuilder.Entity<Person>().HasKey(e => e.ID);
     }

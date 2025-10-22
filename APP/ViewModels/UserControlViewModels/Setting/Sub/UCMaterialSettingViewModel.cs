@@ -232,12 +232,13 @@ public partial class UCMaterialSettingViewModel : ObservableObject
 
 
                 var duplicateGroups = materials
-    .GroupBy(g => new { g.ModelName, g.MaterialCode })
+    .GroupBy(g => new { g.ModelName, g.MaterialCode,g.Mold })
     .Where(group => group.Count() > 1)
     .Select(group => new
     {
         group.Key.ModelName,
         group.Key.MaterialCode,
+        group.Key.Mold,
         Count = group.Count(),
         Items = group.ToList()
     })
@@ -250,7 +251,7 @@ public partial class UCMaterialSettingViewModel : ObservableObject
                 {
                     string message = "Các giá trị trùng:\n" +
                         string.Join("\n", duplicateGroups.Select(g =>
-                            $"{g.ModelName} - {g.MaterialCode} (số lượng: {g.Count})"));
+                            $"{g.ModelName} - {g.MaterialCode} - {g.Mold} (số lượng: {g.Count})"));
 
                     MessageBox.Show(message, "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
