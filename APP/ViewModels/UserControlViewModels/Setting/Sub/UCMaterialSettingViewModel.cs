@@ -202,8 +202,7 @@ public partial class UCMaterialSettingViewModel : ObservableObject
                 string filePath = openFileDialog.FileName;
                 string[] data = File.ReadAllLines(filePath, Encoding.UTF8).Skip(1)
                     .ToArray();
-                int rs = await _db.Database.ExecuteSqlRawAsync("DELETE from Material");
-                _db.ChangeTracker.Clear();
+               
                 var materials = new List<Material>();
                 foreach (var row in data)
                 {
@@ -230,6 +229,38 @@ public partial class UCMaterialSettingViewModel : ObservableObject
                         MessageBox.Show(ex.ToString());
                     }
                 }
+
+
+                var duplicateGroups = materials
+    .GroupBy(g => new { g.ModelName, g.MaterialCode })
+    .Where(group => group.Count() > 1)
+    .Select(group => new
+    {
+        group.Key.ModelName,
+        group.Key.MaterialCode,
+        Count = group.Count(),
+        Items = group.ToList()
+    })
+    .ToList();
+
+
+
+
+                if (duplicateGroups.Any())
+                {
+                    string message = "Các giá trị trùng:\n" +
+                        string.Join("\n", duplicateGroups.Select(g =>
+                            $"{g.ModelName} - {g.MaterialCode} (số lượng: {g.Count})"));
+
+                    MessageBox.Show(message, "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+               
+
+                int rs = await _db.Database.ExecuteSqlRawAsync("DELETE from Material");
+                _db.ChangeTracker.Clear();
+
                 await _db.Material.AddRangeAsync(materials);
                 await _db.SaveChangesAsync();
                 Reload();

@@ -49,9 +49,9 @@ public partial class UCToolsViewModel : ObservableObject
     [ObservableProperty]
     int quantity = 1;
     [ObservableProperty]
-    ObservableCollection<ErrorMaster> nameErrors = new ObservableCollection<ErrorMaster>();
+    ObservableCollection<string> nameErrors = new ObservableCollection<string>();
     [ObservableProperty]
-    ErrorMaster nameError;
+    string nameError;
     [ObservableProperty]
     string position;
     [ObservableProperty]
@@ -186,19 +186,19 @@ public partial class UCToolsViewModel : ObservableObject
     private void ReloadErrorMaster()
     {
         NameErrors.Clear();
-        var data = _db.ErrorMaster.ToList();
+        var data = _db.ErrorMaster.GroupBy(p=> new { p.NameError }).Select(g=> new {g.Key.NameError});
         foreach (var item in data)
         {
-            NameErrors.Add(item);
+            NameErrors.Add(item.NameError);
         }
     }
     #region On
-    partial void OnNameErrorChanged(ErrorMaster value)
+    partial void OnNameErrorChanged(string value)
     {
         Reasons.Clear();
         if (value != null)
         {
-            var data = NameErrors.Where(p => p.NameError == value.NameError);
+            var data = _db.ErrorMaster.Where(p => p.NameError == value);
             foreach (var item in data)
             {
                 Reasons.Add(item);
@@ -311,7 +311,7 @@ public partial class UCToolsViewModel : ObservableObject
             }
             else
             {
-                var checkerror = _db.ErrorMaster.Where(p => p.NameError == NameError.NameError).FirstOrDefault();
+                var checkerror = _db.ErrorMaster.Where(p => p.NameError == NameError).FirstOrDefault();
                 if (checkerror == null)
                 {
                     MessageBox.Show("Tên lỗi không tồn tại trong cài đặt. Hãy kiểm liên hệ với Leader để kiểm tra cài đặt!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -350,11 +350,11 @@ public partial class UCToolsViewModel : ObservableObject
                 MaterialCode = CodeMaterial.MaterialCode,
                 MaterialName = NameMaterial,
                 Person = Person,
-                NameError = NameError.NameError,
+                NameError = NameError,
                 Reason = Reason.Reason,
                 MaterialColor = ColorMaterial
             };
-            _printerService.Print(dataprint);
+            //_printerService.Print(dataprint);
 
             MessageBoxResult rs = MessageBox.Show("Đã in phiếu thành công chưa?", "Xác nhận in phiếu", MessageBoxButton.YesNo,MessageBoxImage.Question);
 
@@ -369,7 +369,7 @@ public partial class UCToolsViewModel : ObservableObject
                 MaterialName = NameMaterial,
                 MaterialCode = CodeMaterial.MaterialCode,
                 MaterialColor = ColorMaterial,
-                NameError = NameError.NameError,
+                NameError = NameError,
                 Position = Machine,
                 Persion = Person,
                 PositionError = Machine,

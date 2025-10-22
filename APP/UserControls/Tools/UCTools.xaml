@@ -38,10 +38,10 @@
                             <Image Grid.Column="0" Height="100" Width="100" Source="{Binding QrCodeImage,UpdateSourceTrigger=PropertyChanged}" Margin="10" />
                             <!-- Tiêu đề -->
                             <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="PHIẾU PHÂN TÍCH NGUYÊN NHÂN LỖI/HỦY"
-FontSize="25"
+FontSize="20"
 FontWeight="Bold"
-HorizontalAlignment="Center"
-Margin="0 0 0 20"
+HorizontalAlignment="Left"
+Margin="30 0 0 20"
 Grid.Row="0"
 Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
                         </Grid>
@@ -171,7 +171,7 @@ Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" VerticalAlignment="Center">Tên lỗi:</Label>
-                                    <ComboBox Grid.Column="1" IsEditable="True" StaysOpenOnEdit="True" ItemsSource="{Binding NameErrors}" SelectedItem="{Binding NameError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="NameError"></ComboBox>
+                                    <ComboBox Grid.Column="1" ItemsSource="{Binding NameErrors}" SelectedItem="{Binding NameError, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></ComboBox>
 
                                 </Grid>
 

@@ -194,13 +194,18 @@ public partial class UCHomeViewModel : ObservableObject
                 DataLabelsPaint = new SolidColorPaint(SKColors.Black),
                 DataLabelsPosition = LiveChartsCore.Measure.DataLabelsPosition.Top,
                 DataLabelsSize = 14,
-                DataLabelsFormatter = point => point.Model.ToString("0") 
+                DataLabelsFormatter = point => point.Model.ToString("0") ,
+                
+
             },
         };
         YAxes = new Axis[] { new Axis { Name = "Quantity",
             MinStep = 1,
             MinLimit = 0,
-             ShowSeparatorLines = true, 
+            ShowSeparatorLines = true, 
+
+         
+
         } };
 
 
@@ -221,6 +226,7 @@ public partial class UCHomeViewModel : ObservableObject
             MinStep = 1,
             MinLimit = 0,
             ShowSeparatorLines = true,
+            
         } };
 
 
@@ -244,13 +250,26 @@ public partial class UCHomeViewModel : ObservableObject
         {
             Labels = result.Select(p=> p.MaterialName).ToArray(),
             ShowSeparatorLines = true,
-             LabelsRotation = 45,
+            LabelsRotation = 60,
+            TextSize= 10
+
         } };
         DataErrorByMaterial.Clear();
         foreach (var item in result)
         {
             DataErrorByMaterial.Add(item.TotalQuantity);
         }
+
+        if (DataErrorByMaterial.Count == 0)
+        {
+            YAxes[0].MaxLimit = 10;
+        }
+        else
+        {
+            YAxes[0].MaxLimit = DataErrorByMaterial.Max() + 1;
+        }
+
+       
 
 
         var resultByDate = _db.History
@@ -261,6 +280,8 @@ public partial class UCHomeViewModel : ObservableObject
          g.Key.Date,
          TotalQuantity = g.Sum(x => x.Quantity),
        }).ToList();
+
+      
 
         XAxesByDate = new Axis[] {new Axis
         {
@@ -288,10 +309,20 @@ public partial class UCHomeViewModel : ObservableObject
             }
         }
 
+        if (DataErrorByDate.Count == 0)
+        {
+            YAxesByDate[0].MaxLimit = 10;
+        }
+        else
+        {
+            YAxesByDate[0].MaxLimit = DataErrorByDate.Max() + 1;
+        }
+           
 
 
 
-       
+
+
 
 
     }
