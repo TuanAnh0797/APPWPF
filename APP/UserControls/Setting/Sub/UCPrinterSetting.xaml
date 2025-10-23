@@ -26,6 +26,7 @@
                     <Setter Property="FontWeight" Value="Medium"></Setter>
                 </Style>
             </StackPanel.Resources>
+            <CheckBox FontSize="15" IsChecked="{Binding ModelPrinter.IsEnable, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">Enable Printer</CheckBox>
             <StackPanel Orientation="Horizontal">
                 <Label>Model Printer:</Label>
                 <ComboBox Style="{StaticResource MaterialDesignOutlinedComboBox}" Padding="5" Width="200" Margin="5,0,10,0" ItemsSource="{Binding ModelPrinters}" SelectedItem="{Binding ModelPrinter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="ModelName"></ComboBox>
@@ -43,7 +44,7 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20">
 
-            <Button Margin="0,0,20,0">
+            <Button Margin="0,0,20,0" Command="{Binding SaveCommand}">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon VerticalAlignment="Center" Kind="ContentSaveAll"></materialDesign:PackIcon>
                     <Label Foreground="White">Save</Label>

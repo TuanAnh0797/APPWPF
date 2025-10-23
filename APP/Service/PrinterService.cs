@@ -1,8 +1,10 @@
 ﻿using APP.Database;
 using APP.Models.Database;
 using APP.Models.Printer;
+using APP.ViewModels.UserControlViewModels.Setting.Sub;
 using bpac;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -40,6 +42,16 @@ public class PrinterService
     }
     public void Print(ModelPrint modelPrint, bool IsTest = false)
     {
+
+
+
+        var printerConfig = App.ServiceProvider.GetRequiredService<UCPrinterSettingViewModel>();
+
+        if (!printerConfig.IsEnable)
+        {
+            return;
+        }
+
         if (IsTest)
         {
             DocumentClass doc = new DocumentClass();

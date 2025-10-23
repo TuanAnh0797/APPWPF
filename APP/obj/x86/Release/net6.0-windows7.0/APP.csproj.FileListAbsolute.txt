@@ -3,6 +3,12 @@ D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\Language\Strin
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\NLog.config
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\DLL\Interop.bpac.dll
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\Database\VFDB.db
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\master.xlsx
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\mastercsv.csv
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\masterError.xlsx
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\masterErrorcsv.csv
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\Person.xlsx
+D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\Personcsv.csv
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\TemplatePrint\Temp.lbx
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\TemplatePrint\temp2.lbx
 D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\APP.exe
@@ -147,9 +153,3 @@ D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\refint\APP.dll
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\APP.pdb
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\APP.genruntimeconfig.cache
 D:\Project\APPWPF\APP\obj\x86\Release\net6.0-windows7.0\ref\APP.dll
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\master.xlsx
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\mastercsv.csv
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\masterError.xlsx
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\masterErrorcsv.csv
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\Person.xlsx
-D:\Project\APPWPF\APP\bin\x86\Release\net6.0-windows7.0\Resources\ImportTemplate\Personcsv.csv

@@ -275,6 +275,12 @@ D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\Language\StringR
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\NLog.config
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\DLL\Interop.bpac.dll
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\Database\VFDB.db
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\master.xlsx
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\mastercsv.csv
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\masterError.xlsx
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\masterErrorcsv.csv
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\Person.xlsx
+D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\Personcsv.csv
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\TemplatePrint\Temp.lbx
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\TemplatePrint\temp2.lbx
 D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\APP.exe
@@ -373,6 +379,7 @@ D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\ComponentUI\RealtimeClock.
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Common\UCControlBar.g.cs
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Help\UCHelp.g.cs
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Home\UCHome.g.cs
+D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Report\UCReport.g.cs
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCMasterSetting.g.cs
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCMaterialSetting.g.cs
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCPersonSetting.g.cs
@@ -394,6 +401,7 @@ D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\ComponentUI\RealtimeClock.
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Common\UCControlBar.baml
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Help\UCHelp.baml
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Home\UCHome.baml
+D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Report\UCReport.baml
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCMasterSetting.baml
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCMaterialSetting.baml
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Setting\Sub\UCPersonSetting.baml
@@ -417,11 +425,3 @@ D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\refint\APP.dll
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.pdb
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\APP.genruntimeconfig.cache
 D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\ref\APP.dll
-D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Report\UCReport.g.cs
-D:\Project\APPWPF\APP\obj\x86\Debug\net6.0-windows7.0\UserControls\Report\UCReport.baml
-D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\master.xlsx
-D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\mastercsv.csv
-D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\masterError.xlsx
-D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\masterErrorcsv.csv
-D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\Person.xlsx
-D:\Project\APPWPF\APP\bin\x86\Debug\net6.0-windows7.0\Resources\ImportTemplate\Personcsv.csv

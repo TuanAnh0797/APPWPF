@@ -354,7 +354,14 @@ public partial class UCToolsViewModel : ObservableObject
                 Reason = Reason.Reason,
                 MaterialColor = ColorMaterial
             };
-            //_printerService.Print(dataprint);
+
+           
+
+           
+                _printerService.Print(dataprint);
+           
+
+
 
             MessageBoxResult rs = MessageBox.Show("Đã in phiếu thành công chưa?", "Xác nhận in phiếu", MessageBoxButton.YesNo,MessageBoxImage.Question);
 

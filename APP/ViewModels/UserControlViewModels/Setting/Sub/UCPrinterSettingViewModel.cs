@@ -1,4 +1,5 @@
-﻿using APP.Models.Database;
+﻿using APP.Database;
+using APP.Models.Database;
 using APP.Service;
 using APP.UserControls.Setting.Sub;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -8,8 +9,11 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Media.Media3D.Converters;
 
 namespace APP.ViewModels.UserControlViewModels.Setting.Sub;
 
@@ -22,10 +26,20 @@ public partial class UCPrinterSettingViewModel : ObservableObject
     [ObservableProperty]
     string pathTemp;
     private PrinterService _printerService;
+    private readonly AppDbContext _db;
 
-    public UCPrinterSettingViewModel(PrinterService printerService)
+
+    public bool IsEnable
     {
+        get { return ModelPrinter.IsEnable ?? false; }
+    }
+
+
+    public UCPrinterSettingViewModel(PrinterService printerService, AppDbContext db)
+    {
+        _db = db;
         _printerService = printerService;
+
         init();
     }
     private void init()
@@ -49,6 +63,26 @@ public partial class UCPrinterSettingViewModel : ObservableObject
     private void PrintTest()
     {
         _printerService.Print(new Models.Printer.ModelPrint(), true);
+    }
+    [RelayCommand]
+    private void Save()
+    {
+        try
+        {
+            var printer = ModelPrinters.Where(p => p.Ischoose == 1).FirstOrDefault();
+            printer.IsEnable = ModelPrinter.IsEnable;
+
+            _db.PrinterSetting.Update(printer);
+            _db.SaveChanges();
+            init();
+
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show(ex.Message);
+        }
+
     }
 
 }
