@@ -53,7 +53,7 @@ namespace APP.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/APP;component/usercontrols/help/uchelp.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Printer;component/usercontrols/help/uchelp.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\UserControls\Help\UCHelp.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -56,7 +56,7 @@ namespace APP.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/APP;component/usercontrols/setting/ucsetting.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Printer;component/usercontrols/setting/ucsetting.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\UserControls\Setting\UCSetting.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

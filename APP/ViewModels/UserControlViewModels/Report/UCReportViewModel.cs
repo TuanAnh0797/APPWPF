@@ -40,6 +40,12 @@ public partial class UCReportViewModel : ObservableObject
     [ObservableProperty]
     DateTime? endDate;
 
+    [ObservableProperty]
+    DateTime? startTime ;
+    [ObservableProperty]
+    DateTime? endTime;
+
+
 
 
     public UCReportViewModel(AppDbContext db, PrinterService printerService)
@@ -68,6 +74,14 @@ public partial class UCReportViewModel : ObservableObject
     [RelayCommand]
     private async Task Search()
     {
+
+        StartDate.Value.AddHours( StartTime?.Hour ?? 0);
+       
+        DateTime StartDateSearch = new DateTime(StartDate?.Year ?? 1, StartDate?.Month ?? 1, StartDate?.Day ?? 1, StartTime?.Hour ?? 0, StartTime?.Minute ?? 0, StartTime?.Second ?? 0);
+        DateTime EndDateSearch = new DateTime(EndDate?.Year ?? 1, EndDate?.Month ?? 1, EndDate?.Day ?? 1, EndTime?.Hour ?? 0, EndTime?.Minute ?? 0, EndTime?.Second ?? 0);
+
+
+
         if (StartDate == null || EndDate == null)
         {
             Reload();
@@ -79,7 +93,7 @@ public partial class UCReportViewModel : ObservableObject
             {
                 int index = 1;
                 Histories.Clear();
-                var data = _db.History.Where(p => p.TimeInsert.Date >= StartDate && p.TimeInsert.Date <= EndDate).OrderByDescending(p => p.Id).ToList();
+                var data = _db.History.Where(p => p.TimeInsert.Date >= StartDateSearch && p.TimeInsert.Date <= EndDateSearch).OrderByDescending(p => p.Id).ToList();
                 foreach (var item in data)
                 {
                     item.STT = index;
@@ -91,7 +105,7 @@ public partial class UCReportViewModel : ObservableObject
             {
                 int index = 1;
                 Histories.Clear();
-                var data = _db.History.Where(p => p.Shift == Shift && p.TimeInsert.Date >= StartDate && p.TimeInsert.Date <= EndDate ).OrderByDescending(p => p.Id).ToList();
+                var data = _db.History.Where(p => p.Shift == Shift && p.TimeInsert.Date >= StartDateSearch && p.TimeInsert.Date <= EndDateSearch).OrderByDescending(p => p.Id).ToList();
                 foreach (var item in data)
                 {
                     item.STT = index;

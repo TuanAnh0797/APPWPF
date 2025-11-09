@@ -2720,7 +2720,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "D:\\Project\\APPWPF\\APP\\APP.csproj",
-      "projectName": "APP",
+      "projectName": "Printer",
       "projectPath": "D:\\Project\\APPWPF\\APP\\APP.csproj",
       "packagesPath": "C:\\Users\\AWESOME\\.nuget\\packages\\",
       "outputPath": "D:\\Project\\APPWPF\\APP\\obj\\",

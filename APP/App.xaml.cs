@@ -19,6 +19,7 @@ using Microsoft.Extensions.Options;
 using SQLitePCL;
 using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
@@ -31,8 +32,18 @@ namespace APP
     public partial class App : Application
     {
         public static IServiceProvider ServiceProvider { get; private set; }
+        private static Mutex mutex;
         protected override  async void OnStartup(StartupEventArgs e)
         {
+            const string appName = "APP"; 
+            bool createdNew;
+            mutex = new Mutex(true, appName, out createdNew);
+            if (!createdNew)
+            {
+                ActivateExistingWindow();
+                Shutdown();
+                return;
+            }
 
             Batteries.Init();
 
@@ -93,6 +104,34 @@ namespace APP
 
             base.OnStartup(e);
         }
-         
+        private void ActivateExistingWindow()
+        {
+            try
+            {
+                Process current = Process.GetCurrentProcess();
+                foreach (Process process in Process.GetProcessesByName(current.ProcessName))
+                {
+                    if (process.Id != current.Id)
+                    {
+                        // đưa cửa sổ đang mở ra trước màn hình
+                        NativeMethods.ShowWindow(process.MainWindowHandle, NativeMethods.SW_RESTORE);
+                        NativeMethods.SetForegroundWindow(process.MainWindowHandle);
+                        break;
+                    }
+                }
+            }
+            catch { }
+        }
+        internal class NativeMethods
+        {
+            public const int SW_RESTORE = 9;
+
+            [System.Runtime.InteropServices.DllImport("user32.dll")]
+            public static extern bool SetForegroundWindow(IntPtr hWnd);
+
+            [System.Runtime.InteropServices.DllImport("user32.dll")]
+            public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+        }
+
     }
 }

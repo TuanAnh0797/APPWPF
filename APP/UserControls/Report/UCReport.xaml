@@ -33,11 +33,38 @@
                         </i:Interaction.Triggers>
                     </TextBox>-->
 
-                    <DatePicker Margin="5" Padding="10" Width="150" BorderThickness="2"  materialDesign:HintAssist.Hint="Từ ngày" Style="{StaticResource MaterialDesignOutlinedDatePicker}" SelectedDate="{Binding StartDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                    <DatePicker Margin="5" Padding="10" Width="150" BorderThickness="2"  materialDesign:HintAssist.Hint="Đến ngày" Style="{StaticResource MaterialDesignOutlinedDatePicker}" SelectedDate="{Binding EndDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <DatePicker
+        Width="150"
+        Margin="5"
+        materialDesign:HintAssist.Hint="Từ ngày"
+        Style="{StaticResource MaterialDesignOutlinedDatePicker}"
+        SelectedDate="{Binding StartDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
+                        <materialDesign:TimePicker
+        Width="120"
+        Margin="5"
+        materialDesign:HintAssist.Hint="Giờ"
+        Style="{StaticResource MaterialDesignOutlinedTimePicker}"
+        SelectedTime="{Binding StartTime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <DatePicker
+Width="150"
+Margin="5"
+materialDesign:HintAssist.Hint="Đến ngày"
+Style="{StaticResource MaterialDesignOutlinedDatePicker}"
+SelectedDate="{Binding EndDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                        <materialDesign:TimePicker
+Width="120"
+Margin="5"
+materialDesign:HintAssist.Hint="Giờ"
+Style="{StaticResource MaterialDesignOutlinedTimePicker}"
+SelectedTime="{Binding EndTime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
                     <ComboBox Width="100" Margin="5" Style="{StaticResource MaterialDesignOutlinedComboBox}" Padding="10" ItemsSource="{Binding Shifts}" Text="{Binding Shift, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" ></ComboBox>
-                    
+
                     <Button Background="Green" Height="40" Command="{Binding SearchCommand}" Margin="0,0,10,0">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Foreground="White" Width="20" Height="20" VerticalAlignment="Center" Kind="Search"></materialDesign:PackIcon>

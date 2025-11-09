@@ -69,7 +69,7 @@ namespace APP.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/APP;component/usercontrols/common/uccontrolbar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Printer;component/usercontrols/common/uccontrolbar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\UserControls\Common\UCControlBar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

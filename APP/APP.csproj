@@ -7,6 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x86;x64</Platforms>
+    <ApplicationIcon>receipt.ico</ApplicationIcon>
+    <AssemblyName>Printer</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -40,6 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="receipt.ico" />
     <Content Include="Resources\Language\StringResources.en.xaml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

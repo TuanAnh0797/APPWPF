@@ -85,7 +85,7 @@ namespace APP.UserControls.Setting.Sub {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/APP;component/usercontrols/setting/sub/ucmaterialsetting.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Printer;component/usercontrols/setting/sub/ucmaterialsetting.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\..\UserControls\Setting\Sub\UCMaterialSetting.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

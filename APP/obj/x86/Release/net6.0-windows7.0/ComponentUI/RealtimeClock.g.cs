@@ -53,7 +53,7 @@ namespace APP.ComponentUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/APP;component/componentui/realtimeclock.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Printer;component/componentui/realtimeclock.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\ComponentUI\RealtimeClock.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

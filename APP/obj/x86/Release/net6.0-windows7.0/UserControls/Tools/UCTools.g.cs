@@ -69,7 +69,7 @@ namespace APP.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/APP;component/usercontrols/tools/uctools.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Printer;component/usercontrols/tools/uctools.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\UserControls\Tools\UCTools.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

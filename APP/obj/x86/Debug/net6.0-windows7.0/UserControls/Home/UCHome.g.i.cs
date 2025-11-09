@@ -57,7 +57,7 @@ namespace APP.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/APP;component/usercontrols/home/uchome.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Printer;component/usercontrols/home/uchome.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\UserControls\Home\UCHome.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
