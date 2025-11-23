@@ -112,11 +112,12 @@ HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <RowDefinition Height="auto"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,0" FontWeight="Bold">SỐ LƯỢNG NGUYÊN VẬT LIỆU HUỶ TRONG THÁNG</Label>
-                    <lvc:CartesianChart Grid.Row="1" Series="{Binding ErrorbyMaterialSeries}"
-                    XAxes="{Binding XAxes, UpdateSourceTrigger=PropertyChanged}"
-                    YAxes="{Binding YAxes, UpdateSourceTrigger=PropertyChanged}"  />
+                    <Label HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,0" FontWeight="Bold">SỐ LƯỢNG NGUYÊN VẬT LIỆU HUỶ THEO NGÀY</Label>
+                    <lvc:CartesianChart Grid.Row="1" Series="{Binding ErrorbyDateSeries}"
+XAxes="{Binding XAxesByDate, UpdateSourceTrigger=PropertyChanged}"
+YAxes="{Binding YAxesByDate, UpdateSourceTrigger=PropertyChanged}"  />
                 </Grid>
+               
                 
             </Border>
            
@@ -126,10 +127,10 @@ HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <RowDefinition Height="auto"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,0" FontWeight="Bold">SỐ LƯỢNG NGUYÊN VẬT LIỆU HUỶ THEO NGÀY</Label>
-                    <lvc:CartesianChart Grid.Row="1" Series="{Binding ErrorbyDateSeries}"
-     XAxes="{Binding XAxesByDate, UpdateSourceTrigger=PropertyChanged}"
-     YAxes="{Binding YAxesByDate, UpdateSourceTrigger=PropertyChanged}"  />
+                    <Label HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,0" FontWeight="Bold">SỐ LƯỢNG NGUYÊN VẬT LIỆU HUỶ TRONG THÁNG</Label>
+                    <lvc:CartesianChart Grid.Row="1" Series="{Binding ErrorbyMaterialSeries}"
+     XAxes="{Binding XAxes, UpdateSourceTrigger=PropertyChanged}"
+     YAxes="{Binding YAxes, UpdateSourceTrigger=PropertyChanged}"  />
                 </Grid>
             </Border>
         </Grid>

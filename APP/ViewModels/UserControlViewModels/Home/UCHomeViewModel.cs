@@ -52,107 +52,13 @@ public partial class UCHomeViewModel : ObservableObject
 
 
 
-
-
-    //// --- Scatter ---
-
-    //[ObservableProperty]
-    //private ISeries[] lineSeries;
-
-    //[ObservableProperty]
-    //private Axis[] lineXAxes;
-
-    //[ObservableProperty]
-    //private Axis[] lineYAxes;
-
-    //// --- Pie ---
-    //[ObservableProperty]
-    //private ISeries[] pieSeries;
-
-    ////
-    //[ObservableProperty]
-    //private ISeries[] radarSeries;
-
-    //[ObservableProperty]
-    //private PolarAxis[] radarAxes;
-
     public UCHomeViewModel(AppDbContext db)
     {
 
         _db = db;
         UpdateHistory();
 
-        // Cartesian: Column + Line
-       
 
-    //    // 1. Line chart (time series)
-    //    var start = DateTime.Today.AddDays(-6);
-    //    var values = new ObservableCollection<DateTimePoint>
-    //    {
-    //        new DateTimePoint(start, 5),
-    //        new DateTimePoint(start.AddDays(1), 8),
-    //        new DateTimePoint(start.AddDays(2), 6),
-    //        new DateTimePoint(start.AddDays(3), 7),
-    //        new DateTimePoint(start.AddDays(4), 9),
-    //        new DateTimePoint(start.AddDays(5), 4),
-    //        new DateTimePoint(start.AddDays(6), 10)
-    //    };
-
-    //    lineSeries = new ISeries[]
-    //    {
-    //        new LineSeries<DateTimePoint>
-    //        {
-    //            Name = "Sales",
-    //            Values = values,
-    //            Fill = null,
-    //        }
-    //    };
-
-    //    lineXAxes = new Axis[]
-    //    {
-    //        new Axis
-    //        {
-    //            Labeler = value => new DateTime((long)value).ToString("MM-dd"),
-    //            LabelsRotation = 45
-    //        }
-    //    };
-
-    //    lineYAxes = new Axis[]
-    //    {
-    //        new Axis { Name = "Units" }
-    //    };
-    //    // Pie
-    //    pieSeries = new ISeries[]
-    //    {
-    //        new PieSeries<double> { Name="Product A", Values = new ObservableCollection<double>{35} },
-    //        new PieSeries<double> { Name="Product B", Values = new ObservableCollection<double>{25} },
-    //        new PieSeries<double> { Name="Product C", Values = new ObservableCollection<double>{20} },
-    //        new PieSeries<double> { Name="Product D", Values = new ObservableCollection<double>{20} },
-    //    };
-    //    // Radar chart (PolarChart)
-    //    radarSeries = new ISeries[]
-    //    {
-    //new PolarLineSeries<double>
-    //{
-    //    Name = "Quality",
-    //    Values = new double[] { 8, 6, 7, 9, 5 },
-    //    GeometrySize = 10
-    //},
-    //new PolarLineSeries<double>
-    //{
-    //    Name = "Target",
-    //    Values = new double[] { 7, 7, 7, 7, 7 },
-    //    GeometrySize = 5
-    //}
-    //    };
-
-    //    radarAxes = new PolarAxis[]
-    //    {
-    //new PolarAxis
-    //{
-    //    Labels = new[] { "Speed", "Power", "Accuracy", "Range", "Durability" }
-    //}
-    //    };
 
     }
     public void UpdateHistory()
@@ -190,21 +96,22 @@ public partial class UCHomeViewModel : ObservableObject
             {
                 Name = "Material",
                 Values = DataErrorByMaterial,
-                Fill = new SolidColorPaint(SKColors.OrangeRed), 
+                Fill = new SolidColorPaint(SKColors.OrangeRed),
                 DataLabelsPaint = new SolidColorPaint(SKColors.Black),
                 DataLabelsPosition = LiveChartsCore.Measure.DataLabelsPosition.Top,
                 DataLabelsSize = 14,
                 DataLabelsFormatter = point => point.Model.ToString("0") ,
-                
+                Padding = 2,
+
 
             },
         };
         YAxes = new Axis[] { new Axis { Name = "Quantity",
             MinStep = 1,
             MinLimit = 0,
-            ShowSeparatorLines = true, 
+            ShowSeparatorLines = true,
 
-         
+
 
         } };
 
@@ -226,7 +133,7 @@ public partial class UCHomeViewModel : ObservableObject
             MinStep = 1,
             MinLimit = 0,
             ShowSeparatorLines = true,
-            
+
         } };
 
 
@@ -236,22 +143,22 @@ public partial class UCHomeViewModel : ObservableObject
 
     public void UpdateChart()
     {
-      var result = _db.History
-      .Where(p => p.TimeInsert.Month == DateTime.Now.Month)
-      .GroupBy(p => new { p.MaterialName })
-      .Select(g => new
-      {
-          g.Key.MaterialName,
-          TotalQuantity = g.Sum(x => x.Quantity),
-      })
-      .ToList();
+        var result = _db.History
+        .Where(p => p.TimeInsert.Month == DateTime.Now.Month)
+        .GroupBy(p => new { p.MaterialName })
+        .Select(g => new
+        {
+            g.Key.MaterialName,
+            TotalQuantity = g.Sum(x => x.Quantity),
+        })
+        .ToList();
 
         XAxes = new Axis[] {new Axis
         {
             Labels = result.Select(p=> p.MaterialName).ToArray(),
             ShowSeparatorLines = true,
-            LabelsRotation = 60,
-            TextSize= 10
+            LabelsRotation = 90,
+            TextSize= 12
 
         } };
         DataErrorByMaterial.Clear();
@@ -266,10 +173,10 @@ public partial class UCHomeViewModel : ObservableObject
         }
         else
         {
-            YAxes[0].MaxLimit = DataErrorByMaterial.Max() + 1;
+            YAxes[0].MaxLimit = DataErrorByMaterial.Max() + 10;
         }
 
-       
+
 
 
         var resultByDate = _db.History
@@ -277,11 +184,11 @@ public partial class UCHomeViewModel : ObservableObject
        .GroupBy(p => new { p.TimeInsert.Date })
        .Select(g => new
        {
-         g.Key.Date,
-         TotalQuantity = g.Sum(x => x.Quantity),
+           g.Key.Date,
+           TotalQuantity = g.Sum(x => x.Quantity),
        }).ToList();
 
-      
+
 
         XAxesByDate = new Axis[] {new Axis
         {
@@ -290,6 +197,8 @@ public partial class UCHomeViewModel : ObservableObject
             .Select(day => day.ToString())  // 👈 chuyển int sang string
             .ToArray(),
             ShowSeparatorLines = true,
+           LabelsRotation = 45, // xoay 45 độ
+        TextSize = 12,
         } };
 
         int index = 1;
@@ -298,7 +207,7 @@ public partial class UCHomeViewModel : ObservableObject
         DataErrorByDate.Clear();
         foreach (var item in Enumerable.Range(1, DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month)))
         {
-           var rs =  resultByDate.Where(p => p.Date.Day == item).FirstOrDefault();
+            var rs = resultByDate.Where(p => p.Date.Day == item).FirstOrDefault();
             if (rs != null)
             {
                 DataErrorByDate.Add(rs.TotalQuantity);
@@ -317,7 +226,7 @@ public partial class UCHomeViewModel : ObservableObject
         {
             YAxesByDate[0].MaxLimit = DataErrorByDate.Max() + 1;
         }
-           
+
 
 
 
